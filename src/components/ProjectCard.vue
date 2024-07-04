@@ -35,7 +35,7 @@
         </a>
       </div>
     </div>
-    <div class="ml-4 w-1/3 relative items-center">
+    <div class="ml-4 w-1/3 flex items-center">
       <img
         :src="imageSrc"
         :alt="title"
