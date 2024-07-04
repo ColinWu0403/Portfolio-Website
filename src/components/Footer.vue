@@ -1,9 +1,7 @@
 <!-- src/components/Footer.vue -->
 <template>
-  <footer
-    class="text-white py-4 flex items-center justify-between fixed bottom-0 left-0 right-0 bg-gray-800"
-  >
-    <div class="ml-8">
+  <footer class="text-white py-2 flex items-center justify-between w-full mb-2">
+    <div class="ml-12">
       <p>
         {{ fullName }} &copy; {{ currentYear }} |
         <a
@@ -14,56 +12,66 @@
         </a>
       </p>
     </div>
-    <div class="mr-8">
-      <a href="#" class="text-gray-400 hover:text-white mx-2">
-        <i class="fab fa-github"></i>
+    <div class="mr-8 items-center">
+      <a
+        target="_blank"
+        href="https://github.com/ColinWu0403/"
+        class="text-gray-400 hover:text-white mx-4 text-4xl"
+      >
+        <i class="fab fa-github" alt="github"></i>
       </a>
-      <a href="#" class="text-gray-400 hover:text-white mx-2">
-        <i class="fas fa-file-alt"></i>
+      <a
+        target="_blank"
+        href="https://www.linkedin.com/in/colinwu0403/"
+        class="text-gray-400 hover:text-white mx-4 text-4xl"
+      >
+        <i class="fab fa-linkedin" alt="linkedin"></i>
       </a>
-      <a href="#" class="text-gray-400 hover:text-white mx-2">
-        <i class="fab fa-linkedin"></i>
+      <a
+        target="_blank"
+        href="#"
+        class="text-gray-400 hover:text-white mx-4 text-4xl"
+      >
+        <i class="fas fa-file-alt" alt="resume"></i>
       </a>
-      <a href="#" class="text-gray-400 hover:text-white mx-2">
-        <i class="fas fa-ellipsis-h"></i>
+      <a
+        target="_blank"
+        href="mailto:wu1886@purdue.edu"
+        class="text-gray-400 hover:text-white mx-4 text-4xl"
+      >
+        <i class="fas fa-envelope" alt="email"></i>
       </a>
     </div>
   </footer>
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from "vue";
+import { ref } from "vue";
 
 const fullName = ref("Colin Wu");
 const currentYear = new Date().getFullYear();
-
-// Check if the content height is shorter than viewport height
-const adjustFooterPosition = () => {
-  const footer = document.querySelector("footer");
-  if (footer) {
-    const windowHeight = window.innerHeight;
-    const bodyHeight = document.body.clientHeight;
-
-    if (bodyHeight <= windowHeight) {
-      footer.classList.add("absolute", "bottom-0");
-    }
-  }
-};
-
-onMounted(() => {
-  adjustFooterPosition();
-  window.addEventListener("resize", adjustFooterPosition);
-});
-
-// Clean up event listener on component unmount
-onBeforeUnmount(() => {
-  window.removeEventListener("resize", adjustFooterPosition);
-});
 </script>
 
 <style scoped>
-/* Scoped styles for Footer.vue */
-/* Adjust styles as per your design requirements */
+footer {
+  position: relative;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#app {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+
 a {
   text-decoration: none;
 }
