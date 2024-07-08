@@ -15,3 +15,6 @@ Source Code for my personal website, (when finished this can also be a template 
 | Blueish      | ![#4361EE](https://via.placeholder.com/10/4361EE?text=+) `#4361EE` |
 | Lime         | ![#45F414](https://via.placeholder.com/10/45F414?text=+) `#45F414` |
 | Pastel White | ![#fefae0](https://via.placeholder.com/10/fefae0?text=+) `#fefae0` |
+| Orange       | ![#fb5607](https://via.placeholder.com/10/fb5607?text=+) `#fb5607` |
+| Light Blue   | ![#4cc9f0](https://via.placeholder.com/10/4cc9f0?text=+) `#4cc9f0` |
+| Violet       | ![#a100f2](https://via.placeholder.com/10/a100f2?text=+) `#a100f2` |
