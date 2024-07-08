@@ -9,21 +9,33 @@ const routes = [
     path: "/",
     name: "Home",
     component: Home,
+    meta: {
+      title: "Colin's Homepage",
+    },
   },
   {
     path: "/about",
     name: "About",
     component: About,
+    meta: {
+      title: "Colin's About Page",
+    },
   },
   {
     path: "/experience",
     name: "Experience",
     component: Experience,
+    meta: {
+      title: "Colin's Experience",
+    },
   },
   {
     path: "/projects",
     name: "Projects",
     component: Projects,
+    meta: {
+      title: "Colin's Projects",
+    },
   },
   // {
   //   path: "/resume",
@@ -40,6 +52,11 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
+});
+
+router.beforeEach((to, from, next) => {
+  document.title = to.meta.title || "Default Title";
+  next();
 });
 
 export default router;

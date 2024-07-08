@@ -1,12 +1,12 @@
 <!-- src/components/ProjectCard.vue -->
 <template>
   <div
-    class="flex bg-gray-800 text-white p-4 rounded-lg shadow-md mb-8 max-w-4xl"
+    class="flex bg-gray-800 text-white p-4 rounded-lg shadow-md mb-8 max-w-5xl"
   >
     <div class="flex-1 relative">
       <p class="text-sm text-gray-400">{{ dateRange }}</p>
       <h2 class="text-2xl font-bold">{{ title }}</h2>
-      <div class="bg-gray-700 p-2 mt-2 mb-4 max-w-full rounded-sm">
+      <div class="bg-gray-700 p-2 mt-2 mb-4 max-w-full rounded-md">
         <p class="text-white description-text">{{ description }}</p>
       </div>
       <ul class="flex flex-wrap mb-4">
@@ -40,6 +40,7 @@
         :src="imageSrc"
         :alt="title"
         class="rounded-lg shadow-md max-h-full"
+        loading="lazy"
       />
     </div>
   </div>

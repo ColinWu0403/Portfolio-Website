@@ -6,7 +6,24 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { useHead } from "@vueuse/head";
+
+useHead({
+  meta: [
+    {
+      name: "description",
+      content: "My Work and Leadership Experiences.",
+    },
+    {
+      property: "og:description",
+      content: "My Work and Leadership Experiences.",
+    },
+    { property: "og:title", content: "Colin's Experience" },
+    { property: "og:image", content: "https://vitejs.dev/logo.svg" }, // temp logo image
+  ],
+});
+</script>
 
 <style scoped>
 /* Add any scoped styles specific to this page if needed */

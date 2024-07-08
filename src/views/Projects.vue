@@ -21,8 +21,24 @@
 <script setup>
 import ProjectCard from "../components/ProjectCard.vue";
 import { projects } from "../constants/projects";
+import { useHead } from "@vueuse/head";
 
 const projectList = projects;
+
+useHead({
+  meta: [
+    {
+      name: "description",
+      content: "My Personal Projects.",
+    },
+    {
+      property: "og:description",
+      content: "My Personal Projects.",
+    },
+    { property: "og:title", content: "Colin's Projects" },
+    { property: "og:image", content: "https://vitejs.dev/logo.svg" }, // temp logo image
+  ],
+});
 </script>
 
 <style scoped>
