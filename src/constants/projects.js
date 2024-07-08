@@ -5,7 +5,13 @@ export const projects = [
     title: "Artikulate -  BoilerMake 2024",
     description:
       "Artikulate is a video-editing and content-generation platform that creates text-to-speech caption videos from either web-scraped or AI-Generated Reddit threads.\nUsers can choose between several different subreddits, and Artikulate can generate a fully edited, captioned, and text-to-speech voiced video over a chosen background video.",
-    technologies: ["Django", "Python", "Selenium", "OpenAI", "FFmpeg"],
+    technologies: [
+      { name: "Django", color: "secondary" },
+      { name: "Python", color: "tertiary" },
+      { name: "Selenium", color: "lime" },
+      { name: "OpenAI", color: "orange" },
+      { name: "FFmpeg", color: "magenta" },
+    ],
     githubLink: "https://github.com/SamDuprey/boilermake2024",
     demoLink: "https://devpost.com/software/artikulate",
     imageSrc:
@@ -16,7 +22,11 @@ export const projects = [
     title: "Mixtape",
     description:
       "Collaborative music-sharing app for iOS, Android, and the web, representing ACM SigApp’s official project for 2023-2024. This cross-platform application, developed using React Native and Rust (Actix Web), empowers users to collectively create and share playlists, fostering a collaborative music experience.",
-    technologies: ["Rust", "React Native", "MongoDB"],
+    technologies: [
+      { name: "Rust", color: "violet" },
+      { name: "React Native", color: "blueish" },
+      { name: "MongoDB", color: "lime" },
+    ],
     githubLink:
       "https://github.com/orgs/Purdue-ACM-SIGAPP/teams/mixtape/repositories",
     demoLink:
@@ -29,7 +39,12 @@ export const projects = [
     title: "Shell Project - CS 252",
     description:
       "Fully functional shell interpreter similar to bash and csh using C and C++. Supports executing commands, file redirection, piping, background processes, subshells, environment variable expansion, wildcards, and control statements (if, while, and for loops).\n\nNote: no public code available for this project.",
-    technologies: ["C", "C++", "Lex", "Yacc"],
+    technologies: [
+      { name: "C", color: "secondary" },
+      { name: "C++", color: "magenta" },
+      { name: "Lex", color: "light_blue" },
+      { name: "Yacc", color: "tertiary" },
+    ],
     githubLink: "https://github.com/",
     demoLink: "https://github.com/",
     imageSrc: "./shell.jpg",
@@ -39,7 +54,12 @@ export const projects = [
     title: "Ascend Purdue Website",
     description:
       "Ascend Purdue Business Club's official website, developed using React and TypeScript. AscendPurdue.com is fully responsive and has a mobile-friendly interface used by over 100 members of the club.",
-    technologies: ["React", "TypeScript", "Tailwind CSS", "Vercel"],
+    technologies: [
+      { name: "React", color: "light_blue" },
+      { name: "TypeScript", color: "blueish" },
+      { name: "Tailwind CSS", color: "secondary" },
+      { name: "Vercel", color: "lime" },
+    ],
     githubLink: "https://github.com/ColinWu0403/AscendWebsiteDev",
     demoLink: "https://www.ascendpurdue.com/",
     imageSrc: "./AscendPurdue.jpg",
@@ -49,7 +69,11 @@ export const projects = [
     title: "Portfolio Website",
     description:
       "This is the website you are currently viewing! I made it completely from scratch. It has many performance improvements and a better design than my previous website.\nI also decided to learn Vue to make this since I'm tired of using React lol.",
-    technologies: ["Vue", "JavaScript", "Tailwind CSS"],
+    technologies: [
+      { name: "Vue", color: "lime" },
+      { name: "JavaScript", color: "tertiary" },
+      { name: "Tailwind CSS", color: "secondary" },
+    ],
     githubLink: "https://github.com/ColinWu0403/Portfolio-Website-Vue",
     demoLink: "/",
     imageSrc: "/",
@@ -58,7 +82,12 @@ export const projects = [
     dateRange: "Jul 2023 - Jun 2024",
     title: "Portfolio Website (Old)",
     description: "My previous personal website, built with React and ThreeJS.",
-    technologies: ["React", "JavaScript", "ThreeJS", "Tailwind CSS"],
+    technologies: [
+      { name: "React", color: "light_blue" },
+      { name: "JavaScript", color: "tertiary" },
+      { name: "ThreeJS", color: "orange" },
+      { name: "Tailwind CSS", color: "secondary" },
+    ],
     githubLink: "https://github.com/ColinWu0403/Portfolio-Website-ReactJS",
     demoLink: "https://colinwu.me/",
     imageSrc: "https://colinwu.me/assets/logo-42c1a2dd.svg",

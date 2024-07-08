@@ -9,7 +9,12 @@
         :dateRange="project.dateRange"
         :title="project.title"
         :description="project.description"
-        :technologies="project.technologies"
+        :technologies="
+          project.technologies.map((tech) => ({
+            name: tech.name,
+            color: tech.color,
+          }))
+        "
         :githubLink="project.githubLink"
         :demoLink="project.demoLink"
         :imageSrc="project.imageSrc"
