@@ -8,11 +8,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // primary: "#e48c17", //050816
-        // secondary: "#aaa6c3", //f18112
-        // tertiary: "#111030", // 151030
-        // orange: "#ff6c22",
-        // brownish: "#67481c",
+        primary: "#040112",
+        secondary: "#17FFC4",
+        tertiary: "#ffd627",
+        blueish: "#4361EE",
+        magenta: "#E80F58",
+        lime: "#45F414",
+        slate: "#aaa6c3",
+        dark_slate: "#4b4959",
+        "magenta-100": "#db195b",
         gold: "#f7b612",
         "pastel-white": "#fefae0",
         white: "#ffffff",
