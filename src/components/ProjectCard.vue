@@ -1,7 +1,7 @@
 <!-- src/components/ProjectCard.vue -->
 <template>
   <div
-    class="flex bg-[#161320] text-white p-4 rounded-lg shadow-md mb-8 max-w-5xl"
+    class="flex bg-darker_slate text-white p-4 rounded-lg shadow-md mb-8 max-w-5xl"
   >
     <div class="flex-1 relative">
       <!-- Title and Date -->

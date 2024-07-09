@@ -1,7 +1,7 @@
 <!-- src/views/About.vue -->
 <template>
   <div class="flex flex-col items-center justify-center h-screen">
-    <h1 class="text-white text-3xl font-bold mb-4">About</h1>
+    <h1 class="text-white text-3xl font-bold mb-4 text-[#db195b]">About</h1>
     <p class="text-white text-lg text-center">About Page</p>
   </div>
 </template>

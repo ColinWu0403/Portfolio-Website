@@ -6,7 +6,7 @@
         {{ fullName }} &copy; {{ currentYear }} |
         <a
           target="_blank"
-          class="text-white hover:text-white"
+          class="text-white hover:text-secondary"
           href="https://github.com/ColinWu0403/Portfolio-Website-Vue"
           >Source Code
         </a>
@@ -16,28 +16,28 @@
       <a
         target="_blank"
         href="https://github.com/ColinWu0403/"
-        class="text-gray-400 hover:text-white mx-4 text-4xl"
+        class="text-slate hover:text-secondary mx-4 text-4xl"
       >
         <i class="fab fa-github" alt="github"></i>
       </a>
       <a
         target="_blank"
         href="https://www.linkedin.com/in/colinwu0403/"
-        class="text-gray-400 hover:text-white mx-4 text-4xl"
+        class="text-slate hover:text-secondary mx-4 text-4xl"
       >
         <i class="fab fa-linkedin" alt="linkedin"></i>
       </a>
       <a
         target="_blank"
         href="#"
-        class="text-gray-400 hover:text-white mx-4 text-4xl"
+        class="text-slate hover:text-secondary mx-4 text-4xl"
       >
         <i class="fas fa-file-alt" alt="resume"></i>
       </a>
       <a
         target="_blank"
         href="mailto:wu1886@purdue.edu"
-        class="text-gray-400 hover:text-white mx-4 text-4xl"
+        class="text-slate hover:text-secondary mx-4 text-4xl"
       >
         <i class="fas fa-envelope" alt="email"></i>
       </a>
