@@ -16,6 +16,7 @@ module.exports = {
         lime: "#45F414",
         slate: "#aaa6c3",
         dark_slate: "#4b4959",
+        darker_slate: "#161320",
         orange: "#fb5607",
         light_blue: "#4cc9f0",
         violet: "#a100f2",
