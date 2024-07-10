@@ -2,7 +2,9 @@
 <template>
   <div class="mx-auto">
     <!--  -->
-    <h1 class="text-4xl font-bold text-white ml-12 mt-4 mb-5">Projects</h1>
+    <h1 class="mechsuit-font text-3xl font-bold text-tertiary ml-12 mt-4 mb-5">
+      Projects
+    </h1>
     <div class="relative">
       <!-- Shorter divider line on top -->
       <div class="divider-line-short"></div>

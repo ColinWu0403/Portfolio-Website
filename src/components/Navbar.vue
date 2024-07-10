@@ -8,7 +8,7 @@
         v-for="(link, idx) in navLinks"
         :key="idx"
         :to="link.path"
-        class="my-4 text-lg nav-link relative"
+        class="my-4 text-xl nav-link relative"
         :class="{
           'font-bold': isCurrentRoute(link.path),
           'nav-link-active': isCurrentRoute(link.path),
@@ -57,23 +57,29 @@ const isCurrentRoute = (routePath) => {
 }
 
 .nav-link:hover {
-  color: #17ffc4;
+  color: #e80f58;
 }
 
 .nav-link-active {
   font-weight: bold;
-  color: #17ffc4;
+  color: #e80f58; /* #17FFC4 */
 }
 
 .active-divider {
+  content: "";
   position: absolute;
   top: 50%;
-  right: -10rem;
+  right: -2rem;
   transform: translateY(-50%);
-  width: 20rem;
   height: 2rem;
   background-color: #ffd627;
   z-index: 1; /* Ensure this is behind the text */
-  clip-path: polygon(0 0, 100% 0, 100% 100%, calc(100% - 18rem) 100%);
+  width: calc(100% + 4.75rem); /* Adjust as needed */
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    calc(100% - calc(100% - 2.5rem)) 100%
+  );
 }
 </style>
