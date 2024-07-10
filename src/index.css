@@ -6,7 +6,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Mechsuit";
+  src: url("./assets/fonts/Mechsuit.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Set default font for the entire project */
 body {
   font-family: "IBM Plex Mono", monospace;
+}
+
+/* Class to apply the custom font */
+.mechsuit-font {
+  font-family: "Mechsuit", sans-serif;
 }
