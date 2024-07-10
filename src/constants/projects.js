@@ -1,6 +1,22 @@
 // src/data/projects.js
 export const projects = [
   {
+    dateRange: "May 2024 - July 2024",
+    title: "ECG AFib Detection",
+    description:
+      "This project contains a collection of 6 classification models that predict if a patient has Atrial Fibrillation (AFib) based on the given Electrocardiography (ECG) signals of the patient.\n\nThe models are written in Python using Scikit-learn and TensorFlow Keras and use Neurokit2 to process and analyze ECG signals.",
+    technologies: [
+      { name: "TensorFlow", color: "secondary" },
+      { name: "Scikit-learn", color: "lime" },
+      { name: "Neurokit2", color: "magenta" },
+      { name: "Pandas", color: "red" },
+      { name: "Python", color: "tertiary" },
+    ],
+    githubLink: "https://github.com/ColinWu0403/ECG_AFIB",
+    demoLink: "https://github.com/ColinWu0403/ECG_AFIB",
+    imageSrc: "./ecg_afib.png",
+  },
+  {
     dateRange: "Jan 2024 - June 2024",
     title: "Artikulate -  BoilerMake 2024",
     description:
@@ -44,6 +60,8 @@ export const projects = [
       { name: "C++", color: "magenta" },
       { name: "Lex", color: "light_blue" },
       { name: "Yacc", color: "tertiary" },
+      { name: "Shell", color: "lime" },
+      { name: "Linux", color: "purple" },
     ],
     githubLink: "https://github.com/",
     demoLink: "https://github.com/",
