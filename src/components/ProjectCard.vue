@@ -1,7 +1,7 @@
 <!-- src/components/ProjectCard.vue -->
 <template>
   <div
-    class="flex bg-darker_slate text-white p-4 rounded-lg shadow-md mb-8 max-w-5xl"
+    class="flex bg-darker_slate text-white p-4 rounded-lg shadow-md mb-4 max-w-5xl"
   >
     <div class="flex-1 relative">
       <!-- Title and Date -->
@@ -45,7 +45,7 @@
       <img
         :src="imageSrc"
         :alt="title"
-        class="rounded-lg shadow-md max-h-full"
+        class="shadow-md max-h-full"
         loading="lazy"
       />
     </div>
@@ -90,6 +90,10 @@ const getColorClass = (color) => {
       return "#4cc9f0";
     case "violet":
       return "#a100f2";
+    case "red":
+      return "#ff0000";
+    case "purple":
+      return "#7900ff";
     default:
       return "#ffffff"; // Default to white if color is undefined
   }

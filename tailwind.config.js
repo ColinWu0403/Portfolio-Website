@@ -20,6 +20,8 @@ module.exports = {
         orange: "#fb5607",
         light_blue: "#4cc9f0",
         violet: "#a100f2",
+        red: "#ff0000",
+        purple: "#7900ff",
         "magenta-100": "#db195b",
         gold: "#f7b612",
         "pastel-white": "#fefae0",
