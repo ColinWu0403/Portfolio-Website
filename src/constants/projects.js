@@ -1,6 +1,40 @@
 // src/data/projects.js
 export const projects = [
   {
+    dateRange: "July 2024 - Present",
+    title: "Heart BPM Music",
+    description:
+      "Heart BPMusic is a website that recommends songs based on your heart's BPM (beats per minute) and mood. The project integrates a Django REST API with a Vue.js Single Page Application frontend to deliver a seamless user experience. It uses a KNN Machine Learning model with scikit-learn and Spotify's Web API to provide personalized music recommendations.",
+    technologies: [
+      { name: "Django", color: "secondary" },
+      { name: "Spotify Web API", color: "red" },
+      { name: "Vue", color: "lime" },
+      { name: "Scikit-learn", color: "tertiary" },
+      { name: "Neurokit2", color: "magenta" },
+    ],
+    githubLink: "https://github.com/ColinWu0403/heartBPMusic",
+    demoLink: "https://heart-bpm-music.vercel.app/",
+    imageSrc: "./HeartBPMusic.png",
+  },
+  {
+    dateRange: "May 2024 - Aug 2024",
+    title: "LLaMA-2-hf-Chatbot",
+    description:
+      "Chatbot from pretrained LLaMA-2 LLM model from HuggingFace, fine-tuned with medical research papers using RAG (Retrieval-Augmented Generation). This chatbot can run on both Google Collab and on a demo web app built with Django and React.",
+    technologies: [
+      { name: "LLaMA-2", color: "blueish" },
+      { name: "Transformers", color: "magenta" },
+      { name: "Langchain", color: "lime" },
+      { name: "Pytorch", color: "tertiary" },
+      { name: "Django", color: "secondary" },
+      { name: "React", color: "light_blue" },
+    ],
+    githubLink: "https://github.com/ColinWu0403/LLaMA-2-hf-Chatbot",
+    demoLink:
+      "https://colab.research.google.com/drive/1ittu4zTPqlZF0MFNlG_86_z_DN2kyZ9G?usp=sharing",
+    imageSrc: "./chatbot.png",
+  },
+  {
     dateRange: "May 2024 - July 2024",
     title: "ECG AFib Detection",
     description:
@@ -49,23 +83,6 @@ export const projects = [
       "https://github.com/orgs/Purdue-ACM-SIGAPP/teams/mixtape/repositories",
     imageSrc:
       "https://raw.githubusercontent.com/Purdue-ACM-SIGAPP/mixtape-frontend/dev/mixtape-rn-app-v0/assets/mixtape.png",
-  },
-  {
-    dateRange: "Feb 2024 - Apr 2024",
-    title: "Shell Project - CS 252",
-    description:
-      "Fully functional shell interpreter similar to bash and csh using C and C++. Supports executing commands, file redirection, piping, background processes, subshells, environment variable expansion, wildcards, and control statements (if, while, and for loops).\n\nNote: no public code available for this project.",
-    technologies: [
-      { name: "C", color: "secondary" },
-      { name: "C++", color: "magenta" },
-      { name: "Lex", color: "light_blue" },
-      { name: "Yacc", color: "tertiary" },
-      { name: "Shell", color: "lime" },
-      { name: "Linux", color: "purple" },
-    ],
-    githubLink: "https://github.com/",
-    demoLink: "https://github.com/",
-    imageSrc: "./shell.jpg",
   },
   {
     dateRange: "Oct 2023 - Feb 2024",
