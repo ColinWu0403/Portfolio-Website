@@ -28,5 +28,31 @@ useHead({
 </script>
 
 <style scoped>
-/* Add any scoped styles specific to this page if needed */
+.wave-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: black;
+}
+
+.wave-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background: url("/wave-pattern.svg") repeat;
+  animation: wave-animation 10s linear infinite;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
 </style>
