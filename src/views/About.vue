@@ -83,12 +83,12 @@
         <img
           src="../assets/Colin.jpg"
           alt="About Me Image"
-          class="rounded-md w-60 h-80 object-cover"
+          class="rounded-md w-72 h-96 object-cover"
         />
 
         <!-- Color Overlay -->
         <div
-          class="absolute inset-0 w-60 h-80 cursor-pointer bg-secondary bg-opacity-30 rounded-md transition-opacity duration-300 group-hover:opacity-0"
+          class="absolute inset-0 w-72 h-96 cursor-pointer bg-secondary bg-opacity-30 rounded-md transition-opacity duration-300 group-hover:opacity-0"
         ></div>
       </div>
     </div>
