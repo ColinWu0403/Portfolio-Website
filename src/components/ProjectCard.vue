@@ -1,29 +1,42 @@
-<!-- src/components/ProjectCard.vue -->
 <template>
   <div
-    class="flex bg-darker_slate text-white p-4 rounded-lg shadow-md mb-4 max-w-5xl"
+    class="flex flex-col md:flex-row bg-darker_slate text-white p-4 rounded-lg shadow-md mb-4 max-w-5xl"
   >
-    <div class="flex-1 relative">
+    <!-- Container for Title and Description Box -->
+    <div class="flex-1 flex flex-col relative">
       <!-- Title and Date -->
       <p class="text-sm text-secondary">{{ dateRange }}</p>
-      <h2 class="text-2xl font-bold text-white">{{ title }}</h2>
+      <h2 class="md:text-2xl text-xl font-bold text-white">
+        {{ title }}
+      </h2>
+      <!-- Project Image (Mobile Only) -->
+      <div class="md:hidden flex justify-center mt-2 mb-4">
+        <img
+          :src="imageSrc"
+          :alt="title"
+          class="shadow-md max-h-full rounded-md"
+          loading="lazy"
+        />
+      </div>
       <!-- Description Box -->
       <div class="bg-dark_slate p-2 mt-2 mb-4 max-w-full rounded-md">
-        <p class="text-white description-text">{{ description }}</p>
+        <p class="md:text-base text-md text-white description-text">
+          {{ description }}
+        </p>
       </div>
       <!-- Technologies -->
-      <ul class="flex flex-wrap mb-4">
+      <ul class="flex flex-wrap md:mb-4 mb-2 md:text-base text-md">
         <li
           v-for="(tech, index) in technologies"
           :key="index"
           :style="{ color: getColorClass(tech.color) }"
-          :class="`mr-2 mb-2 px-2 py-1 font-[500] rounded`"
+          :class="`mr-2 md:mb-2 px-2 py-1 font-[500] rounded`"
         >
           {{ tech.name }}
         </li>
       </ul>
       <!-- Source Links -->
-      <div class="flex">
+      <div class="flex md:mb-0 mb-4">
         <a
           :href="githubLink"
           target="_blank"
@@ -40,8 +53,8 @@
         </a>
       </div>
     </div>
-    <!-- Project Image -->
-    <div class="ml-4 w-1/3 flex items-center">
+    <!-- Project Image (Desktop Only) -->
+    <div class="md:flex-1 md:ml-4 md:w-1/3 hidden md:flex items-center">
       <img
         :src="imageSrc"
         :alt="title"
