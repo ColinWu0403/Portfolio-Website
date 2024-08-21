@@ -1,13 +1,35 @@
 <!-- src/views/Experience.vue -->
 <template>
-  <div class="flex flex-col items-center justify-center h-screen">
-    <h1 class="text-white text-3xl font-bold mb-4">Experience</h1>
-    <p class="text-white text-lg text-center">Experience Page</p>
+  <div class="mx-auto h-screen">
+    <h1 class="mechsuit-font text-3xl font-bold text-tertiary ml-12 mt-4 mb-5">
+      Experience
+    </h1>
+    <div class="relative">
+      <!-- Shorter divider line on top -->
+      <div class="divider-line-short"></div>
+
+      <!-- Longer divider line below -->
+      <div class="divider-line-long bottom-[7px]"></div>
+    </div>
+
+    <!-- Experience Cards -->
+    <div class="flex flex-col space-y-8 py-8 px-12">
+      <ExperienceCard
+        v-for="experience in experiences"
+        :key="experience.id"
+        :title="experience.title"
+        :company="experience.company"
+        :dates="experience.dates"
+        :description="experience.description"
+      />
+    </div>
   </div>
 </template>
 
 <script setup>
 import { useHead } from "@vueuse/head";
+import ExperienceCard from "../components/ExperienceCard.vue";
+import { experiences } from "../constants/experiences";
 
 useHead({
   meta: [
@@ -26,5 +48,52 @@ useHead({
 </script>
 
 <style scoped>
-/* Add any scoped styles specific to this page if needed */
+/* Decorative divider styles */
+.divider-line-long {
+  position: relative;
+  width: 50rem;
+  height: 1rem;
+  background-color: #17ffc4;
+  overflow: hidden;
+
+  /* Clip the bottom right corner to create a diagonal cut */
+  clip-path: polygon(0 0, 100% 0, calc(100% - 1rem) 100%, 0% 100%);
+  z-index: 1; /* Ensure this line is on top */
+}
+
+.divider-line-long::before {
+  content: "";
+  position: absolute;
+  top: -2rem; /* Adjust to position the diagonal cut */
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 2rem 0 0 2rem; /* Adjust size of diagonal cut */
+  border-color: transparent transparent #17ffc4 transparent;
+}
+
+.divider-line-short {
+  position: relative;
+  width: 49rem;
+  height: 1rem;
+  background-color: #e80f58;
+  overflow: hidden;
+
+  /* Clip the bottom right corner to create a diagonal cut */
+  clip-path: polygon(0 0, 100% 0, calc(100% - 1rem) 100%, 0% 100%);
+  z-index: 2; /* Ensure this line is below the shorter line */
+}
+
+.divider-line-short::before {
+  content: "";
+  position: absolute;
+  top: -1rem; /* Adjust to position the diagonal cut */
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 1rem 0 0 1rem; /* Adjust size of diagonal cut */
+  border-color: transparent transparent #17ffc4 transparent;
+}
 </style>
