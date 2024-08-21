@@ -111,7 +111,7 @@ export const projects = [
     ],
     githubLink: "https://github.com/ColinWu0403/Portfolio-Website-Vue",
     demoLink: "/",
-    imageSrc: "/",
+    imageSrc: "./icon_small.svg",
   },
   {
     dateRange: "Jul 2023 - Jun 2024",
