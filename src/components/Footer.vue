@@ -53,23 +53,27 @@ const currentYear = new Date().getFullYear();
 </script>
 
 <style scoped>
-footer {
-  position: relative;
-}
-
 html,
 body {
   height: 100%;
+  margin: 0; /* Ensure no default margins */
 }
 
+/* App container should take full height and use flexbox */
 #app {
-  min-height: 100%;
   display: flex;
   flex-direction: column;
+  min-height: 100vh; /* Ensure it takes at least the full viewport height */
+}
+
+/* Ensure main content area grows to take available space */
+main {
+  flex-grow: 1;
 }
 
 footer {
-  margin-top: auto;
+  position: relative;
+  color: white;
 }
 
 a {
@@ -77,5 +81,18 @@ a {
 }
 a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    text-align: center; /* Center align text and icons on mobile */
+  }
+  .ml-12 {
+    margin-left: 0; /* Remove left margin for mobile */
+  }
+  .mr-8 {
+    margin-right: 0; /* Remove right margin for mobile */
+  }
 }
 </style>
