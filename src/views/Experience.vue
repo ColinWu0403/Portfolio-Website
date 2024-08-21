@@ -15,7 +15,7 @@
     </div>
 
     <!-- Experience Cards -->
-    <div class="flex flex-col space-y-8 py-8 px-12">
+    <div class="flex flex-col space-y-8 py-8 md:px-12 px-6">
       <ExperienceCard
         v-for="experience in experiences"
         :key="experience.id"

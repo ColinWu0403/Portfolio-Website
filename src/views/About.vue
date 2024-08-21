@@ -16,7 +16,7 @@
 
     <!-- Main Container -->
     <div
-      class="flex flex-col-reverse md:flex-row mt-8 mb-8 px-8 w-full md:w-4/5"
+      class="flex flex-col-reverse md:flex-row mt-8 mb-8 md:px-8 px-6 w-full md:w-4/5"
     >
       <!-- Text Section -->
       <div class="text-white md:text-base text-md md:w-2/3 md:mr-10">

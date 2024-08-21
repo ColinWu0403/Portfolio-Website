@@ -1,15 +1,17 @@
 <template>
   <div class="experience-card flex flex-col mb-8 max-w-5xl">
     <!-- Job Title -->
-    <h2 class="text-2xl font-bold text-tertiary">{{ title }}</h2>
+    <h2 class="md:text-2xl text-xl font-bold text-tertiary">{{ title }}</h2>
 
     <!-- Company and Dates Row -->
     <div class="flex justify-between items-center">
       <!-- Left Side: Company Name -->
-      <p class="text-lg font-medium text-pastel_white">{{ company }}</p>
+      <p class="md:text-lg text-base font-medium text-pastel_white">
+        {{ company }}
+      </p>
 
       <!-- Right Side: Dates -->
-      <div class="text-right text-lg text-pastel_white">
+      <div class="text-right md:text-lg text-md text-pastel_white">
         <p>{{ dates }}</p>
       </div>
     </div>
