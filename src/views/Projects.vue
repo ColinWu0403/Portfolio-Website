@@ -1,8 +1,9 @@
 <!-- src/views/Projects.vue -->
 <template>
   <div class="mx-auto">
-    <!--  -->
-    <h1 class="mechsuit-font text-3xl font-bold text-tertiary ml-12 mt-4 mb-5">
+    <h1
+      class="mechsuit-font text-3xl font-bold text-tertiary md:ml-12 ml-6 mt-4 mb-5"
+    >
       Projects
     </h1>
     <div class="relative">
@@ -61,7 +62,8 @@ useHead({
 /* Decorative divider styles */
 .divider-line-long {
   position: relative;
-  width: 50rem;
+  width: 90vw; /* Adjust to viewport width */
+  max-width: 50rem; /* Max width for larger screens */
   height: 1rem;
   background-color: #17ffc4;
   overflow: hidden;
@@ -85,10 +87,12 @@ useHead({
 
 .divider-line-short {
   position: relative;
-  width: 49rem;
+  width: 88vw; /* Adjust to viewport width */
+  max-width: 49rem; /* Max width for larger screens */
   height: 1rem;
   background-color: #e80f58;
   overflow: hidden;
+  margin-top: -0.5rem; /* Adjust to overlap the long divider */
 
   /* Clip the bottom right corner to create a diagonal cut */
   clip-path: polygon(0 0, 100% 0, calc(100% - 1rem) 100%, 0% 100%);

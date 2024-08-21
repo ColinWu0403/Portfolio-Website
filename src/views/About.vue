@@ -1,7 +1,9 @@
 <!-- src/views/About.vue -->
 <template>
   <div class="mx-auto h-screen">
-    <h1 class="mechsuit-font text-3xl font-bold text-tertiary ml-12 mt-4 mb-5">
+    <h1
+      class="mechsuit-font text-3xl font-bold text-tertiary md:ml-12 ml-6 mt-4 mb-5"
+    >
       About Me
     </h1>
     <div class="relative">
@@ -13,9 +15,13 @@
     </div>
 
     <!-- Main Container -->
-    <div class="flex mt-8 px-8 w-4/5">
+    <div
+      class="flex flex-col-reverse md:flex-row mt-8 md:px-8 w-4/5 md:items-left items-center md:w-full"
+    >
       <!-- Text Section -->
-      <div class="w-2/3 mr-10 text-white text-base">
+      <div
+        class="text-white text-base md:w-2/3 md:mr-10 md:text-left text-center"
+      >
         <p>
           Hello! My name is Colin and I'm currently a third-year student at
           Purdue University studying Computer Science. My interest with
@@ -80,7 +86,9 @@
         </h3>
       </div>
       <!-- Image Section -->
-      <div class="relative mt-1 w-1/3 flex-shrink-0 group">
+      <div
+        class="relative mt-1 md:w-1/3 w-full mb-8 md:mb-0 items-center md:items-center align-center flex-shrink-0 group"
+      >
         <img
           src="../assets/Colin.jpg"
           alt="About Me Image"
@@ -119,7 +127,8 @@ useHead({
 /* Decorative divider styles */
 .divider-line-long {
   position: relative;
-  width: 50rem;
+  width: 90vw; /* Adjust to viewport width */
+  max-width: 50rem; /* Max width for larger screens */
   height: 1rem;
   background-color: #17ffc4;
   overflow: hidden;
@@ -143,10 +152,12 @@ useHead({
 
 .divider-line-short {
   position: relative;
-  width: 49rem;
+  width: 88vw; /* Adjust to viewport width */
+  max-width: 49rem; /* Max width for larger screens */
   height: 1rem;
   background-color: #e80f58;
   overflow: hidden;
+  margin-top: -0.5rem; /* Adjust to overlap the long divider */
 
   /* Clip the bottom right corner to create a diagonal cut */
   clip-path: polygon(0 0, 100% 0, calc(100% - 1rem) 100%, 0% 100%);
@@ -163,9 +174,5 @@ useHead({
   border-style: solid;
   border-width: 1rem 0 0 1rem; /* Adjust size of diagonal cut */
   border-color: transparent transparent #17ffc4 transparent;
-}
-
-.group-hover\:opacity-0:hover {
-  opacity: 0;
 }
 </style>
