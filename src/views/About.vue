@@ -1,8 +1,8 @@
 <!-- src/views/About.vue -->
 <template>
-  <div class="mx-auto h-screen">
+  <div class="mx-auto">
     <h1
-      class="mechsuit-font text-3xl font-bold text-tertiary md:ml-12 ml-6 mt-4 mb-5"
+      class="mechsuit-font md:text-3xl text-2xl font-bold text-tertiary md:ml-12 ml-6 mt-4 mb-5"
     >
       About Me
     </h1>
@@ -16,12 +16,10 @@
 
     <!-- Main Container -->
     <div
-      class="flex flex-col-reverse md:flex-row mt-8 md:px-8 w-4/5 md:items-left items-center md:w-full"
+      class="flex flex-col-reverse md:flex-row mt-8 mb-8 px-8 w-full md:w-4/5"
     >
       <!-- Text Section -->
-      <div
-        class="text-white text-base md:w-2/3 md:mr-10 md:text-left text-center"
-      >
+      <div class="text-white md:text-base text-md md:w-2/3 md:mr-10">
         <p>
           Hello! My name is Colin and I'm currently a third-year student at
           Purdue University studying Computer Science. My interest with

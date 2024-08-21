@@ -1,8 +1,8 @@
 <!-- src/views/Experience.vue -->
 <template>
-  <div class="mx-auto h-screen">
+  <div class="mx-auto">
     <h1
-      class="mechsuit-font text-3xl font-bold text-tertiary md:ml-12 ml-6 mt-4 mb-5"
+      class="mechsuit-font md:text-3xl text-2xl font-bold text-tertiary md:ml-12 ml-6 mt-4 mb-5"
     >
       Experience
     </h1>
