@@ -20,6 +20,6 @@ This website was built with Vue.js using Vite and TailwindCSS for styling.
 | Pastel White | ![#fefae0](https://via.placeholder.com/10/fefae0?text=+) `#fefae0` |
 | Orange       | ![#fb5607](https://via.placeholder.com/10/fb5607?text=+) `#fb5607` |
 | Light Blue   | ![#4cc9f0](https://via.placeholder.com/10/4cc9f0?text=+) `#4cc9f0` |
-| Violet       | ![#a100f2](https://via.placeholder.com/10/a100f2?text=+) `#a100f2` |
+| Violet       | ![#AD49E1](https://via.placeholder.com/10/a100f2?text=+) `#AD49E1` |
 | Red          | ![#ff0000](https://via.placeholder.com/10/ff0000?text=+) `#ff0000` |
 | Purple       | ![#7900ff](https://via.placeholder.com/10/7900ff?text=+) `#7900ff` |
