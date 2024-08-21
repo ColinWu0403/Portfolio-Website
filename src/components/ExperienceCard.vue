@@ -18,11 +18,11 @@
     <div class="divider-line mt-2"></div>
 
     <!-- Job Description Bullet Points -->
-    <ul class="mt-4 list-none list-inside">
+    <ul class="mt-4 list-none list-inside w-4/5">
       <li
         v-for="(point, index) in description"
         :key="index"
-        class="text-md text-white mb-2 custom-bullet"
+        class="text-md text-white mb-3 custom-bullet"
       >
         {{ point }}
       </li>

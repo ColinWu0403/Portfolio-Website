@@ -71,7 +71,8 @@
         <h3>
           You can also download my resume here:
           <a
-            href="../assets/resume.pdf"
+            href="./resume.pdf"
+            target="_blank"
             download="ChiCheColinWuResume.pdf"
             class="text-tertiary hover:text-magenta"
             >Download Resume</a
