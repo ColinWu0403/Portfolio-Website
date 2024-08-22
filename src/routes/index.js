@@ -3,6 +3,7 @@ import Home from "../views/Home.vue";
 import About from "../views/About.vue";
 import Experience from "../views/Experience.vue";
 import Projects from "../views/Projects.vue";
+import Music from "../views/Music.vue";
 
 const routes = [
   {
@@ -37,11 +38,11 @@ const routes = [
       title: "Colin's Projects",
     },
   },
-  // {
-  //   path: "/resume",
-  //   name: "Resume",
-  //   component: Resume,
-  // },
+  {
+    path: "/music",
+    name: "Music",
+    component: Music,
+  },
   // {
   //   path: "/other",
   //   name: "Other",
