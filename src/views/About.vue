@@ -22,10 +22,11 @@
       <div class="text-white md:text-base text-md md:w-2/3 md:mr-10">
         <p>
           Hello! My name is Colin and I'm currently a third-year student at
-          Purdue University studying Computer Science. My interest with
-          technology started with creating silly games with Scratch and
-          tinkering with my Raspberry PI. In high school, I did FIRST Robotics,
-          which ignited my passion for STEM.
+          Purdue University studying Computer Science. I’m passionate about
+          creating innovative software and exploring new technologies. I also
+          enjoy producing music (check out my
+          <a href="/music" class="text-lime hover:text-tertiary">music</a>),
+          playing table tennis, and watching movies in my free time.
         </p>
         <br />
         <p>
