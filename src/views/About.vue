@@ -25,7 +25,9 @@
           Purdue University studying Computer Science. I’m passionate about
           creating innovative software and exploring new technologies. I also
           enjoy producing music (under the artist name
-          <router-link to="/music" class="text-secondary hover:text-tertiary"
+          <router-link
+            to="/music"
+            class="text-secondary hover:text-tertiary hover:underline"
             >Lyenz</router-link
           >), playing table tennis, and watching movies in my free time.
         </p>
@@ -56,21 +58,21 @@
           <a
             target="_blank"
             href="https://www.linkedin.com/in/colinwu0403/"
-            class="text-secondary hover:text-tertiary"
+            class="text-secondary hover:text-tertiary hover:underline"
             aria-label="LinkedIn"
             >LinkedIn</a
           >,
           <a
             target="_blank"
             href="https://github.com/ColinWu0403"
-            class="text-secondary hover:text-tertiary"
+            class="text-secondary hover:text-tertiary hover:underline"
             aria-label="GitHub"
             >GitHub</a
           >, and
           <a
             target="_blank"
             href="mailto:wu1886@purdue.edu"
-            class="text-secondary hover:text-tertiary"
+            class="text-secondary hover:text-tertiary hover:underline"
             aria-label="My Email"
           >
             Email</a
@@ -83,7 +85,7 @@
             href="./ChiCheColinWuResume.pdf"
             target="_blank"
             download="ChiCheColinWuResume.pdf"
-            class="text-tertiary hover:text-violet"
+            class="text-tertiary hover:text-violet hover:underline"
             aria-label="Download my resume"
             >Download Resume</a
           >

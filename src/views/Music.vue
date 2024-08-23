@@ -17,47 +17,52 @@
     <div
       class="flex flex-col max-h-screen mt-16 align-center items-center justify-center"
     >
-      <h1 class="text-center text-3xl text-secondary mb-6">
-        Page Under Construction
+      <h1
+        class="mechsuit-font text-center text-4xl text-tertiary hover:text-violet transition mt-6 mb-12"
+      >
+        Lyenz
       </h1>
-      <p class="text-center text-lg text-secondary">
+      <p class="text-center text-lg text-secondary px-4 mb-12">
         Follow Me on:
         <a
           target="_blank"
           href="https://open.spotify.com/artist/5Y2RNkXpVgfTdNdb44quSC"
-          class="text-lime hover:text-tertiary"
+          class="text-lime hover:text-tertiary hover:underline"
           aria-label="Spotify"
           >Spotify</a
         >,
         <a
           target="_blank"
           href="https://music.apple.com/us/artist/lyenz/1703430735"
-          class="text-lime hover:text-tertiary"
+          class="text-lime hover:text-tertiary hover:underline"
           aria-label="Apple Music"
           >Apple Music</a
         >,
         <a
           target="_blank"
           href="https://www.youtube.com/@lyenzmusic"
-          class="text-lime hover:text-tertiary"
+          class="text-lime hover:text-tertiary hover:underline"
           aria-label="YouTube"
           >YouTube</a
         >,
         <a
           target="_blank"
           href="https://soundcloud.com/lyenzmusic"
-          class="text-lime hover:text-tertiary"
+          class="text-lime hover:text-tertiary hover:underline"
           aria-label="Soundcloud"
           >SoundCloud</a
         >, and
         <a
           target="_blank"
           href="https://www.instagram.com/LyenzMusic"
-          class="text-lime hover:text-tertiary"
+          class="text-lime hover:text-tertiary hover:underline"
           aria-label="Instagram"
           >Instagram</a
         >
       </p>
+      <h1 class="text-center text-3xl text-secondary">
+        Page Under Construction
+      </h1>
     </div>
   </div>
 </template>
