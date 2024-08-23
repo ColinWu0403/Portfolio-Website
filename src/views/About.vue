@@ -24,9 +24,10 @@
           Hello! My name is Colin and I'm currently a third-year student at
           Purdue University studying Computer Science. I’m passionate about
           creating innovative software and exploring new technologies. I also
-          enjoy producing music (check out my
-          <a href="/music" class="text-lime hover:text-tertiary">music</a>),
-          playing table tennis, and watching movies in my free time.
+          enjoy producing music (under the artist name
+          <router-link to="/music" class="text-secondary hover:text-tertiary"
+            >Lyenz</router-link
+          >), playing table tennis, and watching movies in my free time.
         </p>
         <br />
         <p>
@@ -42,47 +43,51 @@
         <br />
         <p>
           Some of the technologies I use the most are:
-          <span class="text-secondary">Python</span>,
-          <span class="text-secondary">React</span>,
-          <span class="text-secondary">.NET</span>,
-          <span class="text-secondary">JavaScript</span>,
-          <span class="text-secondary">Django</span>, and
-          <span class="text-secondary">C</span>.
+          <span class="text-tertiary">Python</span>,
+          <span class="text-tertiary">React</span>,
+          <span class="text-tertiary">.NET</span>,
+          <span class="text-tertiary">JavaScript</span>,
+          <span class="text-tertiary">Django</span>, and
+          <span class="text-tertiary">C</span>.
         </p>
         <br />
-        <h3>
+        <p>
           Feel free to reach out to me on my socials:
           <a
             target="_blank"
             href="https://www.linkedin.com/in/colinwu0403/"
-            class="text-lime hover:text-tertiary"
+            class="text-secondary hover:text-tertiary"
+            aria-label="LinkedIn"
             >LinkedIn</a
           >,
           <a
             target="_blank"
             href="https://github.com/ColinWu0403"
-            class="text-lime hover:text-tertiary"
+            class="text-secondary hover:text-tertiary"
+            aria-label="GitHub"
             >GitHub</a
           >, and
           <a
             target="_blank"
             href="mailto:wu1886@purdue.edu"
-            class="text-lime hover:text-tertiary"
+            class="text-secondary hover:text-tertiary"
+            aria-label="My Email"
           >
             Email</a
           >.
-        </h3>
+        </p>
         <br />
-        <h3>
+        <h2>
           You can also download my resume here:
           <a
             href="./resume.pdf"
             target="_blank"
             download="ChiCheColinWuResume.pdf"
-            class="text-tertiary hover:text-magenta"
+            class="text-tertiary hover:text-violet"
+            aria-label="Download my resume"
             >Download Resume</a
           >
-        </h3>
+        </h2>
       </div>
       <!-- Image Section -->
       <div

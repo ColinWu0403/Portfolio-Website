@@ -8,6 +8,7 @@
           target="_blank"
           class="text-white hover:text-secondary"
           href="https://github.com/ColinWu0403/Portfolio-Website-Vue"
+          aria-label="Source Code for this website"
           >Source Code
         </a>
       </p>
@@ -17,6 +18,7 @@
         target="_blank"
         href="https://github.com/ColinWu0403/"
         class="text-slate hover:text-secondary mx-4 text-4xl"
+        aria-label="Visit Colin Wu's GitHub profile"
       >
         <i class="fab fa-github" alt="github"></i>
       </a>
@@ -24,6 +26,7 @@
         target="_blank"
         href="https://www.linkedin.com/in/colinwu0403/"
         class="text-slate hover:text-secondary mx-4 text-4xl"
+        aria-label="Visit Colin Wu's LinkedIN profile"
       >
         <i class="fab fa-linkedin" alt="linkedin"></i>
       </a>
@@ -31,6 +34,7 @@
         target="_blank"
         href="#"
         class="text-slate hover:text-secondary mx-4 text-4xl"
+        aria-label="Download my resume"
       >
         <i class="fas fa-file-alt" alt="resume"></i>
       </a>
@@ -38,6 +42,7 @@
         target="_blank"
         href="mailto:wu1886@purdue.edu"
         class="text-slate hover:text-secondary mx-4 text-4xl"
+        aria-label="Send an email to me"
       >
         <i class="fas fa-envelope" alt="email"></i>
       </a>

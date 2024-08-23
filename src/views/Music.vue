@@ -26,30 +26,35 @@
           target="_blank"
           href="https://open.spotify.com/artist/5Y2RNkXpVgfTdNdb44quSC"
           class="text-lime hover:text-tertiary"
+          aria-label="Spotify"
           >Spotify</a
         >,
         <a
           target="_blank"
           href="https://music.apple.com/us/artist/lyenz/1703430735"
           class="text-lime hover:text-tertiary"
+          aria-label="Apple Music"
           >Apple Music</a
         >,
         <a
           target="_blank"
           href="https://www.youtube.com/@lyenzmusic"
           class="text-lime hover:text-tertiary"
+          aria-label="YouTube"
           >YouTube</a
         >,
         <a
           target="_blank"
           href="https://soundcloud.com/lyenzmusic"
           class="text-lime hover:text-tertiary"
+          aria-label="Soundcloud"
           >SoundCloud</a
         >, and
         <a
           target="_blank"
           href="https://www.instagram.com/LyenzMusic"
           class="text-lime hover:text-tertiary"
+          aria-label="Instagram"
           >Instagram</a
         >
       </p>
