@@ -1,9 +1,12 @@
 // tailwind.config.js
+const sitemapConfig = require("./sitemap.config.js");
+
 module.exports = {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   variants: {
     extend: {},
   },
+  configureWebpack: sitemapConfig,
   plugins: [],
   theme: {
     extend: {
