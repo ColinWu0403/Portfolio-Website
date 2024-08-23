@@ -80,7 +80,7 @@
         <h2>
           You can also download my resume here:
           <a
-            href="./resume.pdf"
+            href="./ChiCheColinWuResume.pdf"
             target="_blank"
             download="ChiCheColinWuResume.pdf"
             class="text-tertiary hover:text-violet"

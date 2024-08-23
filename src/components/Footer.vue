@@ -32,7 +32,8 @@
       </a>
       <a
         target="_blank"
-        href="#"
+        href="./ChiCheColinWuResume.pdf"
+        download="ChiCheColinWuResume.pdf"
         class="text-slate hover:text-secondary mx-4 text-4xl"
         aria-label="Download my resume"
       >
