@@ -4,6 +4,7 @@ import About from "../views/About.vue";
 import Experience from "../views/Experience.vue";
 import Projects from "../views/Projects.vue";
 import Music from "../views/Music.vue";
+import NotFound from "../views/NotFound.vue";
 
 const routes = [
   {
@@ -42,12 +43,23 @@ const routes = [
     path: "/music",
     name: "Music",
     component: Music,
+    meta: {
+      title: "Lyenz Music",
+    },
   },
   // {
   //   path: "/other",
   //   name: "Other",
   //   component: Other,
   // },
+  {
+    path: "/:pathMatch(.*)*",
+    name: "Not Found",
+    component: NotFound,
+    meta: {
+      title: "Page Not Found",
+    },
+  },
 ];
 
 const router = createRouter({
