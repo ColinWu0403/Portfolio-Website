@@ -9,6 +9,14 @@ import NotFound from "../views/NotFound.vue";
 const routes = [
   {
     path: "/",
+    name: "/",
+    component: About,
+    meta: {
+      title: "Colin's Homepage",
+    },
+  },
+  {
+    path: "/home",
     name: "Home",
     component: Home,
     meta: {

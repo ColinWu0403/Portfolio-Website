@@ -77,7 +77,7 @@ import { ref } from "vue";
 
 // Define your navigation links
 const navLinks = [
-  { name: "Home", path: "/" },
+  { name: "Home", path: "/home" },
   { name: "About", path: "/about" },
   { name: "Projects", path: "/projects" },
   { name: "Experience", path: "/experience" },
