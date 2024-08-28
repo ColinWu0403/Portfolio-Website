@@ -8,10 +8,10 @@
     </h1>
     <div class="relative">
       <!-- Shorter divider line on top -->
-      <div class="divider-line-short"></div>
+      <div class="h-[1rem] w-[88vw] divider-line-short"></div>
 
       <!-- Longer divider line below -->
-      <div class="divider-line-long bottom-[7px]"></div>
+      <div class="h-[1rem] w-[90vw] divider-line-long bottom-[7px]"></div>
     </div>
 
     <!-- Experience Cards -->
@@ -25,13 +25,38 @@
         :description="experience.description"
       />
     </div>
+
+    <h2
+      class="mechsuit-font md:text-2xl text-xl font-bold text-tertiary md:ml-12 ml-6 mt-4 mb-5"
+    >
+      Leadership
+    </h2>
+    <div class="relative">
+      <!-- Shorter divider line on top -->
+      <div class="h-[0.75rem] w-[78vw] divider-line-short"></div>
+
+      <!-- Longer divider line below -->
+      <div class="h-[0.75rem] w-[80vw] divider-line-long bottom-[5px]"></div>
+    </div>
+
+    <!-- Leadership Cards -->
+    <div class="flex flex-col space-y-8 py-8 md:px-12 px-6">
+      <ExperienceCard
+        v-for="experience in leadership"
+        :key="experience.id"
+        :title="experience.title"
+        :company="experience.company"
+        :dates="experience.dates"
+        :description="experience.description"
+      />
+    </div>
   </div>
 </template>
 
 <script setup>
 import { useHead } from "@vueuse/head";
 import ExperienceCard from "../components/ExperienceCard.vue";
-import { experiences } from "../constants/experiences";
+import { experiences, leadership } from "../constants/experiences";
 
 useHead({
   meta: [
@@ -53,9 +78,7 @@ useHead({
 /* Decorative divider styles */
 .divider-line-long {
   position: relative;
-  width: 90vw; /* Adjust to viewport width */
-  max-width: 50rem; /* Max width for larger screens */
-  height: 1rem;
+  max-width: 46rem; /* Max width for larger screens */
   background-color: #17ffc4;
   overflow: hidden;
 
@@ -78,9 +101,7 @@ useHead({
 
 .divider-line-short {
   position: relative;
-  width: 88vw; /* Adjust to viewport width */
-  max-width: 49rem; /* Max width for larger screens */
-  height: 1rem;
+  max-width: 45rem; /* Max width for larger screens */
   background-color: #e80f58;
   overflow: hidden;
   margin-top: -0.5rem; /* Adjust to overlap the long divider */
