@@ -1,8 +1,18 @@
-# Colin's Personal Website
+# My Personal Website
 
 Source Code for my personal website, (when finished this can also be a template for others to use!)
 
 This website was built with Vue.js using Vite and TailwindCSS for styling.
+
+### Install Dependencies:
+```
+npm install
+```
+
+### Run Project:
+```
+npm run dev
+```
 
 ## 🎨 Color Reference
 
