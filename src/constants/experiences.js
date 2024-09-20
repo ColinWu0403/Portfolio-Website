@@ -6,7 +6,7 @@ export const experiences = [
     dates: "Aug 2024 - Present",
     description: [
       "Collaborated with PepsiCo on a project to map environmental risks impacting manufacturing sites, focusing on predictive analysis for water-related risks.",
-      "Developed a dashboard to provide predictions for extreme weather events (e.g., floods, droughts) and climate change impacts for states such as California and Texas.",
+      "Developed a dashboard to provide predictions for extreme weather events (e.g., floods, droughts) and climate change impacts in states such as California, Texas, Colorado, and Florida.",
       "Utilized GIS and Power BI for data visualization and creating actionable insights to help optimize operations and mitigate environmental risks.",
     ],
   },
@@ -16,9 +16,10 @@ export const experiences = [
     company: "REVLIS Biotechnology Company Limited",
     dates: "May 2024 - Aug 2024",
     description: [
-      "Processed and cleaned hundreds of ECG signals from hospital patient data using NeuroKit2 and Pandas to extract features for detecting Atrial Fibrillation.",
-      "Trained and tested RandomForest, CNN, and LSTM models using scikit-learn and TensorFlow on the processed data, achieving approximately a 97.5% accuracy in Atrial Fibrillation detection",
-      "Developed an LLM chatbot using Hugging Face’s LLaMA2 model and LangChain, employing Retrieval-Augmented Generation (RAG) to accurately retrieve and answer company-specific inquiries.",
+      "Processed, cleaned, and visualized hundreds of ECG signals from hospital patient data using NeuroKit2, Pandas, and Matplotlib to extract features and generate insights for detecting Atrial Fibrillation.",
+      "Trained and tested RandomForest, CNN, and LSTM models using scikit-learn and TensorFlow on the processed data, achieving approximately a 97.5% accuracy in Atrial Fibrillation detection.",
+      "Developed an LLM chatbot using Hugging Face’s LLaMA2 model, fine-tuned with medical research papers and company data using LangChain and Transformers to retrieve and answer company-specific inquiries accurately.",
+      "Created a lightweight web application for users to interact with the chatbot, utilizing Django for API calls and React for the frontend.",
     ],
   },
   // Add more experiences as needed
