@@ -1,6 +1,21 @@
 // src/data/projects.js
 export const projects = [
   {
+    dateRange: "May 2024 - Present",
+    title: "APO Online",
+    description:
+      "Full-stack website for the Alpha Phi Omega chapter at Purdue, enabling users to manage accounts, join events, and track volunteer hours, providing comprehensive insights for both users and administrators.\n\nUtilized React for frontend, Django REST framework for backend, and PostgreSQL for the database to implement the platform’s features ensuring efficient data handling and seamless user experiences.",
+    technologies: [
+      { name: "Django", color: "secondary" },
+      { name: "React", color: "light_blue" },
+      { name: "PostgreSQL", color: "tertiary" },
+      { name: "Tailwind CSS", color: "lime" },
+    ],
+    githubLink: "https://github.com/katelync12/APO-Website",
+    demoLink: "https://github.com/katelync12/APO-Website",
+    imageSrc: "./APOBadge.svg",
+  },
+  {
     dateRange: "July 2024 - Present",
     title: "Heart BPM Music",
     description:
