@@ -139,8 +139,8 @@ export const projects = [
       { name: "Tailwind CSS", color: "secondary" },
     ],
     githubLink: "https://github.com/ColinWu0403/Portfolio-Website-ReactJS",
-    demoLink: "https://colinwu.me/",
-    imageSrc: "https://colinwu.me/assets/logo-42c1a2dd.svg",
+    demoLink: "https://colinwu0403.github.io/ ",
+    imageSrc: "https://colinwu0403.github.io/assets/logo-42c1a2dd.svg",
   },
   // Add more projects as needed
 ];
