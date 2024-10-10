@@ -2,7 +2,8 @@
 
 Source Code for my personal website, (when finished this can also be a template for others to use!)
 
-This website was built with Vue.js using Vite and TailwindCSS for styling. I used Vercel to deploy the website to [www.colinwu.net](https://www.colinwu.net/)
+This website was built with Vue.js using Vite and TailwindCSS for styling.
+The website is deployed with Vercel at [www.colinwu.net](https://www.colinwu.net/)
 
 ### Install Dependencies:
 ```
