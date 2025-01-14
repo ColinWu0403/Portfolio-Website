@@ -5,10 +5,5 @@
       "source": "/(.*)",
       "destination": "/"
     }
-  ],
-  "build": {
-    "env": {
-      "NODE_VERSION": "23.1.0"
-    }
-  }
+  ]
 }
