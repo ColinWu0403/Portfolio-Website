@@ -6,7 +6,7 @@ export const experiences = [
     dates: "Aug 2024 - Present",
     description: [
       "Collaborated with PepsiCo on a project to map environmental risks impacting manufacturing sites, focusing on predictive analysis for water-related risks.",
-      "Developed a dashboard to provide predictions for extreme weather events (e.g., floods, droughts) and climate change impacts in states such as California, Texas, Colorado, and Florida.",
+      "Developed a dashboard to provide and display predictions for extreme weather events (e.g., floods, droughts) and climate change impacts in California, Texas, Colorado, Nevada, Arizona, and Florida.",
       "Utilized GIS and Power BI for data visualization and creating actionable insights to help optimize operations and mitigate environmental risks.",
     ],
   },
