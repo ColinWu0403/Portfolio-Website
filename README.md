@@ -6,36 +6,39 @@ This website was built with Vue.js using Vite and TailwindCSS for styling.
 The website is deployed with Vercel at [www.colinwu.net](https://www.colinwu.net/)
 
 ### Install Dependencies:
+
 ```
 npm install
 ```
 
 ### Run Project:
+
 ```
 npm run dev
 ```
 
 ### Build Project:
+
 ```
 npm run build
 ```
 
 ## 🎨 Color Reference
 
-| Color        | Hex                                                                |
-| ------------ | ------------------------------------------------------------------ |
-| Primary      | ![#040112](https://via.placeholder.com/10/040112?text=+) `#040112` |
-| Secondary    | ![#17FFC4](https://via.placeholder.com/10/17FFC4?text=+) `#17FFC4` |
-| Tertiary     | ![#ffd627](https://via.placeholder.com/10/ffd627?text=+) `#ffd627` |
-| Slate        | ![#aaa6c3](https://via.placeholder.com/10/aaa6c3?text=+) `#aaa6c3` |
-| Dark Slate   | ![#4b4959](https://via.placeholder.com/10/4b4959?text=+) `#4b4959` |
-| Darker Slate | ![#161320](https://via.placeholder.com/10/161320?text=+) `#161320` |
-| Magenta      | ![#e80f58](https://via.placeholder.com/10/e80f58?text=+) `#e80f58` |
-| Blueish      | ![#4361EE](https://via.placeholder.com/10/4361EE?text=+) `#4361EE` |
-| Lime         | ![#45F414](https://via.placeholder.com/10/45F414?text=+) `#45F414` |
-| Pastel White | ![#fefae0](https://via.placeholder.com/10/fefae0?text=+) `#fefae0` |
-| Orange       | ![#fb5607](https://via.placeholder.com/10/fb5607?text=+) `#fb5607` |
-| Light Blue   | ![#4cc9f0](https://via.placeholder.com/10/4cc9f0?text=+) `#4cc9f0` |
-| Violet       | ![#AD49E1](https://via.placeholder.com/10/a100f2?text=+) `#AD49E1` |
-| Red          | ![#ff0000](https://via.placeholder.com/10/ff0000?text=+) `#ff0000` |
-| Purple       | ![#7900ff](https://via.placeholder.com/10/7900ff?text=+) `#7900ff` |
+| Color        | Hex                                                          |
+| ------------ | ------------------------------------------------------------ |
+| Primary      | ![#040112](https://place-hold.it/10/040112/040112) `#040112` |
+| Secondary    | ![#17FFC4](https://place-hold.it/10/17FFC4/17FFC4) `#17FFC4` |
+| Tertiary     | ![#ffd627](https://place-hold.it/10/ffd627/ffd627) `#ffd627` |
+| Slate        | ![#aaa6c3](https://place-hold.it/10/aaa6c3/aaa6c3) `#aaa6c3` |
+| Dark Slate   | ![#4b4959](https://place-hold.it/10/4b4959/4b4959) `#4b4959` |
+| Darker Slate | ![#161320](https://place-hold.it/10/161320/161320) `#161320` |
+| Magenta      | ![#e80f58](https://place-hold.it/10/e80f58/e80f58) `#e80f58` |
+| Blueish      | ![#4361EE](https://place-hold.it/10/4361EE/4361EE) `#4361EE` |
+| Lime         | ![#45F414](https://place-hold.it/10/45F414/45F414) `#45F414` |
+| Pastel White | ![#fefae0](https://place-hold.it/10/fefae0/fefae0) `#fefae0` |
+| Orange       | ![#fb5607](https://place-hold.it/10/fb5607/fb5607) `#fb5607` |
+| Light Blue   | ![#4cc9f0](https://place-hold.it/10/4cc9f0/4cc9f0) `#4cc9f0` |
+| Violet       | ![#AD49E1](https://place-hold.it/10/AD49E1/AD49E1) `#AD49E1` |
+| Red          | ![#ff0000](https://place-hold.it/10/ff0000/ff0000) `#ff0000` |
+| Purple       | ![#7900ff](https://place-hold.it/10/7900ff/7900ff) `#7900ff` |
