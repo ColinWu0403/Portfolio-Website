@@ -1,6 +1,53 @@
 // src/data/projects.js
 export const projects = [
   {
+    dateRange: "Feb 2025 - Present",
+    title: "StonkSensei",
+    description:
+      "AI-Powered Stock Market Analysis Platform leveraging pre-trained BERT models for sentiment analysis on Reddit posts on r/wallstreetbets and financial news, integrating real market data to assess stock hype and risk.",
+    technologies: [
+      { name: "FastAPI", color: "tertiary" },
+      { name: "React", color: "light_blue" },
+      { name: "MongoDB", color: "secondary" },
+      { name: "Selenium", color: "lime" },
+      { name: "Next.js", color: "blueish" },
+      { name: "Auth0", color: "orange" },
+    ],
+    githubLink: "https://github.com/ColinWu0403/StonkSensei",
+    demoLink: "https://github.com/ColinWu0403/StonkSensei",
+    imageSrc: "./stonks.png",
+  },
+  {
+    dateRange: "Sep 2024 - Present",
+    title: "Bucketlist",
+    description:
+      "A commissioned mobile app where each bucket serves as a community, allowing users to connect, share tips, and collaborate on achieving specific goals.\n\nNote: Source code not public.",
+    technologies: [
+      { name: "Node.js", color: "tertiary" },
+      { name: "React Native", color: "blueish" },
+      { name: "PostgreSQL", color: "lime" },
+      { name: "Express.js", color: "violet" },
+      { name: "AWS (RDS and S3)", color: "orange" },
+    ],
+    githubLink: "https://github.com/Purdue-ACM-SIGAPP/bucketlist",
+    demoLink: "https://github.com/Purdue-ACM-SIGAPP/bucketlist",
+    imageSrc: "./adaptive-icon.png",
+  },
+  {
+    dateRange: "Aug 2024 - Present",
+    title: "Purdue Paths",
+    description:
+      "ACM SIGAPP's annual project for 2024-2025. It is an interactive map of campus intended for university students to explore campus dorms, view detailed information, and access user-generated reviews, including ratings, images, and comments.",
+    technologies: [
+      { name: "ASP.NET", color: "lime" },
+      { name: "React Native", color: "blueish" },
+      { name: "MongoDB", color: "secondary" },
+    ],
+    githubLink: "https://github.com/Purdue-ACM-SIGAPP/housing-frontend",
+    demoLink: "https://github.com/Purdue-ACM-SIGAPP/housing-frontend",
+    imageSrc: "./purduepaths.png",
+  },
+  {
     dateRange: "May 2024 - Present",
     title: "APO Online",
     description:
