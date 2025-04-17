@@ -3,7 +3,7 @@ export const experiences = [
     id: 1,
     title: "Undergraduate Data Science Researcher",
     company: "The Data Mine",
-    dates: "Aug 2024 - Present",
+    dates: "Aug 2024 - Apr 2025",
     description: [
       "Collaborated with PepsiCo on a project to map environmental risks impacting manufacturing sites, focusing on predictive analysis for water-related risks.",
       "Developed a dashboard to provide and display predictions for extreme weather events (e.g., floods, droughts) and climate change impacts in California, Texas, Colorado, Nevada, Arizona, and Florida.",
@@ -30,7 +30,7 @@ export const leadership = [
     id: 1,
     title: "President",
     company: "ACM SIGAPP Purdue",
-    dates: "Apr 2024 - Present",
+    dates: "Apr 2024 - Apr 2025",
     description: [
       "Led ACM SIGAPP Purdue, Purdue’s premier app development club. Under the Association for Computing Machinery chapter at Purdue, SIGAPP focuses on developing 1 large collaborative project every year.",
       "Planned and organized callouts, workshops, and advertising strategies resulting in enhanced club visibility and increased membership.",
