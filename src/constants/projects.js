@@ -1,7 +1,23 @@
 // src/data/projects.js
 export const projects = [
   {
-    dateRange: "Feb 2025 - Present",
+    dateRange: "Sep 2024 - June 2025",
+    title: "Bucketlist",
+    description:
+      "A commissioned mobile app where each bucket serves as a community, allowing users to connect, share tips, and collaborate on achieving specific goals.\n\nNote: Source code not public.",
+    technologies: [
+      { name: "Node.js", color: "tertiary" },
+      { name: "React Native", color: "blueish" },
+      { name: "PostgreSQL", color: "lime" },
+      { name: "Express.js", color: "violet" },
+      { name: "AWS (RDS and S3)", color: "orange" },
+    ],
+    githubLink: "https://github.com/Purdue-ACM-SIGAPP/bucketlist",
+    demoLink: "https://github.com/Purdue-ACM-SIGAPP/bucketlist",
+    imageSrc: "./adaptive-icon.png",
+  },
+  {
+    dateRange: "Feb 2025 - May 2025",
     title: "StonkSensei",
     description:
       "AI-Powered Stock Market Analysis Platform leveraging pre-trained BERT models for sentiment analysis on Reddit posts on r/wallstreetbets and financial news, integrating real market data to assess stock hype and risk.",
@@ -16,22 +32,6 @@ export const projects = [
     githubLink: "https://github.com/ColinWu0403/StonkSensei",
     demoLink: "https://github.com/ColinWu0403/StonkSensei",
     imageSrc: "./stonks.png",
-  },
-  {
-    dateRange: "Sep 2024 - Present",
-    title: "Bucketlist",
-    description:
-      "A commissioned mobile app where each bucket serves as a community, allowing users to connect, share tips, and collaborate on achieving specific goals.\n\nNote: Source code not public.",
-    technologies: [
-      { name: "Node.js", color: "tertiary" },
-      { name: "React Native", color: "blueish" },
-      { name: "PostgreSQL", color: "lime" },
-      { name: "Express.js", color: "violet" },
-      { name: "AWS (RDS and S3)", color: "orange" },
-    ],
-    githubLink: "https://github.com/Purdue-ACM-SIGAPP/bucketlist",
-    demoLink: "https://github.com/Purdue-ACM-SIGAPP/bucketlist",
-    imageSrc: "./adaptive-icon.png",
   },
   {
     dateRange: "Aug 2024 - Present",
