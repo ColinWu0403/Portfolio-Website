@@ -3,6 +3,43 @@ export const experiences = [
     id: 1,
     title: "Undergraduate Data Science Researcher",
     company: "The Data Mine",
+    dates: "Aug 2025 - Present",
+    description: [
+      "Collaborating with Costco to build a weather-aware supply chain model using Python, Spark, and GCP Vertex AI to predict crop availability, anticipate transportation delays, and improve distribution efficiency.",
+    ],
+  },
+  {
+    id: 2,
+    title: "Undergraduate Researcher",
+    company: "Vertically Integrated Projects (VIP)",
+    dates: "Aug 2025 - Present",
+    description: [
+      "Researching applications of Deep Learning for Disaster Response, developing image and text classification models to assess damage severity and improve emergency decision-making.",
+    ],
+  },
+  {
+    id: 3,
+    title: "Undergraduate Researcher",
+    company: "Department of Computer Science, Purdue University",
+    dates: "Apr 2025 - Present",
+    description: [
+      "Contributed to research in the Human-Centered Software Systems Lab (under Professor Tianyi Zhang) by organizing and labeling large-scale code datasets for a benchmark evaluating LLM-generated code, supporting advancements in developer productivity and software safety.• Contributed to research in the Human-Centered Software Systems Lab (under Professor Tianyi Zhang) by organizing and labeling large-scale code datasets for a benchmark evaluating LLM-generated code, supporting advancements in developer productivity and software safety.",
+    ],
+  },
+  {
+    id: 4,
+    title: "Software Engineering Inter",
+    company: "Purdue University",
+    dates: "May 2025 - Aug 2025",
+    description: [
+      "Designed and launched a housing portal for Purdue Exponent using WordPress and PHP & enabling local apartments to advertise directly to students",
+      "Revamped the Purdue MSENE program website (using HTML, CSS & JavaScript) based on client feedback, enhancing navigation and highlighting key program details for a clearer, more user-friendly experience",
+    ],
+  },
+  {
+    id: 5,
+    title: "Undergraduate Data Science Researcher",
+    company: "The Data Mine",
     dates: "Aug 2024 - Apr 2025",
     description: [
       "Collaborated with PepsiCo on a project to map environmental risks impacting manufacturing sites, focusing on predictive analysis for water-related risks.",
@@ -11,7 +48,7 @@ export const experiences = [
     ],
   },
   {
-    id: 2,
+    id: 6,
     title: "Machine Learning Intern",
     company: "REVLIS Biotechnology Company Limited",
     dates: "May 2024 - Aug 2024",
