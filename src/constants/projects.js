@@ -35,7 +35,7 @@ export const projects = [
   },
   {
     dateRange: "Aug 2024 - Present",
-    title: "BoilerRooms",
+    title: "Purdue Paths",
     description:
       "ACM SIGAPP's annual project for 2024-2025. It is an interactive map of campus intended for university students to explore campus dorms, view detailed information, and access user-generated reviews, including ratings, images, and comments.",
     technologies: [
