@@ -5,7 +5,7 @@ export const experiences = [
     company: "The Data Mine",
     dates: "Aug 2025 - Present",
     description: [
-      "Collaborating with Costco to build a weather-aware supply chain model using Python, Spark, and GCP Vertex AI to predict crop availability, anticipate transportation delays, and improve distribution efficiency.",
+      "Collaborating with Costco to build a weather-aware supply chain model using Python, Pytorch, and GCP Vertex AI to predict crop availability, anticipate transportation delays, and improve distribution efficiency.",
     ],
   },
   {
@@ -14,7 +14,7 @@ export const experiences = [
     company: "Vertically Integrated Projects (VIP)",
     dates: "Aug 2025 - Present",
     description: [
-      "Researching applications of Deep Learning for Disaster Response, developing image and text classification models to assess damage severity and improve emergency decision-making.",
+      "Researched automated disaster-response methods in the AI for Disaster Response project, developing Random Forest and MLP image-classification models to assess damage severity from social-media disaster images.",
     ],
   },
   {
@@ -28,7 +28,7 @@ export const experiences = [
   },
   {
     id: 4,
-    title: "Software Engineering Inter",
+    title: "Software Engineering Intern",
     company: "Purdue University",
     dates: "May 2025 - Aug 2025",
     description: [

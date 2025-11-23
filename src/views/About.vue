@@ -95,11 +95,11 @@
       <div
         class="relative mt-1 md:w-1/3 w-full mb-8 md:mb-0 items-center md:items-center align-center flex-shrink-0 group"
       >
-        <img
+        <!-- <img
           src="../assets/Colin.jpg"
           alt="About Me Image"
           class="rounded-md w-72 h-96 object-cover"
-        />
+        /> -->
 
         <!-- Color Overlay -->
         <div
