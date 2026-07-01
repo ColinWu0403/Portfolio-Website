@@ -4,7 +4,7 @@
     <div class="flex flex-col md:flex-row md:items-start gap-10 md:gap-12">
       <!-- Left profile card -->
       <aside
-        class="w-full md:w-72 flex-shrink-0 border border-secondary/30 rounded-lg bg-white/5 p-6 self-start"
+        class="w-full md:w-72 flex-shrink-0 border border-secondary rounded-lg bg-primary p-6"
       >
         <!-- Section 1: photo + name -->
         <div class="flex flex-col items-center text-center">
