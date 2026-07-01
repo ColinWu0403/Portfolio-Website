@@ -10,19 +10,19 @@ const routes = [
   {
     path: "/",
     name: "/",
-    component: About,
-    meta: {
-      title: "Colin's Homepage",
-    },
-  },
-  {
-    path: "/home",
-    name: "Home",
     component: Home,
     meta: {
       title: "Colin's Homepage",
     },
   },
+  // {
+  //   path: "/home",
+  //   name: "Home",
+  //   component: Home,
+  //   meta: {
+  //     title: "Colin's Homepage",
+  //   },
+  // },
   {
     path: "/about",
     name: "About",

@@ -32,6 +32,14 @@
       </a>
       <a
         target="_blank"
+        href="https://scholar.google.com/citations?hl=en&user=MFt6J4oAAAAJ"
+        class="text-slate hover:text-secondary mx-4 text-4xl transition"
+        aria-label="Visit Colin Wu's Google Scholar profile"
+      >
+        <i class="fab fa-google-scholar" alt="google scholar"></i>
+      </a>
+      <a
+        target="_blank"
         href="./ChiCheColinWuResume.pdf"
         download="ChiCheColinWuResume.pdf"
         class="text-slate hover:text-secondary mx-4 text-4xl transition"
