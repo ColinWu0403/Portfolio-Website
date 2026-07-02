@@ -14,7 +14,7 @@ export default defineConfig({
       extensions: ["vue", "md"],
     }),
     Markdown({
-      wrapperClasses: "prose prose-slate max-w-none dark:prose-invert",
+      // wrapperClasses: "prose prose-slate max-w-none dark:prose-invert",
       wrapperComponent: "MarkdownLayout",
     }),
     Sitemap({
