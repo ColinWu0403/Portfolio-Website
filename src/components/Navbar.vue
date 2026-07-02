@@ -33,7 +33,7 @@
       </button>
 
       <!-- Desktop nav -->
-      <nav class="hidden md:flex items-center gap-10">
+      <nav class="hidden md:flex items-center gap-6">
         <router-link
           v-for="(link, idx) in navLinks"
           :key="idx"
@@ -78,9 +78,10 @@ import { ref } from "vue";
 
 const navLinks = [
   { name: "Home", path: "/" },
+  { name: "Research", path: "/research" },
+  { name: "Blog", path: "/blog" },
   { name: "Projects", path: "/projects" },
-  { name: "Experience", path: "/experience" },
-  { name: "Music", path: "/music" },
+  { name: "CV", path: "/cv" },
 ];
 
 const isCurrentRoute = (routePath) => {
@@ -105,7 +106,7 @@ const toggleMobileMenu = () => {
 }
 .nav-link-active {
   font-weight: bold;
-  color: #17ffc4;
+  color: #ffd627;
   border-bottom: 2px solid #ffd627;
 }
 </style>

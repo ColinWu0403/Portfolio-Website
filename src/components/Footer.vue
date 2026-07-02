@@ -3,13 +3,14 @@
   <footer class="text-white py-2 flex items-center justify-between w-full mb-2">
     <div class="ml-12">
       <p>
-        {{ fullName }} &copy; {{ currentYear }} |
+        &copy; {{ currentYear }} {{ fullName }} | Check out the code for my
+        website
         <a
           target="_blank"
           class="text-white hover:text-secondary"
           href="https://github.com/ColinWu0403/Portfolio-Website-Vue"
           aria-label="Source Code for this website"
-          >Source Code
+          >here
         </a>
       </p>
     </div>
@@ -17,7 +18,7 @@
       <a
         target="_blank"
         href="https://github.com/ColinWu0403/"
-        class="text-slate hover:text-secondary mx-4 text-4xl transition"
+        class="text-slate hover:text-secondary mx-4 text-3xl transition"
         aria-label="Visit Colin Wu's GitHub profile"
       >
         <i class="fab fa-github" alt="github"></i>
@@ -25,7 +26,7 @@
       <a
         target="_blank"
         href="https://www.linkedin.com/in/colinwu0403/"
-        class="text-slate hover:text-secondary mx-4 text-4xl transition"
+        class="text-slate hover:text-secondary mx-4 text-3xl transition"
         aria-label="Visit Colin Wu's LinkedIN profile"
       >
         <i class="fab fa-linkedin" alt="linkedin"></i>
@@ -33,7 +34,7 @@
       <a
         target="_blank"
         href="https://scholar.google.com/citations?hl=en&user=MFt6J4oAAAAJ"
-        class="text-slate hover:text-secondary mx-4 text-4xl transition"
+        class="text-slate hover:text-secondary mx-4 text-3xl transition"
         aria-label="Visit Colin Wu's Google Scholar profile"
       >
         <i class="fab fa-google-scholar" alt="google scholar"></i>
@@ -42,7 +43,7 @@
         target="_blank"
         href="./ChiCheColinWuResume.pdf"
         download="ChiCheColinWuResume.pdf"
-        class="text-slate hover:text-secondary mx-4 text-4xl transition"
+        class="text-slate hover:text-secondary mx-4 text-3xl transition"
         aria-label="Download my resume"
       >
         <i class="fas fa-file-alt" alt="resume"></i>
@@ -50,7 +51,7 @@
       <a
         target="_blank"
         href="mailto:wu1886@purdue.edu"
-        class="text-slate hover:text-secondary mx-4 text-4xl transition"
+        class="text-slate hover:text-secondary mx-4 text-3xl transition"
         aria-label="Send an email to me"
       >
         <i class="fas fa-envelope" alt="email"></i>
