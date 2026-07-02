@@ -1,21 +1,21 @@
 <!-- src/views/Projects.vue -->
 <template>
   <div class="mx-auto">
-    <h1
+    <!-- <h1
       class="mechsuit-font md:text-3xl text-2xl font-bold text-tertiary md:ml-12 ml-6 mt-4 mb-5"
     >
       Music
     </h1>
     <div class="relative">
-      <!-- Shorter divider line on top -->
+      Shorter divider line on top
       <div class="divider-line-short"></div>
 
-      <!-- Longer divider line below -->
+      Longer divider line below
       <div class="divider-line-long bottom-[7px]"></div>
-    </div>
+    </div> -->
 
     <div
-      class="flex flex-col max-h-screen mt-16 align-center items-center justify-center"
+      class="flex flex-col max-h-screen mt-40 align-center items-center justify-center"
     >
       <h1
         class="mechsuit-font text-center text-4xl text-tertiary hover:text-violet transition mt-6 mb-12"

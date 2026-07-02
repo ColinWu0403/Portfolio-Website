@@ -5,6 +5,10 @@ import Experience from "../views/Experience.vue";
 import Projects from "../views/Projects.vue";
 import Music from "../views/Music.vue";
 import NotFound from "../views/NotFound.vue";
+import Research from "../views/Research.vue";
+import CV from "../views/CV.vue";
+import Blog from "../views/Blog.vue";
+import BlogPost from "../views/BlogPost.vue";
 
 const routes = [
   {
@@ -15,20 +19,20 @@ const routes = [
       title: "Colin's Homepage",
     },
   },
-  // {
-  //   path: "/home",
-  //   name: "Home",
-  //   component: Home,
-  //   meta: {
-  //     title: "Colin's Homepage",
-  //   },
-  // },
+  {
+    path: "/research",
+    name: "Research",
+    component: Research,
+    meta: {
+      title: "Publications",
+    },
+  },
   {
     path: "/about",
     name: "About",
     component: About,
     meta: {
-      title: "Colin's About Page",
+      title: "About",
     },
   },
   {
@@ -36,7 +40,7 @@ const routes = [
     name: "Experience",
     component: Experience,
     meta: {
-      title: "Colin's Experience",
+      title: "Experience",
     },
   },
   {
@@ -44,7 +48,7 @@ const routes = [
     name: "Projects",
     component: Projects,
     meta: {
-      title: "Colin's Projects",
+      title: "Projects",
     },
   },
   {
@@ -54,6 +58,28 @@ const routes = [
     meta: {
       title: "Lyenz Music",
     },
+  },
+  {
+    path: "/cv",
+    name: "CV",
+    component: CV,
+    meta: {
+      title: "My CV",
+    },
+  },
+  {
+    path: "/blog",
+    name: "Blog",
+    component: Blog,
+    meta: {
+      title: "Blog",
+    },
+  },
+  {
+    path: "/blog/:slug",
+    name: "BlogPost",
+    component: BlogPost,
+    meta: { title: "Blog" }, // gets overridden per-post by useHead above
   },
   // {
   //   path: "/other",

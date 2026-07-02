@@ -1,42 +1,52 @@
 <!-- src/views/Projects.vue -->
 <template>
-  <div class="mx-auto">
-    <h1
-      class="mechsuit-font md:text-3xl text-2xl font-bold text-tertiary md:ml-12 ml-6 mt-4 mb-5"
-    >
-      Projects
-    </h1>
-    <div class="relative">
-      <!-- Shorter divider line on top -->
-      <div class="divider-line-short"></div>
+  <div class="max-w-8xl mx-auto px-6 md:px-12 py-10">
+    <div class="flex flex-col md:flex-row md:items-start gap-10 md:gap-12">
+      <!-- Left profile card -->
+      <ProfileCard />
 
-      <!-- Longer divider line below -->
-      <div class="divider-line-long bottom-[7px]"></div>
-    </div>
+      <!-- Right section -->
+      <div class="flex-1 min-w-0">
+        <!-- Header -->
+        <h1
+          class="mechsuit-font md:text-2xl text-2xl font-bold text-tertiary mb-5"
+        >
+          Projects
+        </h1>
+        <div class="relative mb-5">
+          <!-- Shorter divider line on top -->
+          <div class="divider-line-short"></div>
 
-    <div class="flex flex-col space-y-8 py-8 px-12">
-      <ProjectCard
-        v-for="(project, index) in projects"
-        :key="index"
-        :dateRange="project.dateRange"
-        :title="project.title"
-        :description="project.description"
-        :technologies="
-          project.technologies.map((tech) => ({
-            name: tech.name,
-            color: tech.color,
-          }))
-        "
-        :githubLink="project.githubLink"
-        :demoLink="project.demoLink"
-        :imageSrc="project.imageSrc"
-      />
+          <!-- Longer divider line below -->
+          <div class="divider-line-long bottom-[5.5px]"></div>
+        </div>
+
+        <!-- Projects grid: 2 per row on desktop -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <ProjectCard
+            v-for="(project, index) in projects"
+            :key="index"
+            :dateRange="project.dateRange"
+            :title="project.title"
+            :description="project.description"
+            :technologies="
+              project.technologies.map((tech) => ({
+                name: tech.name,
+                color: tech.color,
+              }))
+            "
+            :githubLink="project.githubLink"
+            :demoLink="project.demoLink"
+          />
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script setup>
 import ProjectCard from "../components/ProjectCard.vue";
+import ProfileCard from "../components/ProfileCard.vue";
 import { projects } from "../constants/projects";
 import { useHead } from "@vueuse/head";
 
@@ -62,9 +72,9 @@ useHead({
 /* Decorative divider styles */
 .divider-line-long {
   position: relative;
-  width: 90vw; /* Adjust to viewport width */
-  max-width: 50rem; /* Max width for larger screens */
-  height: 1rem;
+  width: 50vw; /* Adjust to viewport width */
+  max-width: 30rem; /* Max width for larger screens */
+  height: 0.75rem;
   background-color: #17ffc4;
   overflow: hidden;
 
@@ -87,9 +97,9 @@ useHead({
 
 .divider-line-short {
   position: relative;
-  width: 88vw; /* Adjust to viewport width */
-  max-width: 49rem; /* Max width for larger screens */
-  height: 1rem;
+  width: 48vw; /* Adjust to viewport width */
+  max-width: 29rem; /* Max width for larger screens */
+  height: 0.75rem;
   background-color: #e80f58;
   overflow: hidden;
   margin-top: -0.5rem; /* Adjust to overlap the long divider */
