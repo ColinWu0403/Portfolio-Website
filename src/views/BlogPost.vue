@@ -1,12 +1,15 @@
 <!-- src/views/BlogPost.vue -->
 <template>
-  <div class="max-w-3xl mx-auto px-6 md:px-12 py-10">
-    <router-link to="/blog" class="text-secondary hover:text-tertiary text-sm">
+  <div class="max-w-4xl mx-auto px-6 md:px-12 py-6">
+    <router-link
+      to="/blog"
+      class="text-blueish dark:text-secondary hover:text-magenta dark:hover:text-tertiary text-md"
+    >
       &larr; Back to Blog
     </router-link>
 
-    <div v-if="notFound" class="mt-8 text-white">
-      Sorry, that post doesn't exist.
+    <div v-if="notFound" class="mt-8 text-primary dark:text-white">
+      Sorry, this post doesn't exist.
     </div>
     <component :is="PostComponent" v-else-if="PostComponent" class="mt-6" />
   </div>
