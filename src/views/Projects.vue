@@ -9,17 +9,14 @@
       <div class="flex-1 min-w-0">
         <!-- Header -->
         <h1
-          class="mechsuit-font md:text-2xl text-2xl font-bold text-tertiary mb-5"
+          class="mechsuit-font md:text-2xl text-2xl font-bold text-blueish dark:text-tertiary mb-5"
         >
           Projects
         </h1>
-        <div class="relative mb-5">
-          <!-- Shorter divider line on top -->
+        <!-- <div class="relative mb-5">
           <div class="divider-line-short"></div>
-
-          <!-- Longer divider line below -->
           <div class="divider-line-long bottom-[5.5px]"></div>
-        </div>
+        </div> -->
 
         <!-- Projects grid: 2 per row on desktop -->
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">

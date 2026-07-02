@@ -5,14 +5,14 @@
       <!-- Logo / name, doubles as Home link -->
       <router-link
         to="/"
-        class="mechsuit-font text-xl md:text-2xl text-tertiary tracking-wide"
+        class="mechsuit-font text-xl md:text-2xl text-magenta dark:text-tertiary tracking-wide"
       >
         COLIN WU
       </router-link>
 
       <!-- Mobile menu icon -->
       <button
-        class="md:hidden text-white"
+        class="md:hidden text-primary dark:text-white"
         @click="toggleMobileMenu"
         aria-label="Open menu"
       >
@@ -43,18 +43,17 @@
         >
           {{ link.name }}
         </router-link>
+        <ThemeToggle class="ml-1" />
       </nav>
     </div>
 
-    <!-- Mobile slide-in menu -->
     <div
       v-if="isMobileMenuOpen"
-      class="z-30 fixed top-0 right-0 h-full w-7/12 bg-darker_slate text-white px-8 shadow-lg transform transition-transform duration-300 ease-in-out md:hidden"
+      class="z-30 fixed top-0 right-0 h-full w-7/12 bg-white dark:bg-primary text-gray-900 dark:text-white px-8 shadow-lg transform transition-transform duration-300 ease-in-out md:hidden"
     >
-      <div class="flex justify-end pt-6">
-        <button class="text-white text-4xl" @click="toggleMobileMenu">
-          &times;
-        </button>
+      <div class="flex items-center justify-between pt-6">
+        <ThemeToggle />
+        <button class="text-3xl" @click="toggleMobileMenu">&times;</button>
       </div>
       <nav class="flex flex-col items-end mt-8">
         <router-link
@@ -75,6 +74,7 @@
 <script setup>
 import { useRoute } from "vue-router";
 import { ref } from "vue";
+import ThemeToggle from "./ThemeToggle.vue";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -98,15 +98,16 @@ const toggleMobileMenu = () => {
 <style scoped>
 .nav-link {
   text-decoration: none;
-  color: white;
+  @apply text-primary dark:text-white;
+  color: var(--nav-link-color);
   transition: color 0.3s ease;
 }
 .nav-link:hover {
-  color: #e80f58;
+  color: var(--nav-link-hover);
 }
 .nav-link-active {
   font-weight: bold;
-  color: #ffd627;
-  border-bottom: 2px solid #ffd627;
+  color: var(--nav-link-active);
+  border-bottom: 2px solid var(--nav-link-active);
 }
 </style>

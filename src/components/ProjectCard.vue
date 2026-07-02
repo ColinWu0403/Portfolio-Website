@@ -1,11 +1,15 @@
 <!-- src/components/ProjectCard.vue -->
 <template>
   <div
-    class="flex flex-col bg-darker_slate text-white p-5 rounded-lg shadow-md border border-white/5"
+    class="flex flex-col bg-blueish/5 dark:bg-darker_slate text-white p-5 rounded-lg shadow-md border border-white/5"
   >
-    <h2 class="text-xl font-bold text-white mb-2">{{ title }}</h2>
+    <h2 class="text-xl font-bold text-primary dark:text-white mb-2">
+      {{ title }}
+    </h2>
 
-    <p class="text-sm text-gray-300 leading-relaxed mb-4 description-text">
+    <p
+      class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed mb-4 description-text"
+    >
       {{ description }}
     </p>
 
@@ -25,12 +29,12 @@
 
     <div
       v-if="githubLink || demoLink"
-      class="flex gap-3 pt-3 mt-auto border-t border-white/10"
+      class="flex gap-3 pt-3 mt-auto border-t border-blueish/30 dark:border-white/10"
     >
       <a
         :href="githubLink"
         target="_blank"
-        class="text-slate hover:text-tertiary mx-2 text-2xl transition"
+        class="text-blueish/50 dark:text-slate hover:text-magenta dark:hover:text-tertiary mx-2 text-2xl transition"
         aria-label="Source Code on GitHub"
       >
         <i class="fab fa-github"></i>
@@ -38,7 +42,7 @@
       <a
         :href="demoLink"
         target="_blank"
-        class="text-slate hover:text-tertiary mx-2 text-2xl transition"
+        class="text-blueish/50 dark:text-slate hover:text-magenta dark:text-tertiary mx-2 text-2xl transition"
         aria-label="Demo Link"
       >
         <i class="fas fa-external-link-alt"></i>
