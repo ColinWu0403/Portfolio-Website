@@ -1,5 +1,8 @@
 <template>
-  <div id="app" class="flex flex-col min-h-screen">
+  <div
+    id="app"
+    class="flex flex-col min-h-screen bg-light dark:bg-primary text-primary dark:text-white transition-colors duration-300"
+  >
     <!-- Main layout components -->
     <Navbar />
     <main class="flex-grow">

@@ -1,5 +1,6 @@
 // tailwind.config.js
 module.exports = {
+  darkMode: "class",
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   variants: {
     extend: {},
@@ -9,16 +10,17 @@ module.exports = {
     extend: {
       colors: {
         primary: "#040112",
+        light: "#FFFAFE",
         secondary: "#17FFC4",
         tertiary: "#ffd627",
         blueish: "#4361EE",
         magenta: "#E80F58",
+        pink: "#FF91D5",
         lime: "#45F414",
         slate: "#aaa6c3",
         dark_slate: "#4b4959",
         darker_slate: "#161320",
-        primary2: "#050114",
-        secondary2: "#17FFC4",
+        plum: "#5E4E5A",
 
         orange: "#fb5607",
         light_blue: "#4cc9f0",
@@ -44,6 +46,30 @@ module.exports = {
         "black-200": "#090325",
         "black-300": "#0d0d0d",
       },
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            "--tw-prose-body": theme("colors.gray.700"),
+            "--tw-prose-headings": "#040112", // your `primary`
+            "--tw-prose-bold": "#040112",
+            "--tw-prose-links": "#e80f58", // your `magenta`
+            "--tw-prose-code": "#e80f58",
+            "--tw-prose-quotes": theme("colors.gray.700"),
+            "--tw-prose-quote-borders": "#17ffc4", // your `secondary`
+          },
+        },
+        invert: {
+          css: {
+            "--tw-prose-invert-body": theme("colors.gray.300"),
+            "--tw-prose-invert-headings": "#ffffff",
+            "--tw-prose-invert-bold": "#ffffff",
+            "--tw-prose-invert-links": "#17ffc4", // secondary reads well on dark
+            "--tw-prose-invert-code": "#17ffc4",
+            "--tw-prose-invert-quotes": theme("colors.gray.300"),
+            "--tw-prose-invert-quote-borders": "#ffd627", // tertiary
+          },
+        },
+      }),
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",
       },
