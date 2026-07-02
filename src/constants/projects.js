@@ -1,6 +1,47 @@
 // src/data/projects.js
 export const projects = [
   {
+    title: "PGSG Grant Management Platform",
+    description:
+      "Collaboration between ACM SIGAPP and the Purdue Graduate Student Government. A full grant-handling web platform with double-blind processing, multi-stage approval, and reimbursement workflows backed by Keycloak RBAC.",
+    technologies: [
+      { name: "FastAPI", color: "tertiary" },
+      { name: "React", color: "light_blue" },
+      { name: "Python", color: "magenta" },
+      { name: "TypeScript", color: "blueish" },
+      { name: "PostgreSQL", color: "lime" },
+    ],
+    githubLink: "https://github.com/Purdue-ACM-SIGAPP/pgsg-grant-app-2526",
+    demoLink: "https://github.com/Purdue-ACM-SIGAPP/pgsg-grant-app-2526",
+  },
+  {
+    title: "Probing LLM Correctness Across Languages",
+    description:
+      "Investigating whether probes - linear & MLP classifiers trained on LLM hidden states to predict whether a model's answer is correct - transfer across languages.",
+    technologies: [
+      { name: "Python", color: "magenta" },
+      { name: "LLaMA-3", color: "blueish" },
+      { name: "Transformers", color: "orange" },
+      { name: "Scikit-learn", color: "tertiary" },
+      { name: "Pytorch", color: "violet" },
+    ],
+    githubLink: "https://github.com/ColinWu0403/CS490NLP-Final_Project",
+    demoLink: "LLMCorrectnessProbes.pdf",
+  },
+  {
+    title: "BoilerBuzz",
+    description:
+      "ACM SIGAPP's annual project for 2025-2026. Cross-platform campus events and socials app where students can view local events in a scrolling feed and a virtual bulletin board.",
+    technologies: [
+      { name: "Node.js", color: "magenta" },
+      { name: "TypeScript", color: "blueish" },
+      { name: "PostgreSQL", color: "lime" },
+      { name: "React Native", color: "secondary" },
+    ],
+    githubLink: "https://github.com/Purdue-ACM-SIGAPP/boilerbuzz-frontend-2526",
+    demoLink: "https://github.com/Purdue-ACM-SIGAPP/boilerbuzz-frontend-2526",
+  },
+  {
     dateRange: "Feb 2025 - Present",
     title: "StonkSensei",
     description:
@@ -21,7 +62,7 @@ export const projects = [
     dateRange: "Sep 2024 - Present",
     title: "Bucketlist",
     description:
-      "A commissioned mobile app where each bucket serves as a community, allowing users to connect, share tips, and collaborate on achieving specific goals.\n\nNote: Source code not public.",
+      "A commissioned mobile app where each bucket serves as a community, allowing users to connect, share tips, and collaborate on achieving specific goals.",
     technologies: [
       { name: "Node.js", color: "tertiary" },
       { name: "React Native", color: "blueish" },
@@ -51,7 +92,7 @@ export const projects = [
     dateRange: "May 2024 - Present",
     title: "APO Online",
     description:
-      "Full-stack website for the Alpha Phi Omega chapter at Purdue, enabling users to manage accounts, join events, and track volunteer hours, providing comprehensive insights for both users and administrators.\n\nUtilized React for frontend, Django REST framework for backend, and PostgreSQL for the database to implement the platform’s features ensuring efficient data handling and seamless user experiences.",
+      "Full-stack website for the Alpha Phi Omega chapter at Purdue, enabling users to manage accounts, join events, and track volunteer hours, providing comprehensive insights for both users and administrators.",
     technologies: [
       { name: "Django", color: "secondary" },
       { name: "React", color: "light_blue" },
@@ -66,7 +107,7 @@ export const projects = [
     dateRange: "July 2024 - Present",
     title: "Heart BPM Music",
     description:
-      "Heart BPMusic is a website that recommends songs based on your heart's BPM (beats per minute) and mood. The project integrates a Django REST API with a Vue.js Single Page Application frontend to deliver a seamless user experience. It uses a KNN Machine Learning model with scikit-learn and Spotify's Web API to provide personalized music recommendations.",
+      "Music recommendation platform based on your heart's BPM (beats per minute) and mood using a KNN model and Spotify's Web API to provide personalized music recommendations.",
     technologies: [
       { name: "Django", color: "secondary" },
       { name: "Spotify Web API", color: "red" },
@@ -82,7 +123,7 @@ export const projects = [
     dateRange: "May 2024 - Aug 2024",
     title: "LLaMA-2-hf-Chatbot",
     description:
-      "Chatbot from pretrained LLaMA-2 LLM model from HuggingFace, fine-tuned with medical research papers using RAG (Retrieval-Augmented Generation). This chatbot can run on both Google Collab and on a demo web app built with Django and React.",
+      "Chatbot from pretrained LLaMA-2 LLM model from HuggingFace, fine-tuned with medical research papers using RAG (Retrieval-Augmented Generation).",
     technologies: [
       { name: "LLaMA-2", color: "blueish" },
       { name: "Transformers", color: "magenta" },
@@ -100,7 +141,7 @@ export const projects = [
     dateRange: "May 2024 - July 2024",
     title: "ECG AFib Detection",
     description:
-      "This project contains a collection of 6 classification models that predict if a patient has Atrial Fibrillation (AFib) based on the given Electrocardiography (ECG) signals of the patient.\n\nThe models are written in Python using Scikit-learn and TensorFlow Keras and use Neurokit2 to process and analyze ECG signals.",
+      "Collection of various ML and Deep Learning classification models that predict if a patient has Atrial Fibrillation (AFib) based on the given Electrocardiography (ECG) signals of the patient.",
     technologies: [
       { name: "TensorFlow", color: "secondary" },
       { name: "Scikit-learn", color: "lime" },
@@ -114,9 +155,9 @@ export const projects = [
   },
   {
     dateRange: "Jan 2024 - June 2024",
-    title: "Artikulate -  BoilerMake 2024",
+    title: "Artikulate",
     description:
-      "Artikulate is a video-editing and content-generation platform that creates text-to-speech caption videos from either web-scraped or AI-Generated Reddit threads.\nUsers can choose between several different subreddits, and Artikulate can generate a fully edited, captioned, and text-to-speech voiced video over a chosen background video.",
+      "Artikulate is a video-editing and content-generation platform that creates text-to-speech caption videos from either web-scraped or AI-Generated Reddit threads, generating a fully edited, captioned, and text-to-speech voiced video over a chosen background video.",
     technologies: [
       { name: "Django", color: "secondary" },
       { name: "Python", color: "tertiary" },
@@ -133,10 +174,11 @@ export const projects = [
     dateRange: "Aug 2023 - May 2024",
     title: "Mixtape",
     description:
-      "Collaborative music-sharing app for iOS, Android, and the web, representing ACM SigApp’s official project for 2023-2024. This cross-platform application, developed using React Native and Rust (Actix Web), empowers users to collectively create and share playlists, fostering a collaborative music experience.",
+      "ACM SIGAPP's annual project for 2023-2024. Collaborative cross-platform music-sharing app for iOS, Android, and the web which empowers users to collectively create and share playlists, fostering a collaborative music experience.",
     technologies: [
       { name: "Rust", color: "violet" },
       { name: "React Native", color: "blueish" },
+      { name: "Actix Web", color: "magenta" },
       { name: "MongoDB", color: "lime" },
     ],
     githubLink:
@@ -165,7 +207,7 @@ export const projects = [
     dateRange: "Jul 2024 - Present",
     title: "Portfolio Website",
     description:
-      "This is the website you are currently viewing! I made it completely from scratch. It has many performance improvements and a better design than my previous website.\nI also decided to learn Vue to make this since I'm tired of using React lol.",
+      "This is the website you are currently viewing! I made it completely from scratch. It has many performance improvements and a better design than my previous website.",
     technologies: [
       { name: "Vue", color: "lime" },
       { name: "JavaScript", color: "tertiary" },
@@ -174,20 +216,6 @@ export const projects = [
     githubLink: "https://github.com/ColinWu0403/Portfolio-Website-Vue",
     demoLink: "/",
     imageSrc: "./icon_small.svg",
-  },
-  {
-    dateRange: "Jul 2023 - Jun 2024",
-    title: "Portfolio Website (Old)",
-    description: "My previous personal website, built with React and ThreeJS.",
-    technologies: [
-      { name: "React", color: "light_blue" },
-      { name: "JavaScript", color: "tertiary" },
-      { name: "ThreeJS", color: "orange" },
-      { name: "Tailwind CSS", color: "secondary" },
-    ],
-    githubLink: "https://github.com/ColinWu0403/Portfolio-Website-ReactJS",
-    demoLink: "https://colinwu0403.github.io/ ",
-    imageSrc: "https://colinwu0403.github.io/assets/logo-42c1a2dd.svg",
   },
   // Add more projects as needed
 ];
