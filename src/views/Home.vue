@@ -59,12 +59,14 @@
           </p>
           <p>
             I'm passionate about creating innovative software and exploring new
-            technologies. I also enjoy producing music (under the artist name
+            technologies. I also enjoy listening to and producing music (under
+            the artist name
             <router-link
               to="/music"
               class="text-magenta dark:text-secondary hover:text-blueish dark:hover:text-tertiary hover:underline"
               >Lyenz</router-link
-            >), playing table tennis, and watching movies in my free time.
+            >), playing table tennis, hiking, and watching movies in my free
+            time.
           </p>
         </div>
 
