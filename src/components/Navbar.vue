@@ -10,27 +10,30 @@
         COLIN WU
       </router-link>
 
-      <!-- Mobile menu icon -->
-      <button
-        class="md:hidden text-primary dark:text-white"
-        @click="toggleMobileMenu"
-        aria-label="Open menu"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="2"
-          stroke="currentColor"
-          class="w-8 h-8"
+      <!-- Mobile controls: theme toggle + menu icon, side by side -->
+      <div class="flex items-center gap-3 md:hidden">
+        <ThemeToggle />
+        <button
+          class="text-primary dark:text-white"
+          @click="toggleMobileMenu"
+          aria-label="Open menu"
         >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M4 6h16M4 12h16m-7 6h7"
-          />
-        </svg>
-      </button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="w-8 h-8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+      </div>
 
       <!-- Desktop nav -->
       <nav class="hidden md:flex items-center gap-6">
@@ -47,20 +50,28 @@
       </nav>
     </div>
 
+    <!-- Mobile full-width dropdown -->
     <div
       v-if="isMobileMenuOpen"
-      class="z-30 fixed top-0 right-0 h-full w-7/12 bg-white dark:bg-primary text-gray-900 dark:text-white px-8 shadow-lg transform transition-transform duration-300 ease-in-out md:hidden"
+      class="z-30 fixed top-0 left-0 w-full h-full bg-white dark:bg-primary text-gray-900 dark:text-white px-6 shadow-lg transform transition-transform duration-300 ease-in-out md:hidden"
     >
-      <div class="flex items-center justify-between pt-6">
-        <ThemeToggle />
+      <div class="flex items-center justify-between pt-5">
+        <router-link
+          to="/"
+          class="mechsuit-font text-xl text-magenta dark:text-tertiary tracking-wide"
+          @click="toggleMobileMenu"
+        >
+          COLIN WU
+        </router-link>
         <button class="text-3xl" @click="toggleMobileMenu">&times;</button>
       </div>
-      <nav class="flex flex-col items-end mt-8">
+
+      <nav class="flex flex-col items-start mt-8">
         <router-link
           v-for="(link, idx) in navLinks"
           :key="idx"
           :to="link.path"
-          class="my-4 text-xl nav-link relative"
+          class="w-full py-4 text-xl nav-link relative border-b border-black/10 dark:border-white/10"
           @click="toggleMobileMenu"
           :class="{ 'nav-link-active': isCurrentRoute(link.path) }"
         >
