@@ -14,7 +14,7 @@ export default defineConfig({
       extensions: ["vue", "md"],
     }),
     Markdown({
-      wrapperComponent: "MarkdownLayout",
+      wrapperComponent: "MarkdownLayoutBlog",
     }),
     Sitemap({
       siteUrl: "https://colinwu.net",

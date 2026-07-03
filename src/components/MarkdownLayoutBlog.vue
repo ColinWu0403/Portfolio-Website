@@ -1,4 +1,4 @@
-<!-- src/components/MarkdownLayout.vue -->
+<!-- src/components/MarkdownLayoutBlog.vue -->
 <script setup>
 import { formatDate } from "../utils/date";
 
@@ -11,7 +11,7 @@ defineProps({
   <article>
     <header class="mb-8">
       <h1
-        class="text-5xl font-bold md:text-4xl text-magenta dark:text-tertiary"
+        class="text-3xl font-bold md:text-4xl text-magenta dark:text-tertiary"
       >
         {{ frontmatter.title }}
       </h1>
@@ -25,5 +25,11 @@ defineProps({
     <div class="prose dark:prose-invert max-w-none">
       <slot />
     </div>
+    <router-link
+      to="/blog"
+      class="text-blueish dark:text-secondary hover:text-magenta dark:hover:text-tertiary text-md"
+    >
+      &larr; Back to Blog
+    </router-link>
   </article>
 </template>
