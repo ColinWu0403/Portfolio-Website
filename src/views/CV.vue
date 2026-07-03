@@ -12,7 +12,7 @@
         <div class="rounded-lg overflow-hidden bg-white">
           <!-- PDF preview -->
           <iframe
-            src="./ChiCheColinWuResume.pdf#toolbar=1&navpanes=0&zoom=100"
+            src="./ChiCheColinWuResume.pdf#toolbar=1&navpanes=0&zoom=page-width"
             title="Colin Wu's Resume"
             class="w-full h-[800px]"
           ></iframe>
