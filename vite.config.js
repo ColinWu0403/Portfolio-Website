@@ -1,11 +1,21 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
+import Pages from "vite-plugin-pages";
+import Markdown from "unplugin-vue-markdown/vite";
 import Sitemap from "vite-plugin-sitemap";
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    vue(),
+    vue({
+      include: [/\.vue$/, /\.md$/], // let Vue compile markdown too
+    }),
+    Pages({
+      extensions: ["vue", "md"],
+    }),
+    Markdown({
+      wrapperComponent: "MarkdownLayoutBlog",
+    }),
     Sitemap({
       siteUrl: "https://colinwu.net",
       changefreq: "daily",
@@ -20,4 +30,7 @@ export default defineConfig({
       ],
     }),
   ],
+  server: {
+    allowedHosts: true,
+  },
 });

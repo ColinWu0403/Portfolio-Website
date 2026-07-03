@@ -22,3 +22,17 @@ body {
 .mechsuit-font {
   font-family: "Mechsuit", sans-serif;
 }
+
+:root {
+  --divider-accent: #17ffc4;
+  --nav-link-color: #040112; /* your `primary` */
+  --nav-link-hover: #ffd627;
+  --nav-link-active: #e80f58;
+}
+
+.dark {
+  --divider-accent: #17ffc4;
+  --nav-link-color: #ffffff;
+  --nav-link-hover: #ffd627;
+  --nav-link-active: #e80f58;
+}
