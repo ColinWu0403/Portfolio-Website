@@ -42,7 +42,7 @@
       <a
         :href="demoLink"
         target="_blank"
-        class="text-blueish/50 dark:text-slate hover:text-magenta dark:text-tertiary mx-2 text-2xl transition"
+        class="text-blueish/50 dark:text-slate hover:text-magenta dark:hover:text-tertiary mx-2 text-2xl transition"
         aria-label="Demo Link"
       >
         <i class="fas fa-external-link-alt"></i>

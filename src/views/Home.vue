@@ -1,7 +1,7 @@
 <!-- src/views/Home.vue -->
 <template>
   <div class="max-w-8xl mx-auto px-6 md:px-12 py-10">
-    <div class="flex flex-col md:flex-row md:items-start gap-10 md:gap-12">
+    <div class="flex flex-col md:flex-row md:items-start gap-10 md:gap-12 mb-2">
       <!-- Left profile card -->
       <ProfileCard />
 

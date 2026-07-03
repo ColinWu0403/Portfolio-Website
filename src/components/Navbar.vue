@@ -1,7 +1,7 @@
 <!-- src/components/Navbar.vue -->
 <template>
   <header class="w-full relative z-40">
-    <div class="flex items-center justify-between px-6 md:px-12 py-5">
+    <div class="flex items-center justify-between px-6 md:px-12 pt-5">
       <!-- Logo / name, doubles as Home link -->
       <router-link
         to="/"

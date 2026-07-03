@@ -50,7 +50,7 @@ useHead({
 <template>
   <div class="max-w-4xl mx-auto px-6 md:px-12 py-6">
     <h1
-      class="mechsuit-font text-2xl font-bold text-blueish dark:text-tertiary mb-2"
+      class="mechsuit-font text-2xl font-bold text-blueish dark:text-secondary mb-2"
     >
       Blog
     </h1>

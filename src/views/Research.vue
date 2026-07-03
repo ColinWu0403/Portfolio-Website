@@ -1,13 +1,15 @@
 <template>
   <div class="max-w-8xl mx-auto px-6 md:px-12 py-10">
-    <div class="flex flex-col md:flex-row md:items-start gap-10 md:gap-12">
+    <div class="flex flex-col md:flex-row md:items-start gap-10 md:gap-12 mb-2">
       <!-- Left profile card -->
-      <ProfileCard />
+      <div class="hidden md:block">
+        <ProfileCard />
+      </div>
 
       <!-- Right section -->
       <div class="flex-1 min-w-0">
         <h1
-          class="mechsuit-font md:text-2xl text-2xl font-bold text-blueish dark:text-tertiary mb-5"
+          class="mechsuit-font md:text-2xl text-2xl font-bold text-blueish dark:text-secondary mb-5"
         >
           Publications
         </h1>
