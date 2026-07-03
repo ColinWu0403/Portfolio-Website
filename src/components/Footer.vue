@@ -7,8 +7,8 @@
         website
         <a
           target="_blank"
-          class="text-primary dark:text-white hover:text-magenta dark:hover:text-secondary"
-          href="https://github.com/ColinWu0403/Portfolio-Website-Vue"
+          class="text-primary font-medium dark:text-white hover:text-magenta dark:hover:text-secondary"
+          href="https://github.com/ColinWu0403/Portfolio-Website"
           aria-label="Source Code for this website"
           >here
         </a>

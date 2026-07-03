@@ -7,7 +7,7 @@
       <!-- Right section -->
       <div class="flex-1 min-w-0">
         <h1
-          class="mechsuit-font md:text-2xl text-2xl font-bold text-tertiary mb-5"
+          class="mechsuit-font md:text-2xl text-2xl font-bold text-blueish dark:text-tertiary mb-5"
         >
           CV
         </h1>
@@ -19,7 +19,7 @@
           <div class="divider-line-long bottom-[5.5px]"></div>
         </div>
 
-        <div class="text-white space-y-4 leading-relaxed">
+        <div class="text-primary dark:text-white space-y-4 leading-relaxed">
           <p>CV</p>
         </div>
 

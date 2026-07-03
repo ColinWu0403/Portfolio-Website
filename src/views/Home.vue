@@ -9,41 +9,50 @@
       <div class="flex-1 min-w-0">
         <!-- Header -->
         <h1
-          class="mechsuit-font md:text-2xl text-2xl font-bold text-tertiary mb-5"
+          class="mechsuit-font md:text-2xl text-2xl font-bold text-blueish dark:text-tertiary mb-5"
         >
           About
         </h1>
-        <div class="relative mb-5">
-          <!-- Shorter divider line on top -->
+        <!-- <div class="relative mb-5">
           <div class="divider-line-short"></div>
-
-          <!-- Longer divider line below -->
           <div class="divider-line-long bottom-[5.5px]"></div>
-        </div>
+        </div> -->
 
-        <div class="text-white space-y-4 leading-relaxed">
+        <div class="text-primary dark:text-light space-y-4 leading-relaxed">
           <p>
             Hello! I'm a M.S. in Computer Science student at
-            <span class="text-secondary">Texas A&M University</span>.
-            Previously, I received my B.S. in Computer Science from
-            <span class="text-secondary">Purdue University</span>.
+            <span class="text-magenta dark:text-secondary"
+              >Texas A&M University</span
+            >. Previously, I received my B.S. in Computer Science from
+            <span class="text-magenta dark:text-secondary"
+              >Purdue University</span
+            >.
           </p>
           <p>
             Some of my research interests include
-            <span class="text-tertiary">Human Computer Interaction (HCI)</span>,
-            <span class="text-tertiary">Artifical Intelligence</span>,
-            <span class="text-tertiary">Natural Language Processing (NLP)</span
-            >, <span class="text-tertiary">Embedded Systems</span>, and
-            <span class="text-tertiary">Bioinformatics</span>
+            <span class="text-violet dark:text-tertiary"
+              >Human Computer Interaction (HCI)</span
+            >,
+            <span class="text-violet dark:text-tertiary"
+              >Artifical Intelligence</span
+            >,
+            <span class="text-violet dark:text-tertiary"
+              >Natural Language Processing (NLP)</span
+            >,
+            <span class="text-violet dark:text-tertiary">Embedded Systems</span
+            >, and
+            <span class="text-violet dark:text-tertiary">Bioinformatics</span>
             with applications of these fields in
-            <span class="text-magenta">Software Engineering</span> and
-            <span class="text-magenta">Healthcare</span>.
+            <span class="text-lime dark:text-magenta"
+              >Software Engineering</span
+            >
+            and <span class="text-lime dark:text-magenta">Healthcare</span>.
             <br />
             I've previously worked with Prof.
             <a
               href="https://tianyi-zhang.github.io"
               target="_blank"
-              class="text-secondary hover:text-tertiary hover:underline"
+              class="text-magenta dark:text-secondary hover:text-blueish dark:hover:text-tertiary hover:underline"
               >Tianyi Zhang</a
             >
             at Human-Centered Software Systems Lab.
@@ -53,7 +62,7 @@
             technologies. I also enjoy producing music (under the artist name
             <router-link
               to="/music"
-              class="text-secondary hover:text-tertiary hover:underline"
+              class="text-magenta dark:text-secondary hover:text-blueish dark:hover:text-tertiary hover:underline"
               >Lyenz</router-link
             >), playing table tennis, and watching movies in my free time.
           </p>

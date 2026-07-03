@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
-import About from "../views/About.vue";
 import Experience from "../views/Experience.vue";
 import Projects from "../views/Projects.vue";
 import Music from "../views/Music.vue";
@@ -25,14 +24,6 @@ const routes = [
     component: Research,
     meta: {
       title: "Publications",
-    },
-  },
-  {
-    path: "/about",
-    name: "About",
-    component: About,
-    meta: {
-      title: "About",
     },
   },
   {
