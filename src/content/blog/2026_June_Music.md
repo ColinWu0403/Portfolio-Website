@@ -8,7 +8,7 @@ This is a monthly write-up of my favorite music including both new releases and 
 
 This is something I want to try (no guarantees I can keep it going monthly though).
 
-According to [Last.fm](https://www.last.fm/) I listened to these genres in June.
+According to [Last.fm](https://www.last.fm/), I listened to these genres in June.
 
 <img src="https://i.imgur.com/6XKV4D0.png" width="700">
 
