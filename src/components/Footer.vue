@@ -1,17 +1,31 @@
 <!-- src/components/Footer.vue -->
 <template>
   <footer class="text-white py-2 flex items-center justify-between w-full mb-2">
-    <div class="ml-12">
+    <div class="ml-12 md:mb-2">
       <p class="text-primary dark:text-white">
-        &copy; {{ currentYear }} {{ fullName }} | Check out the code for my
-        website
+        &copy; {{ currentYear }} {{ fullName }}
+        <!-- Desktop: inline with separator -->
+        <span class="hidden md:inline">
+          | Check out the code for my website
+          <a
+            target="_blank"
+            class="text-primary font-medium dark:text-white hover:text-magenta dark:hover:text-secondary"
+            href="https://github.com/ColinWu0403/Portfolio-Website"
+            aria-label="Source Code for this website"
+            >here</a
+          >
+        </span>
+      </p>
+      <!-- Mobile: own line, no separator -->
+      <p class="md:hidden text-primary dark:text-white mb-4">
+        Check out the code for my website
         <a
           target="_blank"
           class="text-primary font-medium dark:text-white hover:text-magenta dark:hover:text-secondary"
           href="https://github.com/ColinWu0403/Portfolio-Website"
           aria-label="Source Code for this website"
-          >here
-        </a>
+          >here</a
+        >
       </p>
     </div>
     <div class="mr-8 items-center">

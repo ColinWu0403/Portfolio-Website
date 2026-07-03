@@ -19,19 +19,19 @@
 
           <!-- Fallback / download bar -->
           <div
-            class="flex items-center justify-between px-5 py-2 bg-blueish/10 dark:bg-darker_slate border-t border-black/50 dark:border-white/10 text-sm transition"
+            class="flex flex-col md:flex-row md:items-center md:justify-between gap-2 px-5 py-3 bg-blueish/10 dark:bg-darker_slate border-t border-black/50 dark:border-white/10 text-sm transition"
           >
             <a
               :href="resumePath"
               download="ChiCheColinWuResume.pdf"
-              class="items-center gap-3 px-8 py-2 rounded-md bg-blueish/10 dark:bg-tertiary/10 hover:bg-magenta/10 dark:hover:bg-secondary/10 text-blueish hover:text-magenta dark:text-tertiary dark:hover:text-secondary text-md font-semibold hover:underline transition"
+              class="items-center gap-3 px-8 py-2 rounded-md bg-blueish/10 dark:bg-tertiary/10 hover:bg-magenta/10 dark:hover:bg-secondary/10 text-blueish hover:text-magenta dark:text-tertiary dark:hover:text-secondary text-md font-semibold hover:underline transition text-center"
             >
               Download CV
             </a>
             <a
               :href="resumePath"
               target="_blank"
-              class="text-blueish hover:text-magenta dark:text-tertiary dark:hover:text-secondary text-md font-semibold hover:underline flex items-center gap-1 transition"
+              class="text-blueish hover:text-magenta dark:text-tertiary dark:hover:text-secondary text-md font-semibold hover:underline flex items-center justify-center gap-1 transition"
             >
               Open in new tab
               <i class="fas fa-arrow-up-right-from-square text-xs"></i>
