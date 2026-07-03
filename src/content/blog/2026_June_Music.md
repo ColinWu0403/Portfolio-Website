@@ -39,12 +39,19 @@ This is the song of the summer!
 
 New Jane Remover is so good
 
-<a href="https://www.youtube.com/watch?v=9umN2klFoGc" target="_blank" rel="noopener noreferrer">
-  <img src="https://i.scdn.co/image/ab67616d0000b273f56403983a9d58bd9a874b3f" width="300">
-  She's Green - Close Your Eyes
+<a href="www.youtube.com/watch?v=OkApy8LE8s8" target="_blank" rel="noopener noreferrer">
+  <img src="https://i.scdn.co/image/ab67616d00001e026f3307b2ee6c3131410efdc7" width="300">
+  Beabadoobee - Sun Has Set
 </a>
 
-The atmosphere and guitars are absolutely insane on this one
+Artists who can sing? Also Shane Moran of [Title Fight](https://en.wikipedia.org/wiki/Title_Fight) plays the guitars on this track.
+
+<a href="https://www.youtube.com/watch?v=9umN2klFoGc" target="_blank" rel="noopener noreferrer">
+  <img src="https://i.scdn.co/image/ab67616d0000b273f56403983a9d58bd9a874b3f" width="300">
+She's Green - Close Your Eyes
+</a>
+
+The atmosphere is absolutely insane on this one, the final section is some of the best shoegaze I've heard recently
 
 ### Highlighted Tracks
 
@@ -63,6 +70,13 @@ Wow epic riff
 </a>
 
 The editing on the music video for this is really inventive
+
+<a href="https://www.youtube.com/watch?v=DiWcBc6Ppa0" target="_blank" rel="noopener noreferrer">
+  <img src="https://i.scdn.co/image/ab67616d0000b273d95c1b35970e04252e414f11" width="300">
+  Saosin - Starting All Over Again
+</a>
+
+Absolute banger
 
 <a href="https://www.youtube.com/watch?v=bw1vHIChI6o" target="_blank" rel="noopener noreferrer">
   <img src="https://i.scdn.co/image/ab67616d0000b273484f84ad4db1ed7d93bbdbb9" width="300">

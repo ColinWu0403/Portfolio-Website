@@ -10,7 +10,7 @@ I've redone my website for like the third time now. This website should be much 
 
 I originally was just going to use the [Academic Pages](https://github.com/academicpages/academicpages.github.io) website template rather try to fix my old website.
 
-Most people who use that template are PhD students or even professors (my prof who I did research with at Purdue uses it lol), but I only recently graduated from my Bachelor's and have no publications to my name.
+Most people who use that template are PhD students or even professors (my prof who I did research with at Purdue uses it), but I only recently graduated from my Bachelor's and have no publications to my name.
 
 I hope to get more involved in research in my Master's, and will hopefully have something to show soon.
 
