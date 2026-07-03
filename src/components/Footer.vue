@@ -33,8 +33,7 @@
       <a
         target="_blank"
         href="./ChiCheColinWuResume.pdf"
-        download="ChiCheColinWuResume.pdf"
-        class="text-slate hover:text-secondary mx-4 text-4xl transition"
+        class="text-slate hover:text-magenta dark:hover:text-secondary mx-4 text-3xl transition"
         aria-label="Download my resume"
       >
         <i class="fas fa-file-alt" alt="resume"></i>
