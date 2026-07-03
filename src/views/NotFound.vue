@@ -1,19 +1,6 @@
 <!-- src/views/Projects.vue -->
 <template>
   <div class="mx-auto">
-    <h1
-      class="mechsuit-font md:text-3xl text-2xl font-bold text-tertiary md:ml-12 ml-6 mt-4 mb-5"
-    >
-      404 - Not Found
-    </h1>
-    <div class="relative">
-      <!-- Shorter divider line on top -->
-      <div class="divider-line-short"></div>
-
-      <!-- Longer divider line below -->
-      <div class="divider-line-long bottom-[7px]"></div>
-    </div>
-
     <div
       class="flex flex-col max-h-screen mt-16 align-center items-center justify-center"
     >
@@ -22,7 +9,7 @@
       </h1>
       <router-link
         to="/"
-        class="text-center text-3xl text-tertiary hover:text-secondary hover:underline"
+        class="text-center text-3xl text-tertiary hover:text-magenta hover:underline"
         >Back to Home</router-link
       >
     </div>

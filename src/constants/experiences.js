@@ -1,24 +1,6 @@
 export const experiences = [
   {
     id: 1,
-    title: "Undergraduate Data Science Researcher",
-    company: "The Data Mine",
-    dates: "Aug 2025 - Present",
-    description: [
-      "Collaborating with Costco to build a weather-aware supply chain model using Python, Pytorch, and GCP Vertex AI to predict crop availability, anticipate transportation delays, and improve distribution efficiency.",
-    ],
-  },
-  {
-    id: 2,
-    title: "Undergraduate Researcher",
-    company: "Vertically Integrated Projects (VIP)",
-    dates: "Aug 2025 - Present",
-    description: [
-      "Researched automated disaster-response methods in the AI for Disaster Response project, developing Random Forest and MLP image-classification models to assess damage severity from social-media disaster images.",
-    ],
-  },
-  {
-    id: 3,
     title: "Undergraduate Researcher",
     company: "Department of Computer Science, Purdue University",
     dates: "Apr 2025 - Present",
