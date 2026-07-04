@@ -103,6 +103,21 @@ module.exports = {
             // Remove auto-inserted smart quotes around blockquotes
             "blockquote p:first-of-type::before": { content: "none" },
             "blockquote p:last-of-type::after": { content: "none" },
+
+            ".footnote-ref a": {
+              color: "#e80f58",
+            },
+            ".footnote-ref a:hover": {
+              color: "#4361EE",
+            },
+            ".footnote-backref": {
+              color: "#e80f58",
+              textDecoration: "none",
+              marginLeft: "0.4em",
+            },
+            ".footnote-backref:hover": {
+              color: "#4361EE",
+            },
           },
         },
         invert: {
@@ -148,6 +163,21 @@ module.exports = {
             // Remove auto-inserted smart quotes around blockquotes
             "blockquote p:first-of-type::before": { content: "none" },
             "blockquote p:last-of-type::after": { content: "none" },
+
+            ".footnote-ref a": {
+              color: "#17ffc4",
+            },
+            ".footnote-ref a:hover": {
+              color: "#ffd627",
+            },
+            ".footnote-backref": {
+              color: "#17ffc4",
+              textDecoration: "none",
+              marginLeft: "0.4em",
+            },
+            ".footnote-backref:hover": {
+              color: "#ffd627",
+            },
           },
         },
       }),

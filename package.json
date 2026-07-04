@@ -16,6 +16,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "@fortawesome/vue-fontawesome": "^3.0.8",
     "@vueuse/head": "^0.9.8",
+    "markdown-it-footnote": "^4.0.0",
     "vite-plugin-sitemap": "^0.7.1",
     "vue": "^3.4.29",
     "vue-router": "^4.0.13"
