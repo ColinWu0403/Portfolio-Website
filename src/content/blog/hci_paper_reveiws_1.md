@@ -122,11 +122,62 @@ My prof explained the framework used by the top HCI conferences, [Seven Research
 
 > [^2] Texterial: A Text-as-Material Interaction Paradigm for LLM-Mediated Writing
 
-I've never seen anything like this before, I don't really know how to explain what this paper is in text. I recommend you, the reader, to first watch this [demo video](https://www.linkedin.com/posts/jocelyn-shen_chi2026-activity-7434619614883373056-lzRI) presented by the researchers that shows how it works. Then I'll give some of my comments on what I think. I won't attempt to explain it in detail like the previous paper lmao.
+This is also a paper submitted to CHI 26', this time by [Microsoft Research](https://www.microsoft.com/en-us/research/about-microsoft-research/).
 
 <img src="https://www.microsoft.com/en-us/research/wp-content/uploads/2026/03/Texterial-figure1.png" width="700">
 
-This is also a paper submitted to CHI 26', this time by a team at [Microsoft Research](https://www.microsoft.com/en-us/research/about-microsoft-research/).
+Honestly, I've never seen anything like this before, I don't really know how to explain what this paper is in text. I recommend you to first watch this [demo video](https://www.linkedin.com/posts/jocelyn-shen_chi2026-activity-7434619614883373056-lzRI) presented by the researchers that shows how it works. Then I'll give some of my comments on what I think. I won't attempt to explain it in detail like the previous paper lmao.
+
+This paper presents 2 novel ways on using LLMs in writing with a visual twist. They propose that instead of asking an LLM to edit your writing by typing a prompt, what if you could manipulate your text physically using the metaphor of **molding clay** or **tending a garden**.
+
+When creating the formative study for the prototypes, the researchers consulted creative professionals, showing them "material" cards (clay, plants, embroidery, photography, etc.) and asking them to imagine writing as if text were that material.
+
+<img src="https://i.imgur.com/dYWQuqj.png" width="600">
+
+The first prototype is _Text as Clay_ where different gestures would result in the selected portion of the text being changed in a certain way. Looking at the gestures from the figure above, the writing actions mapping onto material actions does make intuitive sense to me.
+
+For example, pinching in the clay would condense it so summarizing/making the pinched text shorter also makes sense. They noted that this prototype could work as a tool for text refinement.
+
+<img src="https://i.imgur.com/6B1K3YD.png" width="800">
+
+The second prototype, _Text as Plants_, is more focused on idea generation/brainstorming rather than refining text. They use the metaphor of planting a seed for a plant as creating a topic/idea, then actions like _watering_, _pruning leaves_, and _grafting a plant with another_ to _develop_, _remove_, and _combine ideas_.
+
+I appreciated that in the appendix of the paper, they actually provide all the prompts used and outline how each transformation of a text is done. After reading it, it doesn't seem as complicated as I thought it'd be (mostly just prompt engineering).
+
+Although these prototypes are unique and fascinating, the main value of this paper (and HCI research in general) is understanding **how the design choices of the prototype impacts the behavior of the users**.
+
+### Study Design
+
+The question this study aims to explore would be **how framing text as material changes how people think about writing**.
+
+They conducted a study with four focus groups of various expertise in writing. Each group interacted with the two prototypes, _Text as Clay_ and _Text as Plants_, allowing for them to compare the two metaphors. Conducting this study in focus groups was important as it allowed the participants to build on each other's reactions and disagreements in real time.
+
+The main points include:
+
+- **Metaphors shape mental models**: the different choices of material metaphors led to people thinking about writing differently.
+  - Clay sculpting was more for sculpting/refining existing prose, while plants was about nurturing/growing ideas over time.
+  - In other words, the choice of metaphor changed what kind of writing task people used the tool for.
+- **Gestures vs prompting LLMs**: participants said that using the gestures felt more direct and efficient than typing in a prompt.
+  - Users didn't need to find the "right words" to describe an edit.
+  - Using gestures made writing feel more expressive and language-agnostic (in CS terms means it's not dependent on your knowledge of a certain programming language, but in this context I mean it's more intuitive/universal).
+- **Spatial Layout and Visual Design**: the participants viewed the spatial layout and visual overview as a way to organize, explore, and reshape ideas.
+  - The demonstration was done on a tablet letting people see and touch multiple pieces of text laid out spatially (rather than one line of chat).
+  - Participants could explore ideas without committing to a single edit as they could jump around, trying things out and undoing easily. This is something linear chat-based AI writing tools don't really support.
+- **Impacts on the writing process**: tools felt playful and creative, inspiring ideas for collaboration.
+  - They described the experience as more like creative experimentation than task completion and that the material-based interaction could be expanded to collaborative writing where multiple users could manipulate a shared canvas.
+  - However, participants also noted that some aspects of the writing process felt missing compared to chat interfaces. A participant said the tools lack explainability of its reasoning compared to using chat based LLMs where they could check certain sources more easily.
+
+### Discussion
+
+Overall, I think this paper introduces a novel idea with the prototypes seeming quite useful. It could lower the barrier for non-expert writers or people uncomfortable with prompt-writing.
+
+I feel that prompting an LLM when organizing thoughts for a project feels very sterile and honestly takes the enjoyment out of writing. This could potentially support creativity in writing in ways that "typing a command into an LLM" can't.
+
+However, as this is a small, explorative study, the findings don't necessarily prove that this approach produces better writing or be preferred at scale. One thing the researchers noted was that interactions should strike an intentional **balance between literal and abstract design choices.**
+
+They noted that the same gesture was interpreted differently across participants. I can imagine using a tool like this might lead to frustration as the outputs created by the different gestures seem quite ambiguous.
+
+Reading this paper was refreshing compared to the LLM papers I usually read. It's interesting to see research taken in a different direction from papers that introduce larger/more efficient models or evaluation/benchmark papers.
 
 > [^3] SusBench: An Online Benchmark for Evaluating Dark Pattern Susceptibility of Computer-Use Agents
 
