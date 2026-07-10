@@ -18,6 +18,15 @@ export default defineConfig({
       wrapperComponent: "MarkdownLayoutBlog",
       markdownItSetup(md) {
         md.use(footnote);
+        md.use(anchor, {
+          level: [2, 3], // ## and ### get ids
+          slugify: (s) =>
+            s
+              .toLowerCase()
+              .trim()
+              .replace(/[^\w\s-]/g, "")
+              .replace(/\s+/g, "-"),
+        });
       },
     }),
     Sitemap({
