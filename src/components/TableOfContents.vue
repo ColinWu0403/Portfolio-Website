@@ -21,7 +21,7 @@ const emit = defineEmits(["jump"]);
           @click.prevent="emit('jump', h.id)"
           class="block -ml-px border-l-2 py-0.5 transition"
           :class="[
-            h.level === 3 ? 'pl-8' : 'pl-4',
+            h.level === 3 ? 'pl-10' : 'pl-6',
             activeId === h.id
               ? 'border-magenta dark:border-secondary text-magenta dark:text-secondary font-semibold'
               : 'border-transparent text-gray-600 dark:text-gray-400 hover:text-magenta dark:hover:text-secondary',

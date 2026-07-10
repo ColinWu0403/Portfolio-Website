@@ -69,14 +69,21 @@ function buildHeadings() {
   teardownObserver();
   if (!articleRef.value) return;
 
+  const titleEl = articleRef.value.querySelector("h1#top");
   const nodes = articleRef.value.querySelectorAll("h2[id], h3[id]");
-  headings.value = Array.from(nodes).map((el) => ({
+
+  const sectionHeadings = Array.from(nodes).map((el) => ({
     id: el.id,
     text: el.textContent,
     level: Number(el.tagName[1]),
   }));
 
-  if (!nodes.length) return;
+  headings.value = titleEl
+    ? [{ id: "top", text: titleEl.textContent, level: 2 }, ...sectionHeadings]
+    : sectionHeadings;
+
+  const observeTargets = titleEl ? [titleEl, ...nodes] : nodes;
+  if (!observeTargets.length) return;
 
   observer = new IntersectionObserver(
     (entries) => {
@@ -87,7 +94,7 @@ function buildHeadings() {
     { rootMargin: "-100px 0px -70% 0px" },
   );
 
-  nodes.forEach((el) => observer.observe(el));
+  observeTargets.forEach((el) => observer.observe(el));
 }
 
 function scrollToHeading(id) {
@@ -117,11 +124,10 @@ watchEffect(async () => {
   PostComponent.value = mod.default;
   pageTitle.value = mod.frontmatter?.title
     ? `${mod.frontmatter.title} — Colin Wu`
-    : "Colin's Blog"; // reactive assignment instead of a fresh useHead() call
+    : "Colin's Blog";
 
   await nextTick();
   buildHeadings();
-  console.log("Headings found:", headings.value); // keep this in for now
 });
 
 onBeforeUnmount(teardownObserver);

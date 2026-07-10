@@ -11,6 +11,7 @@ defineProps({
   <article>
     <header class="mb-8">
       <h1
+        id="top"
         class="text-3xl font-bold md:text-4xl text-magenta dark:text-tertiary"
       >
         {{ frontmatter.title }}
