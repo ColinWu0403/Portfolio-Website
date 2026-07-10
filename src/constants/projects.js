@@ -25,7 +25,8 @@ export const projects = [
       { name: "Scikit-learn", color: "tertiary" },
       { name: "Pytorch", color: "violet" },
     ],
-    githubLink: "https://github.com/ColinWu0403/CS490NLP-Final_Project",
+    githubLink:
+      "https://github.com/ColinWu0403/Probing_Correctness_Across_Languages",
     demoLink: "LLMCorrectnessProbes.pdf",
   },
   {

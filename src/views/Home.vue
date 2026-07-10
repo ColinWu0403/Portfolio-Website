@@ -52,7 +52,7 @@
             <a
               href="https://tianyi-zhang.github.io"
               target="_blank"
-              class="text-magenta dark:text-secondary hover:text-blueish dark:hover:text-tertiary hover:underline"
+              class="text-magenta underline font-medium dark:text-secondary hover:text-blueish dark:hover:text-tertiary"
               >Tianyi Zhang</a
             >
             at Human-Centered Software Systems Lab.
@@ -63,7 +63,7 @@
             the artist name
             <router-link
               to="/music"
-              class="text-magenta dark:text-secondary hover:text-blueish dark:hover:text-tertiary hover:underline"
+              class="text-magenta underline font-medium dark:text-secondary hover:text-blueish dark:hover:text-tertiary"
               >Lyenz</router-link
             >), playing table tennis, hiking, and watching movies in my free
             time.
