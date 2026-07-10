@@ -12,7 +12,7 @@ According to [Last.fm](https://www.last.fm/), I listened to these genres in June
 
 <img src="https://i.imgur.com/6XKV4D0.png" width="700">
 
-### Highlighted Album
+## Highlighted Album
 
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtm23l1VUw_DIBGYoJ3UdqrzK1g2Sc6ofciD02Br2nFnLOsbacxzgkmA&s=10" width="300" style="border: 2px solid black;">
 
@@ -22,7 +22,7 @@ Hyperview sounds very different from their previous albums, a departure from the
 
 I really like how dreamy the album sounds, it sounds more melancholic and less _angry_ than Shed or Floral Green. My favorite tracks on the album are [Hypernight](https://youtu.be/8gOAoT9n33I?si=J4lLhQO-WPQZmATf), [Your Pain Is Mine Now](https://youtu.be/9X9i7Nh_BPo?si=47NNMhDaNFHsG6xM), [Trace Me Onto You](https://youtu.be/9X9i7Nh_BPo?si=9yuRLTPpF0PZJqCa), and [Liar's Love](https://youtu.be/r6Jsvmzh_ec?si=ztsajjv7phtDEzqc).
 
-### New Releases
+## New Releases
 
 <a href="https://www.youtube.com/watch?v=AEEesEP14a0" target="_blank" rel="noopener noreferrer">
   <img src="https://t2.genius.com/unsafe/516x516/https%3A%2F%2Fimages.genius.com%2Fd97d76725483149221ffd0702b6a9902.1000x1000x1.png
@@ -53,7 +53,7 @@ She's Green - Close Your Eyes
 
 The atmosphere is absolutely insane on this one, the final section is some of the best shoegaze I've heard recently
 
-### Highlighted Tracks
+## Highlighted Tracks
 
 (other favorite songs that weren't released in June)
 
@@ -85,7 +85,7 @@ Absolute banger
 
 Lmao I put this here because of the title; it's such an emotional & powerful song though
 
-### Favorite Artists
+## Favorite Artists
 
 I discovered and went down the 2nd wave emo rabbit hole this month (new blogpost on that soon?). [Penfold](https://www.last.fm/music/Penfold/+wiki) and [Mineral](<https://en.wikipedia.org/wiki/Mineral_(band)>) are my favorite bands I discovered from this era.
 

@@ -30,6 +30,8 @@ All papers I explain in this post were submitted to conferences this year. I'll 
 
 _Note: you can click on the footnote number at the beginning of each paper title and that will take you to end where I list all the citations, you can click on the doi link to read the paper as a pdf._
 
+## Paper 1
+
 > [^1] WatchHand: Enabling Continuous Hand Pose Tracking On Off-the-Shelf Smartwatches
 
 This paper by researchers from Cornell and KAIST seems like it could be largely impactful.
@@ -120,6 +122,8 @@ I'm remembering the stuff I learned in my HCI class. I think this paper can be c
 
 My prof explained the framework used by the top HCI conferences, [Seven Research Contributions in HCI](https://faculty.washington.edu/wobbrock/pubs/Wobbrock-2012.pdf), which includes the definitions of types of HCI papers. I thought it was kinda boring during lecture but I guess I am finally applying this information when reading all of these papers.
 
+## Paper 2
+
 > [^2] Texterial: A Text-as-Material Interaction Paradigm for LLM-Mediated Writing
 
 This is also a paper submitted to CHI 26', this time by [Microsoft Research](https://www.microsoft.com/en-us/research/about-microsoft-research/).
@@ -179,19 +183,25 @@ They noted that the same gesture was interpreted differently across participants
 
 Reading this paper was refreshing compared to the LLM papers I usually read. It's interesting to see research taken in a different direction from papers that introduce larger/more efficient models or evaluation/benchmark papers.
 
+## Paper 3
+
 > [^3] SusBench: An Online Benchmark for Evaluating Dark Pattern Susceptibility of Computer-Use Agents
 
 I am legit too brainrotted, why did I think of amogus. Maybe the authors of the paper did this on purpose. What a sus paper.
+
+## Paper 4
 
 > [^4] HiFiGaze: Improving Eye Tracking Accuracy Using Screen Content Knowledge
 
 ---
 
+## Paper 5
+
 > [^5] Beyond Screenshots: Evaluating VLMs’ Understanding of UI Animations
 
 ---
 
-### Works Cited
+## Works Cited
 
 [^1]: Jiwan Kim, Chi-Jung Lee, et. al. 2026. WatchHand: Enabling Continuous Hand Pose Tracking On Off-the-Shelf Smartwatches. In _Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (CHI’26), April 13–17, 2026, Barcelona, Spain_. ACM, New York, NY, USA, 21 pages. [https://doi.org/10.1145/3772318.3790932](https://arxiv.org/pdf/2602.21610)
 

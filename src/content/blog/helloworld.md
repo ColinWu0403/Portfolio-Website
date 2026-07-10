@@ -4,7 +4,7 @@ description: "Introduction to my website"
 date: 2026-07-01
 ---
 
-### Welcome to my website!
+## Welcome to my website!
 
 I've redone my website for like the third time now. This website should be much easier to navigate (I had a right sided navigation bar for some reason on previous one lol).
 
@@ -22,7 +22,7 @@ This website is made with `Vue.js`, `Vite`, and deployed via `Vercel`. I also us
 
 Below, I show how markdown files look in my theme:
 
-### Markdown Demo
+## Markdown Demo
 
 **This is an bold text**
 
