@@ -10,7 +10,7 @@ const emit = defineEmits(["jump"]);
 <template>
   <nav v-if="headings.length" class="text-sm">
     <p
-      class="font-bold text-primary dark:text-white mb-3 uppercase tracking-wide text-xs"
+      class="font-bold text-primary dark:text-white mb-3 uppercase tracking-wide text-lg"
     >
       On this page
     </p>
@@ -21,7 +21,7 @@ const emit = defineEmits(["jump"]);
           @click.prevent="emit('jump', h.id)"
           class="block -ml-px border-l-2 py-0.5 transition"
           :class="[
-            h.level === 3 ? 'pl-8 text-xs' : 'pl-4',
+            h.level === 3 ? 'pl-8' : 'pl-4',
             activeId === h.id
               ? 'border-magenta dark:border-secondary text-magenta dark:text-secondary font-semibold'
               : 'border-transparent text-gray-600 dark:text-gray-400 hover:text-magenta dark:hover:text-secondary',

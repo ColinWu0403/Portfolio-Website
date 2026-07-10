@@ -1,6 +1,6 @@
 <!-- src/views/BlogPost.vue -->
 <template>
-  <div class="max-w-4xl mx-auto px-6 md:px-12 py-6">
+  <div class="max-w-7xl mx-auto px-6 md:px-12 py-6">
     <router-link
       to="/blog"
       class="text-blueish dark:text-secondary hover:text-magenta dark:hover:text-tertiary text-md"
@@ -12,11 +12,12 @@
       Sorry, this post doesn't exist.
     </div>
 
-    <div v-else class="flex flex-col md:flex-row md:items-start gap-10 mt-6">
-      <!-- TOC sidebar: left side, desktop only -->
+    <!-- Blog Body -->
+    <div v-else class="md:grid md:grid-cols-[200px_1fr] md:gap-20 mt-6">
+      <!-- Table of Contents -->
       <aside
         v-if="headings.length"
-        class="hidden md:block w-56 flex-shrink-0 sticky top-10 self-start"
+        class="hidden md:block sticky top-10 self-start"
       >
         <TableOfContents
           :headings="headings"
@@ -25,9 +26,11 @@
         />
       </aside>
 
-      <!-- Article content -->
-      <div ref="articleRef" class="flex-1 min-w-0">
-        <component :is="PostComponent" v-if="PostComponent" />
+      <!-- Article -->
+      <div class="min-w-0">
+        <div ref="articleRef" class="max-w-2xl mx-0">
+          <component :is="PostComponent" v-if="PostComponent" />
+        </div>
       </div>
     </div>
   </div>
