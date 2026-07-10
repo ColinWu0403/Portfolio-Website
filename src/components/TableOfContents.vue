@@ -23,8 +23,8 @@ const emit = defineEmits(["jump"]);
           :class="[
             h.level === 3 ? 'pl-10' : 'pl-6',
             activeId === h.id
-              ? 'border-magenta dark:border-secondary text-magenta dark:text-secondary font-semibold'
-              : 'border-transparent text-gray-600 dark:text-gray-400 hover:text-magenta dark:hover:text-secondary',
+              ? 'border-magenta dark:border-tertiary text-magenta dark:text-tertiary font-semibold'
+              : 'border-transparent text-gray-600 dark:text-gray-400 hover:text-magenta dark:hover:text-tertiary',
           ]"
         >
           {{ h.text }}

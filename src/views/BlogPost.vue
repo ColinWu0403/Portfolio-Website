@@ -33,6 +33,13 @@
         </div>
       </div>
     </div>
+
+    <router-link
+      to="/blog"
+      class="text-blueish dark:text-secondary hover:text-magenta dark:hover:text-tertiary text-md"
+    >
+      &larr; Back to Blog
+    </router-link>
   </div>
 </template>
 

@@ -26,11 +26,5 @@ defineProps({
     <div class="prose dark:prose-invert max-w-none">
       <slot />
     </div>
-    <router-link
-      to="/blog"
-      class="text-blueish dark:text-secondary hover:text-magenta dark:hover:text-tertiary text-md"
-    >
-      &larr; Back to Blog
-    </router-link>
   </article>
 </template>
