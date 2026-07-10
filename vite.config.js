@@ -4,6 +4,7 @@ import Pages from "vite-plugin-pages";
 import Markdown from "unplugin-vue-markdown/vite";
 import Sitemap from "vite-plugin-sitemap";
 import footnote from "markdown-it-footnote";
+import anchor from "markdown-it-anchor";
 
 // https://vitejs.dev/config/
 export default defineConfig({
