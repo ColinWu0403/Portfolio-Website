@@ -189,17 +189,41 @@ Reading this paper was refreshing compared to the LLM papers I usually read. It'
 
 I am legit too brainrotted, why did I think of amogus. Maybe the authors of the paper did this on purpose. What a sus paper.
 
+### Subpoint
+
+### Subpoint
+
+### Subpoint
+
+### Subpoint
+
 ## Paper 4
 
 > [^4] HiFiGaze: Improving Eye Tracking Accuracy Using Screen Content Knowledge
 
 ---
 
+### Subpoint
+
+### Subpoint
+
+### Subpoint
+
 ## Paper 5
 
 > [^5] Beyond Screenshots: Evaluating VLMs’ Understanding of UI Animations
 
 ---
+
+### Subpoint
+
+### Subpoint
+
+### Subpoint
+
+### Subpoint
+
+### Subpoint
 
 ## Works Cited
 

@@ -1,14 +1,40 @@
 <!-- src/components/TableOfContents.vue -->
 <script setup>
-import { ref } from "vue";
+import { ref, computed, reactive } from "vue";
 
-defineProps({
+const props = defineProps({
   headings: { type: Array, default: () => [] },
   activeId: { type: String, default: "" },
 });
 const emit = defineEmits(["jump"]);
 
 const showToc = ref(true);
+
+const tree = computed(() => {
+  const result = [];
+  let current = null;
+
+  for (const h of props.headings) {
+    if (h.level === 2) {
+      current = { ...h, children: [] };
+      result.push(current);
+    } else if (h.level === 3 && current) {
+      current.children.push(h);
+    } else {
+      result.push({ ...h, children: [] });
+      current = null;
+    }
+  }
+  return result;
+});
+
+const expanded = reactive({});
+function toggleSection(id) {
+  expanded[id] = !expanded[id];
+}
+function isExpanded(id) {
+  return expanded[id] !== false;
+}
 </script>
 
 <template>
@@ -31,24 +57,69 @@ const showToc = ref(true);
       </button>
     </div>
 
-    <nav v-show="showToc">
-      <ul class="space-y-2 border-l border-black/10 dark:border-white/10">
-        <li v-for="h in headings" :key="h.id">
-          <a
-            :href="`#${h.id}`"
-            @click.prevent="emit('jump', h.id)"
-            class="block -ml-px border-l-2 py-0.5 transition"
-            :class="[
-              h.level === 3 ? 'pl-10' : 'pl-6',
-              activeId === h.id
-                ? 'border-magenta dark:border-tertiary text-magenta dark:text-tertiary font-semibold'
-                : 'border-transparent text-gray-600 dark:text-gray-400 hover:text-magenta dark:hover:text-tertiary',
-            ]"
-          >
-            {{ h.text }}
-          </a>
+    <nav v-show="showToc" class="max-h-[calc(100vh-8rem)] overflow-y-auto pr-2">
+      <ul class="space-y-0.5">
+        <li v-for="h in tree" :key="h.id">
+          <div class="flex items-center">
+            <button
+              v-if="h.children.length"
+              @click="toggleSection(h.id)"
+              class="w-6 h-6 flex-shrink-0 flex items-center justify-center rounded hover:bg-black/5 dark:hover:bg-white/10 text-gray-500 dark:text-gray-400 transition"
+              :aria-label="
+                isExpanded(h.id) ? 'Collapse section' : 'Expand section'
+              "
+            >
+              <i
+                class="fas fa-chevron-right text-xs transition-transform"
+                :class="isExpanded(h.id) ? 'rotate-90' : ''"
+              ></i>
+            </button>
+            <span v-else class="w-6 flex-shrink-0"></span>
+            <a
+              :href="`#${h.id}`"
+              @click.prevent="emit('jump', h.id)"
+              class="block flex-1 py-1 px-2 rounded transition"
+              :class="
+                activeId === h.id
+                  ? 'text-magenta dark:text-tertiary font-bold'
+                  : 'text-gray-600 dark:text-gray-400 hover:text-magenta dark:hover:text-tertiary'
+              "
+            >
+              {{ h.text }}
+            </a>
+          </div>
+
+          <ul v-if="h.children.length && isExpanded(h.id)" class="space-y-0.5">
+            <li v-for="child in h.children" :key="child.id">
+              <a
+                :href="`#${child.id}`"
+                @click.prevent="emit('jump', child.id)"
+                class="block py-1 pl-12 pr-2 rounded transition"
+                :class="
+                  activeId === child.id
+                    ? 'text-magenta dark:text-tertiary font-bold'
+                    : 'text-gray-600 dark:text-gray-400 hover:text-magenta dark:hover:text-tertiary'
+                "
+              >
+                {{ child.text }}
+              </a>
+            </li>
+          </ul>
         </li>
       </ul>
     </nav>
   </div>
 </template>
+
+<style scoped>
+nav::-webkit-scrollbar {
+  width: 4px;
+}
+nav::-webkit-scrollbar-track {
+  background: transparent;
+}
+nav::-webkit-scrollbar-thumb {
+  background-color: rgba(128, 128, 128, 0.4);
+  border-radius: 9999px;
+}
+</style>
