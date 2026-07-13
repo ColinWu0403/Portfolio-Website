@@ -13,7 +13,13 @@
     </div>
 
     <!-- Blog Body -->
-    <div v-else class="md:grid md:grid-cols-[200px_1fr] md:gap-20 mt-6">
+    <div
+      v-else
+      class="mt-6"
+      :class="
+        headings.length ? 'md:grid md:grid-cols-[200px_1fr] md:gap-20' : ''
+      "
+    >
       <!-- Table of Contents -->
       <aside
         v-if="headings.length"
@@ -52,15 +58,13 @@ import TableOfContents from "../components/TableOfContents.vue";
 const route = useRoute();
 const modules = import.meta.glob("../content/blog/\*.md");
 
-const PostComponent = shallowRef(null); // was: ref(null)
+const PostComponent = shallowRef(null);
 const notFound = ref(false);
 const articleRef = ref(null);
 const headings = ref([]);
 const activeId = ref("");
-const pageTitle = ref("Colin's Blog"); // new
+const pageTitle = ref("Colin's Blog");
 
-// Called synchronously here, at the top level of setup — no await before it.
-// @vueuse/head accepts a ref and stays reactive to it afterward.
 useHead({ title: pageTitle });
 
 let observer = null;
