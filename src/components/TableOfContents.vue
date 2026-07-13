@@ -33,7 +33,7 @@ function toggleSection(id) {
   expanded[id] = !expanded[id];
 }
 function isExpanded(id) {
-  return expanded[id] !== false;
+  return expanded[id] === true;
 }
 </script>
 

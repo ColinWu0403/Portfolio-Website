@@ -90,9 +90,9 @@ import ThemeToggle from "./ThemeToggle.vue";
 const navLinks = [
   { name: "Home", path: "/" },
   { name: "Research", path: "/research" },
-  { name: "Blog", path: "/blog" },
-  { name: "Projects", path: "/projects" },
   { name: "CV", path: "/cv" },
+  { name: "Projects", path: "/projects" },
+  { name: "Blog", path: "/blog" },
 ];
 
 const isCurrentRoute = (routePath) => {
