@@ -34,7 +34,7 @@
               >Human Computer Interaction (HCI)</span
             >,
             <span class="text-violet dark:text-tertiary"
-              >Artifical Intelligence</span
+              >Artificial Intelligence</span
             >,
             <span class="text-violet dark:text-tertiary"
               >Natural Language Processing (NLP)</span
