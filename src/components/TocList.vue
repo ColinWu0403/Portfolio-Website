@@ -1,13 +1,4 @@
 <!-- src/components/TocList.vue -->
-<script setup>
-defineProps({
-  tree: { type: Array, default: () => [] },
-  activeId: { type: String, default: "" },
-  isExpanded: { type: Function, required: true },
-});
-const emit = defineEmits(["jump", "toggle"]);
-</script>
-
 <template>
   <ul class="space-y-0.5">
     <li v-for="h in tree" :key="h.id">
@@ -57,3 +48,12 @@ const emit = defineEmits(["jump", "toggle"]);
     </li>
   </ul>
 </template>
+
+<script setup>
+defineProps({
+  tree: { type: Array, default: () => [] },
+  activeId: { type: String, default: "" },
+  isExpanded: { type: Function, required: true },
+});
+const emit = defineEmits(["jump", "toggle"]);
+</script>

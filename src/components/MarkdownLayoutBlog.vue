@@ -1,12 +1,4 @@
 <!-- src/components/MarkdownLayoutBlog.vue -->
-<script setup>
-import { formatDate } from "../utils/date";
-
-defineProps({
-  frontmatter: { type: Object, default: () => ({}) },
-});
-</script>
-
 <template>
   <article>
     <header class="mb-8">
@@ -28,3 +20,11 @@ defineProps({
     </div>
   </article>
 </template>
+
+<script setup>
+import { formatDate } from "../utils/date";
+
+defineProps({
+  frontmatter: { type: Object, default: () => ({}) },
+});
+</script>

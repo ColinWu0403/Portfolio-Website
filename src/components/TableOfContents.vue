@@ -1,61 +1,4 @@
 <!-- src/components/TableOfContents.vue -->
-<script setup>
-import { ref, computed, reactive, watch, onBeforeUnmount } from "vue";
-import TocList from "./TocList.vue";
-import { useMobileNav } from "../utils/useMobileNav";
-
-const props = defineProps({
-  headings: { type: Array, default: () => [] },
-  activeId: { type: String, default: "" },
-});
-const emit = defineEmits(["jump"]);
-
-const { isMobileNavOpen } = useMobileNav();
-
-const showToc = ref(true);
-const mobileOpen = ref(false);
-
-const tree = computed(() => {
-  const result = [];
-  let current = null;
-
-  for (const h of props.headings) {
-    if (h.level === 2) {
-      current = { ...h, children: [] };
-      result.push(current);
-    } else if (h.level === 3 && current) {
-      current.children.push(h);
-    } else {
-      result.push({ ...h, children: [] });
-      current = null;
-    }
-  }
-  return result;
-});
-
-const expanded = reactive({});
-function toggleSection(id) {
-  expanded[id] = !expanded[id];
-}
-function isExpanded(id) {
-  return expanded[id] === true;
-}
-
-// Mobile only: jumping to a section should also close the overlay
-function handleMobileJump(id) {
-  emit("jump", id);
-  mobileOpen.value = false;
-}
-
-// Prevent the page behind the full-screen overlay from scrolling while it's open
-watch(mobileOpen, (open) => {
-  document.body.style.overflow = open ? "hidden" : "";
-});
-onBeforeUnmount(() => {
-  document.body.style.overflow = "";
-});
-</script>
-
 <template>
   <!-- Desktop -->
   <div v-if="headings.length" class="hidden md:block text-sm">
@@ -132,3 +75,60 @@ onBeforeUnmount(() => {
     </div>
   </Teleport>
 </template>
+
+<script setup>
+import { ref, computed, reactive, watch, onBeforeUnmount } from "vue";
+import TocList from "./TocList.vue";
+import { useMobileNav } from "../utils/useMobileNav";
+
+const props = defineProps({
+  headings: { type: Array, default: () => [] },
+  activeId: { type: String, default: "" },
+});
+const emit = defineEmits(["jump"]);
+
+const { isMobileNavOpen } = useMobileNav();
+
+const showToc = ref(true);
+const mobileOpen = ref(false);
+
+const tree = computed(() => {
+  const result = [];
+  let current = null;
+
+  for (const h of props.headings) {
+    if (h.level === 2) {
+      current = { ...h, children: [] };
+      result.push(current);
+    } else if (h.level === 3 && current) {
+      current.children.push(h);
+    } else {
+      result.push({ ...h, children: [] });
+      current = null;
+    }
+  }
+  return result;
+});
+
+const expanded = reactive({});
+function toggleSection(id) {
+  expanded[id] = !expanded[id];
+}
+function isExpanded(id) {
+  return expanded[id] === true;
+}
+
+// Mobile only: jumping to a section should also close the overlay
+function handleMobileJump(id) {
+  emit("jump", id);
+  mobileOpen.value = false;
+}
+
+// Prevent the page behind the full-screen overlay from scrolling while it's open
+watch(mobileOpen, (open) => {
+  document.body.style.overflow = open ? "hidden" : "";
+});
+onBeforeUnmount(() => {
+  document.body.style.overflow = "";
+});
+</script>

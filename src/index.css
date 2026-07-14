@@ -25,7 +25,7 @@ body {
 
 :root {
   --divider-accent: #17ffc4;
-  --nav-link-color: #040112; /* your `primary` */
+  --nav-link-color: #040112;
   --nav-link-hover: #ffd627;
   --nav-link-active: #e80f58;
 }

@@ -1,3 +1,4 @@
+<!-- src/components/ExperienceCard.vue -->
 <template>
   <div class="experience-card flex flex-col mb-8 max-w-5xl">
     <!-- Job Title -->
