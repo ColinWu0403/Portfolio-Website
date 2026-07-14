@@ -64,7 +64,7 @@
       </a>
       <a
         target="_blank"
-        href="mailto:wu1886@purdue.edu"
+        href="mailto:colinwu@tamu.edu"
         class="text-slate hover:text-magenta dark:hover:text-secondary mx-4 text-3xl transition"
         aria-label="Send an email to me"
       >

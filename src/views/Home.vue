@@ -31,7 +31,7 @@
           <p>
             Some of my research interests include
             <span class="text-violet dark:text-tertiary"
-              >Human Computer Interaction (HCI)</span
+              >Human-Computer Interaction (HCI)</span
             >,
             <span class="text-violet dark:text-tertiary"
               >Artificial Intelligence</span

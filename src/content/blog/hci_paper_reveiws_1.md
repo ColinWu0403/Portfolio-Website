@@ -1,7 +1,7 @@
 ---
 title: "HCI Paper Reviews"
 description: "Random ramblings on papers I've read recently"
-date: 2026-07-03
+date: 2026-07-13
 ---
 
 This summer I'm trying to learn more about the fields of research I'm interested in. One field that I'm interested in is **HCI (Human Computer Interaction)**.
