@@ -86,6 +86,8 @@
 import { useRoute } from "vue-router";
 import { ref } from "vue";
 import ThemeToggle from "./ThemeToggle.vue";
+import { useMobileNav } from "../utils/useMobileNav";
+const { isMobileNavOpen: isMobileMenuOpen } = useMobileNav();
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -100,7 +102,7 @@ const isCurrentRoute = (routePath) => {
   return currentRoute.path === routePath;
 };
 
-const isMobileMenuOpen = ref(false);
+// const isMobileMenuOpen = ref(false);
 const toggleMobileMenu = () => {
   isMobileMenuOpen.value = !isMobileMenuOpen.value;
 };

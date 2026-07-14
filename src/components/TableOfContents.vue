@@ -2,6 +2,7 @@
 <script setup>
 import { ref, computed, reactive, watch, onBeforeUnmount } from "vue";
 import TocList from "./TocList.vue";
+import { useMobileNav } from "../utils/useMobileNav";
 
 const props = defineProps({
   headings: { type: Array, default: () => [] },
@@ -9,8 +10,10 @@ const props = defineProps({
 });
 const emit = defineEmits(["jump"]);
 
-const showToc = ref(true); // desktop hide/show
-const mobileOpen = ref(false); // mobile overlay — hidden by default
+const { isMobileNavOpen } = useMobileNav();
+
+const showToc = ref(true);
+const mobileOpen = ref(false);
 
 const tree = computed(() => {
   const result = [];
@@ -88,9 +91,9 @@ onBeforeUnmount(() => {
   <!-- Mobile -->
   <Teleport to="body">
     <button
-      v-if="headings.length"
+      v-if="headings.length && !isMobileNavOpen"
       @click="mobileOpen = true"
-      class="md:hidden fixed top-24 left-4 z-40 w-12 h-12 flex items-center justify-center rounded-full shadow-lg bg-white dark:bg-darker_slate border border-black/10 dark:border-white/10 text-primary dark:text-white hover:text-magenta dark:hover:text-tertiary transition"
+      class="md:hidden fixed top-16 right-4 z-40 w-12 h-12 flex items-center justify-center rounded-full shadow-lg bg-white dark:bg-darker_slate border border-black/10 dark:border-white/10 text-primary dark:text-white hover:text-magenta dark:hover:text-tertiary transition"
       aria-label="Open table of contents"
     >
       <i class="fas fa-list text-xl"></i>
@@ -104,7 +107,7 @@ onBeforeUnmount(() => {
         class="flex items-center justify-between px-6 py-5 border-b border-black/10 dark:border-white/10 sticky top-0 bg-white dark:bg-primary"
       >
         <p
-          class="font-bold uppercase tracking-wide text-xl text-primary dark:text-white"
+          class="font-bold uppercase tracking-wide text-2xl text-primary dark:text-white"
         >
           Contents
         </p>
@@ -117,7 +120,7 @@ onBeforeUnmount(() => {
         </button>
       </div>
 
-      <div class="px-6 py-4 text-md">
+      <div class="px-6 py-4 text-lg">
         <TocList
           :tree="tree"
           :activeId="activeId"
