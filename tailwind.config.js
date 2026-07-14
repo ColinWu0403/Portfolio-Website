@@ -67,6 +67,8 @@ module.exports = {
             // Link hover
             a: {
               transition: "color 0.2s ease",
+              overflowWrap: "break-word",
+              wordBreak: "break-word",
             },
             "a:hover": {
               color: "#4361EE",
@@ -118,6 +120,10 @@ module.exports = {
             ".footnote-backref:hover": {
               color: "#4361EE",
             },
+            ".footnotes a": {
+              overflowWrap: "break-word",
+              wordBreak: "break-word",
+            },
           },
         },
         invert: {
@@ -137,6 +143,11 @@ module.exports = {
             "--tw-prose-invert-pre-bg": "#161320",
             "--tw-prose-invert-pre-code": "#17ffc4",
 
+            a: {
+              transition: "color 0.2s ease",
+              overflowWrap: "break-word",
+              wordBreak: "break-word",
+            },
             "a:hover": {
               color: "#ffd627",
             },
@@ -177,6 +188,10 @@ module.exports = {
             },
             ".footnote-backref:hover": {
               color: "#ffd627",
+            },
+            ".footnotes a": {
+              overflowWrap: "break-word",
+              wordBreak: "break-word",
             },
           },
         },
