@@ -3,6 +3,8 @@
   <div class="max-w-8xl mx-auto px-6 md:px-12 py-10">
     <ProfileBanner />
     <NewsSection />
+    <AdvisorsSection />
+    <MiscSection />
   </div>
 </template>
 
@@ -11,6 +13,8 @@ import { useHead } from "@vueuse/head";
 import ProfileCard from "../components/ProfileCard.vue";
 import ProfileBanner from "../components/ProfileBanner.vue";
 import NewsSection from "../components/NewsSection.vue";
+import AdvisorsSection from "../components/AdvisorsSection.vue";
+import MiscSection from "../components/MiscSection.vue";
 
 useHead({
   meta: [

@@ -22,7 +22,7 @@
         </div>
 
         <div class="text-primary dark:text-white space-y-4 leading-relaxed">
-          <p>Whoops I gotta publish some stuff first :(</p>
+          <p>Coming soon...</p>
         </div>
 
         <!-- Optional: featured projects preview, pulling from your existing constants/projects.js -->
