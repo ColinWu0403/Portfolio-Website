@@ -1,14 +1,7 @@
 <!-- src/components/ProfileBanner.vue -->
-<script setup>
-import { ref } from "vue";
-
-const tamuLogo = ref(null);
-const purdueLogo = "../assets/purdue.svg";
-</script>
-
 <template>
   <div
-    class="w-full rounded-lg border border-black/10 dark:border-white/10 bg-blueish/3 dark:bg-darker_slate p-6 md:p-8"
+    class="w-full rounded-sm border border-black/10 dark:border-white/10 bg-blueish/3 dark:bg-darker_slate p-6 md:p-8"
   >
     <div
       class="flex flex-col md:flex-row md:items-center gap-8 md:ml-12 md:mr-12"
@@ -18,7 +11,7 @@ const purdueLogo = "../assets/purdue.svg";
         <h1
           class="font-semibold text-3xl md:text-4xl text-primary dark:text-white"
         >
-          Hi there, I'm
+          Hello There! I'm
           <span class="text-magenta dark:text-secondary">Colin Wu</span>
         </h1>
 
@@ -162,3 +155,10 @@ const purdueLogo = "../assets/purdue.svg";
     </div>
   </div>
 </template>
+
+<script setup>
+import { ref } from "vue";
+
+const tamuLogo = ref(null);
+const purdueLogo = "../assets/purdue.svg";
+</script>
