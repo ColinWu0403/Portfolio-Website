@@ -28,7 +28,7 @@ module.exports = {
         red: "#ff0000",
         purple: "#7900ff",
         "magenta-100": "#db195b",
-        gold: "#f7b612",
+        gold: "#CFB991",
         pastel_white: "#fefae0",
         white: "#ffffff",
         "white-100": "#f3f3f3",
