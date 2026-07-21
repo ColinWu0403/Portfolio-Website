@@ -108,7 +108,9 @@
             applications in Software Engineering and Healthcare.
           </p>
 
-          <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm">
+          <div
+            class="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm mt-4 md:mt-0"
+          >
             <a
               href="mailto:colinwu@tamu.edu"
               class="flex items-center gap-1.5 text-gray-600 dark:text-gray-400 hover:text-magenta dark:hover:text-tertiary transition"
