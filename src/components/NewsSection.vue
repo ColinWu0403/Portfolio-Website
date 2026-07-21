@@ -16,7 +16,7 @@
     </div>
 
     <div
-      class="rounded-sm border border-black/10 dark:border-white/10 bg-blueish/3 dark:bg-darker_slate p-6 md:p-8"
+      class="rounded-sm border border-black/10 dark:border-white/10 bg-blueish/3 dark:bg-white/5 p-6 md:p-8"
     >
       <div class="space-y-5">
         <div
