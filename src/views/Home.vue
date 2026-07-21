@@ -1,90 +1,14 @@
 <!-- src/views/Home.vue -->
 <template>
   <div class="max-w-8xl mx-auto px-6 md:px-12 py-10">
-    <div class="flex flex-col md:flex-row md:items-start gap-10 md:gap-12 mb-2">
-      <!-- Left profile card -->
-      <ProfileCard />
-
-      <!-- Right intro section -->
-      <div class="flex-1 min-w-0">
-        <!-- Header -->
-        <h1
-          class="mechsuit-font md:text-2xl text-2xl font-bold text-blueish dark:text-tertiary mb-5"
-        >
-          About
-        </h1>
-        <!-- <div class="relative mb-5">
-          <div class="divider-line-short"></div>
-          <div class="divider-line-long bottom-[5.5px]"></div>
-        </div> -->
-
-        <div class="text-primary dark:text-light space-y-4 leading-relaxed">
-          <p>
-            Hello! I'm a M.S. in Computer Science student at
-            <span class="text-magenta dark:text-secondary"
-              >Texas A&M University</span
-            >. Previously, I received my B.S. in Computer Science from
-            <span class="text-magenta dark:text-secondary"
-              >Purdue University</span
-            >.
-          </p>
-          <p>
-            Some of my research interests include
-            <span class="text-violet dark:text-tertiary"
-              >Human-Computer Interaction (HCI)</span
-            >,
-            <span class="text-violet dark:text-tertiary"
-              >Artificial Intelligence</span
-            >,
-            <span class="text-violet dark:text-tertiary"
-              >Natural Language Processing (NLP)</span
-            >,
-            <span class="text-violet dark:text-tertiary">Embedded Systems</span
-            >, and
-            <span class="text-violet dark:text-tertiary">Bioinformatics</span>
-            with applications of these fields in
-            <span class="text-lime dark:text-magenta"
-              >Software Engineering</span
-            >
-            and <span class="text-lime dark:text-magenta">Healthcare</span>.
-            <br />
-            I've previously worked with Prof.
-            <a
-              href="https://tianyi-zhang.github.io"
-              target="_blank"
-              class="text-magenta underline font-medium dark:text-secondary hover:text-blueish dark:hover:text-tertiary"
-              >Tianyi Zhang</a
-            >
-            at Human-Centered Software Systems Lab.
-          </p>
-          <p>
-            I'm passionate about creating innovative software and exploring new
-            technologies. I also enjoy listening to and producing music (under
-            the artist name
-            <router-link
-              to="/music"
-              class="text-magenta underline font-medium dark:text-secondary hover:text-blueish dark:hover:text-tertiary"
-              >Lyenz</router-link
-            >), playing table tennis, hiking, and watching movies in my free
-            time.
-          </p>
-        </div>
-
-        <!-- Optional: featured projects preview, pulling from your existing constants/projects.js -->
-        <!--
-        <div class="mt-10">
-          <h3 class="mechsuit-font text-xl text-tertiary mb-4">Featured Projects</h3>
-          ...
-        </div>
-        -->
-      </div>
-    </div>
+    <ProfileBanner />
   </div>
 </template>
 
 <script setup>
 import { useHead } from "@vueuse/head";
 import ProfileCard from "../components/ProfileCard.vue";
+import ProfileBanner from "../components/ProfileBanner.vue";
 
 useHead({
   meta: [
