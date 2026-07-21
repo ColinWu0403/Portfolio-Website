@@ -18,7 +18,8 @@ const people = [
       <p
         class="text-2xl font-bold text-primary dark:text-white whitespace-nowrap"
       >
-        Advisors &amp; Collaborators
+        <span class="md:hidden">Advisors</span>
+        <span class="hidden md:inline">Advisors &amp; Collaborators</span>
       </p>
       <div
         class="flex-1 h-px bg-black/20 dark:bg-white/20 translate-y-[3px]"
