@@ -6,7 +6,7 @@
     <!-- Section 1: photo + name -->
     <div class="flex flex-col items-center text-center">
       <img
-        src="../assets/oreo.jpg"
+        src="./oreo.jpg"
         alt="Colin Wu"
         class="w-48 h-48 rounded-full object-cover border-2 border-magenta dark:border-tertiary"
       />
