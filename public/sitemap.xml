@@ -1,0 +1,9 @@
+<!-- public/sitemap.xml -->
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://colinwu.net/</loc></url>
+  <url><loc>https://colinwu.net/research</loc></url>
+  <url><loc>https://colinwu.net/projects</loc></url>
+  <url><loc>https://colinwu.net/blog</loc></url>
+  <url><loc>https://colinwu.net/cv</loc></url>
+</urlset>

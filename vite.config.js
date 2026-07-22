@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import Pages from "vite-plugin-pages";
 import Markdown from "unplugin-vue-markdown/vite";
-import Sitemap from "vite-plugin-sitemap";
+// import Sitemap from "vite-plugin-sitemap";
 import footnote from "markdown-it-footnote";
 import anchor from "markdown-it-anchor";
 
@@ -30,19 +30,19 @@ export default defineConfig({
         });
       },
     }),
-    Sitemap({
-      siteUrl: "https://colinwu.net",
-      changefreq: "daily",
-      priority: 0.7,
-      generateIndexSitemap: true,
-      additionalPaths: async (config) => [
-        { loc: "/", lastmod: new Date() },
-        { loc: "/about", lastmod: new Date() },
-        { loc: "/projects", lastmod: new Date() },
-        { loc: "/experience", lastmod: new Date() },
-        { loc: "/music", lastmod: new Date() },
-      ],
-    }),
+    // Sitemap({
+    //   siteUrl: "https://colinwu.net",
+    //   changefreq: "daily",
+    //   priority: 0.7,
+    //   generateIndexSitemap: true,
+    //   additionalPaths: async (config) => [
+    //     { loc: "/", lastmod: new Date() },
+    //     { loc: "/about", lastmod: new Date() },
+    //     { loc: "/projects", lastmod: new Date() },
+    //     { loc: "/experience", lastmod: new Date() },
+    //     { loc: "/music", lastmod: new Date() },
+    //   ],
+    // }),
   ],
   server: {
     allowedHosts: true,

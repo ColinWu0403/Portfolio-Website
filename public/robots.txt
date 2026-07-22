@@ -1,5 +1,5 @@
 User-agent: *
-Disallow: /admin/
+Disallow: /admin/ /blog/
 Allow: /
 
 Sitemap: https://www.colinwu.net/sitemap.xml
