@@ -7,7 +7,7 @@
         to="/"
         class="mechsuit-font text-xl md:text-2xl text-magenta dark:text-tertiary tracking-wide"
       >
-        COLIN WU
+        <GlitchText text="COLIN WU" />
       </router-link>
 
       <!-- Mobile controls: theme toggle + menu icon, side by side -->
@@ -92,6 +92,7 @@
 import { useRoute } from "vue-router";
 import { ref } from "vue";
 import ThemeToggle from "./ThemeToggle.vue";
+import GlitchText from "./GlitchText.vue";
 import { useMobileNav } from "../utils/useMobileNav";
 const { isMobileNavOpen: isMobileMenuOpen } = useMobileNav();
 
