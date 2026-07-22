@@ -9,7 +9,7 @@
           | Check out the code for my website
           <a
             target="_blank"
-            class="text-primary font-medium dark:text-white hover:text-magenta dark:hover:text-secondary"
+            class="text-primary link-underline font-medium dark:text-white hover:text-magenta dark:hover:text-secondary"
             href="https://github.com/ColinWu0403/Portfolio-Website"
             aria-label="Source Code for this website"
             >here</a
@@ -21,7 +21,7 @@
         Check out the code for my website
         <a
           target="_blank"
-          class="text-primary font-medium dark:text-white hover:text-magenta dark:hover:text-secondary"
+          class="text-primary link-underline font-medium dark:text-white hover:text-magenta dark:hover:text-secondary"
           href="https://github.com/ColinWu0403/Portfolio-Website"
           aria-label="Source Code for this website"
           >here</a
@@ -107,9 +107,6 @@ footer {
 
 a {
   text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
 }
 
 @media (max-width: 768px) {

@@ -43,7 +43,7 @@ const people = [
           class="w-2 h-2 rounded-full flex-shrink-0 bg-blueish dark:bg-secondary"
         ></span>
         <span
-          class="font-semibold text-primary dark:text-white group-hover:text-magenta dark:group-hover:text-tertiary transition"
+          class="font-semibold text-primary link-underline dark:text-white group-hover:text-magenta dark:group-hover:text-tertiary transition"
         >
           {{ person.name }}
         </span>

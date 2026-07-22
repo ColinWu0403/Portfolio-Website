@@ -3,7 +3,7 @@
   <div class="max-w-7xl mx-auto px-6 md:px-12 py-6">
     <router-link
       to="/blog"
-      class="text-blueish dark:text-secondary hover:text-magenta dark:hover:text-tertiary text-md"
+      class="text-blueish link-underline dark:text-secondary hover:text-magenta dark:hover:text-tertiary text-md"
     >
       &larr; Back to Blog
     </router-link>
@@ -42,7 +42,7 @@
 
     <router-link
       to="/blog"
-      class="text-blueish dark:text-secondary hover:text-magenta dark:hover:text-tertiary text-md"
+      class="text-blueish link-underline dark:text-secondary hover:text-magenta dark:hover:text-tertiary text-md"
     >
       &larr; Back to Blog
     </router-link>

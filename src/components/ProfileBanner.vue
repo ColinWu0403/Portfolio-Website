@@ -12,7 +12,7 @@
           class="font-semibold text-3xl md:text-4xl text-primary dark:text-white"
         >
           Hello There! I'm
-          <span class="text-magenta dark:text-secondary">Colin Wu</span>
+          <span class="text-magenta dark:text-tertiary">Colin Wu</span>
         </h1>
 
         <div
@@ -113,7 +113,7 @@
           >
             <a
               href="mailto:colinwu@tamu.edu"
-              class="flex items-center gap-1.5 text-gray-600 dark:text-gray-400 hover:text-magenta dark:hover:text-tertiary transition"
+              class="flex items-center link-underline gap-1.5 text-gray-600 dark:text-gray-400 hover:text-magenta dark:hover:text-tertiary transition"
             >
               <i class="fas fa-envelope"></i> Email
             </a>
@@ -121,22 +121,22 @@
             <a
               href="https://www.linkedin.com/in/colinwu0403/"
               target="_blank"
-              class="flex items-center gap-1.5 text-gray-600 dark:text-gray-400 hover:text-magenta dark:hover:text-tertiary transition"
+              class="flex items-center link-underline gap-1.5 text-gray-600 dark:text-gray-400 hover:text-magenta dark:hover:text-tertiary transition"
             >
-              <i class="fab fa-linkedin"></i> Linkedin
+              <i class="fab fa-linkedin"></i> LinkedIn
             </a>
             <span class="text-gray-300 dark:text-gray-700">/</span>
             <a
               href="https://github.com/ColinWu0403/"
               target="_blank"
-              class="flex items-center gap-1.5 text-gray-600 dark:text-gray-400 hover:text-magenta dark:hover:text-tertiary transition"
+              class="flex items-center link-underline gap-1.5 text-gray-600 dark:text-gray-400 hover:text-magenta dark:hover:text-tertiary transition"
             >
               <i class="fab fa-github"></i> GitHub
             </a>
             <span class="text-gray-300 dark:text-gray-700">/</span>
             <router-link
               to="/cv"
-              class="flex items-center gap-1.5 text-gray-600 dark:text-gray-400 hover:text-magenta dark:hover:text-tertiary transition"
+              class="flex items-center link-underline gap-1.5 text-gray-600 dark:text-gray-400 hover:text-magenta dark:hover:text-tertiary transition"
             >
               <i class="fas fa-file-lines"></i> CV
             </router-link>

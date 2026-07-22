@@ -41,8 +41,12 @@
           v-for="(link, idx) in navLinks"
           :key="idx"
           :to="link.path"
-          class="nav-link relative text-lg pb-1"
-          :class="{ 'nav-link-active': isCurrentRoute(link.path) }"
+          class="nav-link relative text-lg pb-1 link-underline"
+          :class="{
+            'nav-link-active text-magenta dark:text-secondary': isCurrentRoute(
+              link.path,
+            ),
+          }"
         >
           {{ link.name }}
         </router-link>
@@ -71,9 +75,11 @@
           v-for="(link, idx) in navLinks"
           :key="idx"
           :to="link.path"
-          class="w-full py-4 text-xl nav-link relative border-b border-black/10 dark:border-white/10"
+          class="w-full py-4 text-xl nav-link link-underline relative border-b border-black/10 dark:border-white/10"
           @click="toggleMobileMenu"
-          :class="{ 'nav-link-active': isCurrentRoute(link.path) }"
+          :class="{
+            'nav-link-active': isCurrentRoute(link.path),
+          }"
         >
           {{ link.name }}
         </router-link>
@@ -121,6 +127,6 @@ const toggleMobileMenu = () => {
 .nav-link-active {
   font-weight: bold;
   color: var(--nav-link-active);
-  border-bottom: 2px solid var(--nav-link-active);
+  /* border-bottom: 2px solid var(--nav-link-active); */
 }
 </style>

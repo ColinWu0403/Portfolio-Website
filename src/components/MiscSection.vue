@@ -3,11 +3,11 @@
 const items = [
   {
     emoji: "🎵",
-    html: 'I love music! I play the piano and produce music, this is <a href="https://soundcloud.com/lyenzmusic" target="_blank" class="text-blueish dark:text-secondary hover:text-magenta dark:hover:text-tertiary hover:underline transition">my SoundCloud</a>.',
+    html: 'I love music! I play the piano and produce music, this is <a href="https://soundcloud.com/lyenzmusic" target="_blank" class="text-blueish link-underline dark:text-secondary hover:text-magenta dark:hover:text-tertiary transition">my SoundCloud</a>.',
   },
   {
     emoji: "📝",
-    html: 'I write on my <a href="/blog" target="_blank" class="text-blueish dark:text-secondary hover:text-magenta dark:hover:text-tertiary hover:underline transition">blog</a>.',
+    html: 'I write on my <a href="/blog" target="_blank" class="text-blueish link-underline dark:text-secondary hover:text-magenta dark:hover:text-tertiary transition">blog</a>.',
   },
   {
     emoji: "🏃",
