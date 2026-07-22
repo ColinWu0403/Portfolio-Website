@@ -5,7 +5,7 @@
       <!-- Logo / name, doubles as Home link -->
       <router-link
         to="/"
-        class="mechsuit-font text-xl md:text-2xl text-magenta dark:text-tertiary tracking-wide"
+        class="mechsuit-font hover:cursor-pointer text-xl md:text-2xl text-magenta dark:text-tertiary tracking-wide"
       >
         <GlitchText text="COLIN WU" />
       </router-link>
