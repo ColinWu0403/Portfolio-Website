@@ -1,7 +1,7 @@
 <!-- src/components/ProjectCard.vue -->
 <template>
   <div
-    class="flex flex-col bg-blueish/5 dark:bg-darker_slate text-white p-5 rounded-lg shadow-md border border-white/5"
+    class="flex flex-col bg-blueish/5 dark:bg-darker_slate text-white p-5 rounded-sm shadow-md border border-white/5"
   >
     <h2 class="text-xl font-bold text-primary dark:text-white mb-2">
       {{ title }}

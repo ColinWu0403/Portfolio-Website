@@ -13,7 +13,7 @@
         v-for="post in posts"
         :key="post.slug"
         :to="`/blog/${post.slug}`"
-        class="block border border-magenta/30 dark:border-secondary/30 rounded-lg px-5 py-3 hover:border-magenta/90 dark:hover:border-secondary/50 hover:bg-pink/10 dark:hover:bg-white/5 transition"
+        class="block border border-magenta/30 dark:border-secondary/30 rounded-sm px-5 py-3 hover:border-magenta/90 dark:hover:border-secondary/50 hover:bg-pink/10 dark:hover:bg-white/5 transition"
       >
         <h2 class="text-xl font-bold text-primary dark:text-white">
           {{ post.title }}

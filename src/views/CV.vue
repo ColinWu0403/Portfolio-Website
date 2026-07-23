@@ -9,7 +9,7 @@
 
       <!-- Right section -->
       <div class="flex-1 min-w-0">
-        <div class="rounded-lg overflow-hidden bg-white">
+        <div class="rounded-sm overflow-hidden bg-white">
           <!-- PDF preview -->
           <iframe
             src="./ChiCheColinWuResume.pdf#toolbar=1&navpanes=0&zoom=page-width"
@@ -24,14 +24,14 @@
             <a
               :href="resumePath"
               download="ChiCheColinWuResume.pdf"
-              class="items-center gap-3 px-8 py-2 rounded-md bg-blueish/10 dark:bg-tertiary/10 hover:bg-magenta/10 dark:hover:bg-secondary/10 text-blueish hover:text-magenta dark:text-tertiary dark:hover:text-secondary text-md font-semibold hover:underline transition text-center"
+              class="items-center gap-3 px-8 py-2 rounded-sm bg-blueish/10 dark:bg-tertiary/10 hover:bg-magenta/10 dark:hover:bg-secondary/10 text-blueish hover:text-magenta dark:text-tertiary dark:hover:text-secondary text-md font-semibold transition text-center"
             >
               Download CV
             </a>
             <a
               :href="resumePath"
               target="_blank"
-              class="text-blueish hover:text-magenta dark:text-tertiary dark:hover:text-secondary text-md font-semibold hover:underline flex items-center justify-center gap-1 transition"
+              class="text-blueish hover:text-magenta dark:text-tertiary dark:hover:text-secondary text-md font-semibold link-underline flex items-center justify-center gap-1 transition"
             >
               Open in new tab
               <i class="fas fa-arrow-up-right-from-square text-xs"></i>

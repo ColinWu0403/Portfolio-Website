@@ -1,7 +1,7 @@
 <!-- src/components/ProfileCard.vue -->
 <template>
   <aside
-    class="w-full md:w-72 flex-shrink-0 border border-blueish dark:border-secondary rounded-lg bg-blueish/5 dark:bg-primary p-6"
+    class="w-full md:w-72 flex-shrink-0 border border-blueish dark:border-secondary rounded-sm bg-blueish/5 dark:bg-primary p-6"
   >
     <!-- Section 1: photo + name -->
     <div class="flex flex-col items-center text-center">
