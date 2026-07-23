@@ -1,6 +1,13 @@
 <!-- src/components/NameEyeReveal.vue -->
 <script setup>
-import { ref, reactive, onBeforeUnmount, nextTick } from "vue";
+import {
+  ref,
+  reactive,
+  computed,
+  onMounted,
+  onBeforeUnmount,
+  nextTick,
+} from "vue";
 
 const props = defineProps({
   name: { type: String, required: true },
@@ -21,7 +28,17 @@ const chars = ref([...originalChars]);
 const pulsing = reactive(new Array(length).fill(false));
 const isAnimating = ref(false);
 
-// Tooltip state
+const revealedCount = ref(0);
+const initialTypeDone = ref(false);
+
+// Only this computed list controls what actually renders — no v-for/v-if
+// priority ambiguity, since the template just loops over indices that
+// are already guaranteed visible.
+const visibleIndices = computed(() => {
+  const count = initialTypeDone.value ? length : revealedCount.value;
+  return Array.from({ length: count }, (_, i) => i);
+});
+
 const showTooltip = ref(false);
 const tooltipX = ref(0);
 const tooltipY = ref(0);
@@ -29,12 +46,14 @@ const TOOLTIP_OFFSET_X = 14;
 const TOOLTIP_OFFSET_Y = 18;
 
 function handleMouseEnter(e) {
+  if (!initialTypeDone.value) return;
   showTooltip.value = true;
   tooltipX.value = e.clientX + TOOLTIP_OFFSET_X;
   tooltipY.value = e.clientY + TOOLTIP_OFFSET_Y;
   runAnimation();
 }
 function handleMouseMove(e) {
+  if (!showTooltip.value) return;
   tooltipX.value = e.clientX + TOOLTIP_OFFSET_X;
   tooltipY.value = e.clientY + TOOLTIP_OFFSET_Y;
 }
@@ -59,6 +78,37 @@ function setChar(i, ch) {
     pulsing[i] = true;
     schedule(() => (pulsing[i] = false), 140);
   });
+}
+
+function typeInName() {
+  const STEP = 90;
+  const start = performance.now();
+  let lastRevealed = 0;
+
+  function tick(now) {
+    const elapsed = now - start;
+    const shouldBeRevealed = Math.min(Math.floor(elapsed / STEP) + 1, length);
+
+    if (shouldBeRevealed > lastRevealed) {
+      for (let i = lastRevealed; i < shouldBeRevealed; i++) {
+        revealedCount.value = i + 1;
+        pulsing[i] = false;
+        nextTick(() => {
+          pulsing[i] = true;
+          schedule(() => (pulsing[i] = false), 140);
+        });
+      }
+      lastRevealed = shouldBeRevealed;
+    }
+
+    if (lastRevealed < length) {
+      requestAnimationFrame(tick);
+    } else {
+      initialTypeDone.value = true;
+    }
+  }
+
+  requestAnimationFrame(tick);
 }
 
 function buildEyeTarget() {
@@ -149,6 +199,13 @@ function runAnimation() {
   schedule(() => (isAnimating.value = false), t + 50);
 }
 
+onMounted(() => {
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(typeInName);
+  } else {
+    typeInName(); // fallback for older browsers without the Font Loading API
+  }
+});
 onBeforeUnmount(clearAllTimeouts);
 </script>
 
@@ -160,15 +217,15 @@ onBeforeUnmount(clearAllTimeouts);
     @mousemove="handleMouseMove"
     @mouseleave="handleMouseLeave"
     class="inline-flex justify-center leading-none align-baseline text-magenta dark:text-tertiary"
-    :style="{ width: `${length * 0.62}em` }"
+    :style="initialTypeDone ? { width: `${length * 0.62}em` } : {}"
   >
     <span aria-hidden="true" class="font-mono leading-none inline-flex">
       <span
-        v-for="(c, i) in chars"
+        v-for="i in visibleIndices"
         :key="i"
         class="char inline-block text-center align-baseline"
         :class="{ pulse: pulsing[i], collapsed: isCollapsed(i) }"
-        >{{ c }}</span
+        >{{ chars[i] }}</span
       >
     </span>
   </router-link>
