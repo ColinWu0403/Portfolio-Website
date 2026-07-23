@@ -15,14 +15,15 @@ const featured = projects.filter((p) => p.featured);
       <p
         class="text-2xl font-bold text-primary dark:text-white whitespace-nowrap"
       >
-        Featured Projects
+        <span class="md:hidden">Projects</span>
+        <span class="hidden md:inline">Featured Projects</span>
       </p>
       <div
         class="flex-1 h-px bg-black/20 dark:bg-white/20 translate-y-[3px]"
       ></div>
       <router-link
         to="/projects"
-        class="flex items-center gap-1.5 link-underline text-sm font-semibold text-blueish dark:text-secondary hover:text-magenta dark:hover:text-tertiary whitespace-nowrap transition"
+        class="flex items-center gap-1.5 link-underline text-sm translate-y-[2px] font-semibold text-blueish dark:text-secondary hover:text-magenta dark:hover:text-tertiary whitespace-nowrap transition"
       >
         View all projects
         <i class="fas fa-chevron-right text-xs"></i>
