@@ -8,6 +8,9 @@ module.exports = {
   plugins: [require("@tailwindcss/typography")],
   theme: {
     extend: {
+      fontFamily: {
+        mono: ['"IBM Plex Mono"', "monospace"],
+      },
       colors: {
         primary: "#040112",
         light: "#FFFAFE",
