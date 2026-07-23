@@ -4,6 +4,7 @@
     <ProfileBanner />
     <NewsSection />
     <SkillsSection />
+    <ProjectSection />
     <AdvisorsSection />
     <MiscSection />
   </div>
@@ -17,6 +18,7 @@ import NewsSection from "../components/NewsSection.vue";
 import AdvisorsSection from "../components/AdvisorsSection.vue";
 import MiscSection from "../components/MiscSection.vue";
 import SkillsSection from "../components/SkillsSection.vue";
+import ProjectSection from "../components/ProjectSection.vue";
 
 useHead({
   meta: [

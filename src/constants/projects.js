@@ -28,6 +28,7 @@ export const projects = [
     githubLink:
       "https://github.com/ColinWu0403/Probing_Correctness_Across_Languages",
     demoLink: "LLMCorrectnessProbes.pdf",
+    featured: true,
   },
   {
     title: "BoilerBuzz",
@@ -49,15 +50,16 @@ export const projects = [
       "AI-Powered Stock Market Analysis Platform leveraging pre-trained BERT models for sentiment analysis on Reddit posts on r/wallstreetbets and financial news, integrating real market data to assess stock hype and risk.",
     technologies: [
       { name: "FastAPI", color: "tertiary" },
-      { name: "React", color: "light_blue" },
+      { name: "Transformers", color: "orange" },
       { name: "MongoDB", color: "secondary" },
       { name: "Selenium", color: "lime" },
       { name: "Next.js", color: "blueish" },
-      { name: "Auth0", color: "orange" },
+      { name: "Auth0", color: "magenta" },
     ],
     githubLink: "https://github.com/ColinWu0403/StonkSensei",
     demoLink: "https://github.com/ColinWu0403/StonkSensei",
     imageSrc: "./stonks.png",
+    featured: true,
   },
   {
     dateRange: "Sep 2024 - Present",
@@ -153,6 +155,7 @@ export const projects = [
     githubLink: "https://github.com/ColinWu0403/ECG_AFIB",
     demoLink: "https://github.com/ColinWu0403/ECG_AFIB",
     imageSrc: "./ecg_afib.png",
+    featured: true,
   },
   {
     dateRange: "Jan 2024 - June 2024",
