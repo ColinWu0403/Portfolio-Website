@@ -148,18 +148,18 @@
       <div
         class="flex justify-center md:justify-end flex-shrink-0 order-1 md:order-2"
       >
-        <div @mouseenter="sortRef.sortDown()" @mouseleave="sortRef.restoreUp()">
+        <!-- <div @mouseenter="sortRef.sortDown()" @mouseleave="sortRef.restoreUp()">
           <PixelSortImage
             ref="sortRef"
             src="./oreo.jpg"
             class="w-44 h-44 md:w-52 md:h-52 rounded-full hover:cursor-crosshair object-cover border-2 border-magenta/30 dark:border-secondary/30"
           />
-        </div>
-        <!-- <img
+        </div> -->
+        <img
           src="../assets/oreo.jpg"
           alt="Colin Wu"
           class="w-44 h-44 md:w-52 md:h-52 rounded-full object-cover border-2 border-magenta/30 dark:border-secondary/30"
-        /> -->
+        />
       </div>
     </div>
   </div>
