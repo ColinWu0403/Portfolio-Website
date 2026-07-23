@@ -62,7 +62,7 @@
       <div class="flex items-center justify-between pt-5">
         <router-link
           to="/"
-          class="mechsuit-font text-xl text-magenta dark:text-tertiary tracking-wide"
+          class="mechsuit-font hover:cursor-pointer text-xl text-magenta dark:text-tertiary tracking-wide"
           @click="toggleMobileMenu"
         >
           COLIN WU

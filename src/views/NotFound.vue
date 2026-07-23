@@ -2,15 +2,23 @@
 <template>
   <div class="mx-auto">
     <div
-      class="flex flex-col max-h-screen mt-16 align-center items-center justify-center"
+      class="flex flex-col max-h-screen mt-4 md:mt-8 align-center items-center justify-center"
     >
-      <h1 class="text-center text-4xl text-secondary mt-24 mb-24">
-        Page Not Found
+      <h1
+        class="mechsuit-font text-center text-8xl md:text-10xl text-blueish dark:text-purple mt-24 mb-8"
+      >
+        404
       </h1>
+      <h2
+        to="/"
+        class="text-xl md:text-2xl text-purple dark:text-lime tracking-wide mb-16"
+      >
+        <GlitchText text="PAGE NOT FOUND" />
+      </h2>
       <router-link
         to="/"
-        class="text-center text-3xl text-tertiary hover:text-magenta hover:underline"
-        >Back to Home</router-link
+        class="text-center link-underline text-xl hover:cursor-pointer text-magenta hover:text-violet dark:text-tertiary dark:hover:text-secondary"
+        >Back To Home</router-link
       >
     </div>
   </div>
@@ -18,6 +26,7 @@
 
 <script setup>
 import { useHead } from "@vueuse/head";
+import GlitchText from "../components/GlitchText.vue";
 
 useHead({
   meta: [

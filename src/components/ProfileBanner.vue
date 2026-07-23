@@ -12,7 +12,9 @@
           class="font-semibold text-3xl md:text-4xl text-primary dark:text-white"
         >
           Hello There! I'm
-          <span class="text-magenta dark:text-tertiary">Colin Wu</span>
+          <router-link to="/about" class="text-magenta dark:text-tertiary">
+            Colin Wu</router-link
+          >
         </h1>
 
         <div

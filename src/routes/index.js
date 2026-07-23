@@ -72,6 +72,14 @@ const routes = [
     component: BlogPost,
     meta: { title: "Blog" }, // gets overridden per-post by useHead above
   },
+  {
+    path: "/about",
+    name: "About",
+    component: NotFound,
+    meta: {
+      title: "About Me",
+    },
+  },
   // {
   //   path: "/other",
   //   name: "Other",
