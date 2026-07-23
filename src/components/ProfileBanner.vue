@@ -15,11 +15,13 @@
           <!-- <router-link to="/about" class="text-magenta dark:text-tertiary">
             Colin Wu</router-link
           > -->
-          <NameEyeReveal
-            name="Colin Wu"
-            to="/about"
-            class="text-magenta dark:text-secondary hover:opacity-80 transition"
-          />
+          <span class="cursor-pointer">
+            <NameEyeReveal
+              name="Colin Wu"
+              to="/about"
+              class="text-magenta dark:text-secondary hover:opacity-80 transition"
+            />
+          </span>
         </h1>
 
         <div

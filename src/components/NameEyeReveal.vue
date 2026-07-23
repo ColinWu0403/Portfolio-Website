@@ -12,9 +12,6 @@ const length = originalChars.length;
 const half = Math.floor(length / 2);
 const pupilIndex = half;
 
-// Every "filler dash" position between the ( ) brackets and the pupil —
-// collapsing all of these (not just one) is what tightens the shape
-// down to <(0)> instead of <(-0-)>, regardless of name length/parity.
 const fillerIndices = new Set();
 for (let i = 2; i <= length - 3; i++) {
   if (i !== pupilIndex) fillerIndices.add(i);
@@ -23,6 +20,27 @@ for (let i = 2; i <= length - 3; i++) {
 const chars = ref([...originalChars]);
 const pulsing = reactive(new Array(length).fill(false));
 const isAnimating = ref(false);
+
+// Tooltip state
+const showTooltip = ref(false);
+const tooltipX = ref(0);
+const tooltipY = ref(0);
+const TOOLTIP_OFFSET_X = 14;
+const TOOLTIP_OFFSET_Y = 18;
+
+function handleMouseEnter(e) {
+  showTooltip.value = true;
+  tooltipX.value = e.clientX + TOOLTIP_OFFSET_X;
+  tooltipY.value = e.clientY + TOOLTIP_OFFSET_Y;
+  runAnimation();
+}
+function handleMouseMove(e) {
+  tooltipX.value = e.clientX + TOOLTIP_OFFSET_X;
+  tooltipY.value = e.clientY + TOOLTIP_OFFSET_Y;
+}
+function handleMouseLeave() {
+  showTooltip.value = false;
+}
 
 let timeouts = [];
 function schedule(fn, delay) {
@@ -138,8 +156,10 @@ onBeforeUnmount(clearAllTimeouts);
   <router-link
     :to="to"
     :aria-label="name"
-    @mouseenter="runAnimation"
-    class="inline-flex justify-center leading-none align-baseline"
+    @mouseenter="handleMouseEnter"
+    @mousemove="handleMouseMove"
+    @mouseleave="handleMouseLeave"
+    class="inline-flex justify-center leading-none align-baseline text-magenta dark:text-tertiary"
     :style="{ width: `${length * 0.62}em` }"
   >
     <span aria-hidden="true" class="font-mono leading-none inline-flex">
@@ -152,6 +172,16 @@ onBeforeUnmount(clearAllTimeouts);
       >
     </span>
   </router-link>
+
+  <Teleport to="body">
+    <div
+      v-if="showTooltip"
+      class="fixed z-50 pointer-events-none px-3 py-1 rounded-sm border border-magenta/60 dark:border-tertiary/60 bg-light dark:bg-darker_slate text-xs font-semibold text-magenta dark:text-tertiary shadow-md whitespace-nowrap transition-opacity duration-150"
+      :style="{ left: `${tooltipX}px`, top: `${tooltipY}px` }"
+    >
+      About Me
+    </div>
+  </Teleport>
 </template>
 
 <style scoped>
