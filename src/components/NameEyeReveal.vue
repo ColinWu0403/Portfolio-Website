@@ -31,9 +31,6 @@ const isAnimating = ref(false);
 const revealedCount = ref(0);
 const initialTypeDone = ref(false);
 
-// Only this computed list controls what actually renders — no v-for/v-if
-// priority ambiguity, since the template just loops over indices that
-// are already guaranteed visible.
 const visibleIndices = computed(() => {
   const count = initialTypeDone.value ? length : revealedCount.value;
   return Array.from({ length: count }, (_, i) => i);
@@ -80,6 +77,7 @@ function setChar(i, ch) {
   });
 }
 
+// onMounted typing effect
 function typeInName() {
   const STEP = 90;
   const start = performance.now();
@@ -111,6 +109,7 @@ function typeInName() {
   requestAnimationFrame(tick);
 }
 
+// turn name into the eye
 function buildEyeTarget() {
   const arr = new Array(length).fill("-");
   for (let i = 0; i < half; i++) {
@@ -134,6 +133,7 @@ function isCollapsed(i) {
   return fillerIndices.has(i) && chars.value[i] !== originalChars[i];
 }
 
+// run eye blink animation
 function runAnimation() {
   if (isAnimating.value) return;
   isAnimating.value = true;
@@ -141,10 +141,15 @@ function runAnimation() {
 
   const eyeTarget = buildEyeTarget();
 
+  // Positions of the "iris" brackets
+  const irisLeft = 1;
+  const irisRight = length - 2;
+
   const STEP_DISSOLVE = 30;
   const STEP_FORM = 100;
   let t = 0;
 
+  // ── Phase 1: name dissolves to blank, outside-in ──
   for (let p = 0; p < half; p++) {
     schedule(() => {
       setChar(p, "\u00A0");
@@ -157,8 +162,9 @@ function runAnimation() {
     t += STEP_DISSOLVE;
   }
 
-  t += 80;
+  t += 80; // brief pause, fully blank
 
+  // ── Phase 2: eye forms outside-in — sides, then brackets, then pupil ──
   for (let p = 0; p < half; p++) {
     schedule(() => {
       setChar(p, eyeTarget[p]);
@@ -169,15 +175,26 @@ function runAnimation() {
   schedule(() => setChar(pupilIndex, eyeTarget[pupilIndex]), t);
   t += STEP_FORM;
 
-  t += 350;
+  t += 350; // hold, fully formed eye
 
-  schedule(() => setChar(pupilIndex, "-"), t);
+  // ── Phase 3: blink — iris brackets + pupil flatten to "-", outer < > stay ──
+  schedule(() => {
+    setChar(irisLeft, "-");
+    setChar(pupilIndex, "-");
+    setChar(irisRight, "-");
+  }, t);
   t += 150;
-  schedule(() => setChar(pupilIndex, eyeTarget[pupilIndex]), t);
+
+  schedule(() => {
+    setChar(irisLeft, eyeTarget[irisLeft]);
+    setChar(pupilIndex, eyeTarget[pupilIndex]);
+    setChar(irisRight, eyeTarget[irisRight]);
+  }, t);
   t += 150;
 
-  t += 250;
+  t += 250; // hold, eye reopened
 
+  // ── Phase 4: eye dissolves from the pupil outward ──
   schedule(() => setChar(pupilIndex, "\u00A0"), t);
   t += STEP_FORM;
 
@@ -189,8 +206,9 @@ function runAnimation() {
     t += STEP_FORM;
   }
 
-  t += 80;
+  t += 80; // brief pause, fully blank again
 
+  // ── Phase 5: name reappears left-to-right ──
   for (let i = 0; i < length; i++) {
     schedule(() => setChar(i, originalChars[i]), t);
     t += 45;
