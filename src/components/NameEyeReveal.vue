@@ -11,9 +11,14 @@ const originalChars = props.name.split("");
 const length = originalChars.length;
 const half = Math.floor(length / 2);
 const pupilIndex = half;
-// Only relevant for even-length names — this slot collapses to zero width
-// whenever it's not showing the real letter, tightening <(--O-)> into <(-0-)>
-const collapseIndex = length % 2 === 0 ? half - 1 : null;
+
+// Every "filler dash" position between the ( ) brackets and the pupil —
+// collapsing all of these (not just one) is what tightens the shape
+// down to <(0)> instead of <(-0-)>, regardless of name length/parity.
+const fillerIndices = new Set();
+for (let i = 2; i <= length - 3; i++) {
+  if (i !== pupilIndex) fillerIndices.add(i);
+}
 
 const chars = ref([...originalChars]);
 const pulsing = reactive(new Array(length).fill(false));
@@ -58,7 +63,7 @@ function buildEyeTarget() {
 }
 
 function isCollapsed(i) {
-  return i === collapseIndex && chars.value[i] !== originalChars[i];
+  return fillerIndices.has(i) && chars.value[i] !== originalChars[i];
 }
 
 function runAnimation() {
@@ -72,7 +77,6 @@ function runAnimation() {
   const STEP_FORM = 100;
   let t = 0;
 
-  // Phase 1: name dissolves to blank, outside-in ripple
   for (let p = 0; p < half; p++) {
     schedule(() => {
       setChar(p, "\u00A0");
@@ -87,7 +91,6 @@ function runAnimation() {
 
   t += 80;
 
-  // Phase 2: eye forms outside-in — sides, then brackets, then pupil
   for (let p = 0; p < half; p++) {
     schedule(() => {
       setChar(p, eyeTarget[p]);
@@ -98,17 +101,15 @@ function runAnimation() {
   schedule(() => setChar(pupilIndex, eyeTarget[pupilIndex]), t);
   t += STEP_FORM;
 
-  t += 350; // hold, fully formed
+  t += 350;
 
-  // Phase 3: blink — only the pupil toggles, brackets stay put
   schedule(() => setChar(pupilIndex, "-"), t);
   t += 150;
   schedule(() => setChar(pupilIndex, eyeTarget[pupilIndex]), t);
   t += 150;
 
-  t += 250; // hold, reopened
+  t += 250;
 
-  // Phase 4: eye dissolves from the pupil outward
   schedule(() => setChar(pupilIndex, "\u00A0"), t);
   t += STEP_FORM;
 
@@ -122,7 +123,6 @@ function runAnimation() {
 
   t += 80;
 
-  // Phase 5: name reappears left-to-right
   for (let i = 0; i < length; i++) {
     schedule(() => setChar(i, originalChars[i]), t);
     t += 45;
@@ -135,12 +135,18 @@ onBeforeUnmount(clearAllTimeouts);
 </script>
 
 <template>
-  <router-link :to="to" :aria-label="name" @mouseenter="runAnimation">
-    <span aria-hidden="true" class="font-mono">
+  <router-link
+    :to="to"
+    :aria-label="name"
+    @mouseenter="runAnimation"
+    class="inline-flex justify-center leading-none align-baseline"
+    :style="{ width: `${length * 0.62}em` }"
+  >
+    <span aria-hidden="true" class="font-mono leading-none inline-flex">
       <span
         v-for="(c, i) in chars"
         :key="i"
-        class="char inline-block text-center"
+        class="char inline-block text-center align-baseline"
         :class="{ pulse: pulsing[i], collapsed: isCollapsed(i) }"
         >{{ c }}</span
       >
@@ -167,11 +173,11 @@ onBeforeUnmount(clearAllTimeouts);
 @keyframes charPop {
   0% {
     opacity: 0;
-    transform: translateY(-3px) scale(0.7);
+    transform: scale(0.7);
   }
   100% {
     opacity: 1;
-    transform: translateY(0) scale(1);
+    transform: scale(1);
   }
 }
 </style>

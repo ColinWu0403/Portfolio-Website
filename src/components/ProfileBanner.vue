@@ -12,9 +12,14 @@
           class="font-semibold text-3xl md:text-4xl text-primary dark:text-white"
         >
           Hello There! I'm
-          <router-link to="/about" class="text-magenta dark:text-tertiary">
+          <!-- <router-link to="/about" class="text-magenta dark:text-tertiary">
             Colin Wu</router-link
-          >
+          > -->
+          <NameEyeReveal
+            name="Colin Wu"
+            to="/about"
+            class="text-magenta dark:text-secondary hover:opacity-80 transition"
+          />
         </h1>
 
         <div
@@ -169,6 +174,7 @@
 
 <script setup>
 import PixelSortImage from "./PixelSortImage.vue";
+import NameEyeReveal from "./NameEyeReveal.vue";
 import { ref } from "vue";
 const sortRef = ref(null);
 
